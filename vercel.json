@@ -3,8 +3,12 @@
     "outputDirectory": "project",
     "rewrites": [
         {
+            "source": "/project/(.*)",
+            "destination": "/project/$1"
+        },
+        {
             "source": "/(.*)",
-            "destination": "/index.html"
+            "destination": "/project/$1"
         }
     ]
 }
