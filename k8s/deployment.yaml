@@ -35,15 +35,15 @@ spec:
         app: az900-portal
         version: v1
     spec:
-      # Image pull secret for GHCR
-      imagePullSecrets:
-        - name: ghcr-secret
+      # No image pull secrets needed for local deployment
+      # imagePullSecrets:
+      #   - name: ghcr-secret
       
       # Container specification
       containers:
       - name: az900-portal
-        image: IMAGE_PLACEHOLDER  # Will be replaced by CI/CD pipeline
-        imagePullPolicy: Always
+        image: az900-portal:v1.0  # Local Docker image
+        imagePullPolicy: Never  # Don't pull from registry, use local image
         
         # Container port
         ports:

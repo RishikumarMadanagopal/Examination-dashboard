@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Practice Assessment Portal</title>
   <link rel="icon" href="favicon.ico" />
   <meta name="description" content="Sharan's AZ-900 Exam Practice Portal" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     body {
       font-family: 'Inter', sans-serif;
@@ -34,8 +39,15 @@
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     .logout-btn {
@@ -160,23 +172,45 @@
       transition: background-color 0.3s ease, transform 0.1s ease;
     }
 
-    .start-btn:hover { background-color: #2563eb; }
-    .start-btn:active { transform: scale(0.98); }
+    .start-btn:hover {
+      background-color: #2563eb;
+    }
+
+    .start-btn:active {
+      transform: scale(0.98);
+    }
 
     @media (max-width: 480px) {
-      .container { padding: 30px 20px; }
-      h1 { font-size: 22px; }
-      .sharan-badge { font-size: 13px; padding: 8px 16px; }
-      .rules-section h2 { font-size: 18px; }
-      .start-btn { padding: 12px; font-size: 15px; }
+      .container {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      .sharan-badge {
+        font-size: 13px;
+        padding: 8px 16px;
+      }
+
+      .rules-section h2 {
+        font-size: 18px;
+      }
+
+      .start-btn {
+        padding: 12px;
+        font-size: 15px;
+      }
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <button class="logout-btn" aria-label="Logout of the portal">Logout</button>
     <div class="exam-icon">📘</div>
-    <div class="sharan-badge">📎 Sharan's Exam Experience 😈</div>
+    <div class="sharan-badge">📎 Rishi's Exam Experience 😈</div>
     <h1>Online Assessment Portal</h1>
     <div id="welcome-user"></div>
 
@@ -288,4 +322,5 @@
     document.addEventListener("DOMContentLoaded", () => AssessmentApp.init());
   </script>
 </body>
+
 </html>
