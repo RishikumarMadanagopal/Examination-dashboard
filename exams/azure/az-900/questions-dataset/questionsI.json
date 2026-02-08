@@ -1,0 +1,1777 @@
+[
+  {
+    "question": "A healthcare provider uses Azure to manage patient data, needing to ensure compliance with privacy regulations across all resources and unify governance for data stored in Azure SQL and external SaaS apps. Which Azure tools address these governance needs? (Select all that apply.)",
+    "options": [
+      "Azure Arc",
+      "Microsoft Purview",
+      "Azure Resource Manager",
+      "Azure Policy"
+    ],
+    "correct": ["Microsoft Purview", "Azure Policy"],
+    "explanations": {
+      "Azure Arc": "Azure Arc extends Azure management to any infrastructure, but it's not specifically focused on data governance.",
+      "Microsoft Purview": "Purview helps discover, classify, and manage sensitive data across cloud and SaaS apps.",
+      "Azure Resource Manager": "ARM manages resources but doesn't handle data governance or compliance.",
+      "Azure Policy": "Azure Policy lets you enforce rules and compliance standards across Azure resources."
+    }
+  },
+  {
+    "question": "A retailer runs an e-commerce platform on Azure, facing cost overruns from auto-scaling VMs, high outbound data transfers to Asia, and premium storage tiers. Which factors are driving these Azure costs? (Select all that apply.)",
+    "options": [
+      "Subscription type",
+      "Usage patterns",
+      "Resource group names",
+      "Data center access latency"
+    ],
+    "correct": ["Usage patterns"],
+    "explanations": {
+      "Subscription type": "Subscription type doesn't directly cause cost overruns.",
+      "Usage patterns": "Usage patterns like auto-scaling VMs and premium storage lead to high Azure costs.",
+      "Resource group names": "Naming conventions do not impact cost.",
+      "Data center access latency": "Latency is a performance concern, not a direct cost driver."
+    }
+  },
+  {
+    "question": "A university secures its Azure resources, using a tool to classify sensitive research data across storage accounts and enforce retention policies, integrating with on-premises file shares. Which Azure governance tool fits this need?",
+    "options": [
+      "Azure Resource Locks",
+      "Azure Policy",
+      "Microsoft Purview",
+      "Azure Monitor"
+    ],
+    "correct": "Microsoft Purview",
+    "explanations": {
+      "Azure Resource Locks": "Used to prevent deletion/modification but not for data classification or retention.",
+      "Azure Policy": "Useful for compliance rules, not data classification or retention policy enforcement.",
+      "Microsoft Purview": "Correct – used for data discovery, classification, and retention management.",
+      "Azure Monitor": "Focuses on resource monitoring and logs, not governance or classification."
+    }
+  },
+  {
+    "question": "A bank secures its Azure resources, requiring employees to sign in with corporate credentials and a phone verification only from trusted office locations, while granting developers VM management rights within a subscription. Which Azure features enforce these controls? (Select all that apply.)",
+    "options": [
+      "Microsoft Entra Conditional Access",
+      "Role-Based Access Control (RBAC)",
+      "Azure Monitor",
+      "Azure Arc"
+    ],
+    "correct": ["Microsoft Entra Conditional Access", "Role-Based Access Control (RBAC)"],
+    "explanations": {
+      "Microsoft Entra Conditional Access": "Enforces multi-factor authentication and location-based access.",
+      "Role-Based Access Control (RBAC)": "Assigns specific roles to developers for VM management.",
+      "Azure Monitor": "Used for performance monitoring, not access control.",
+      "Azure Arc": "Extends Azure management but not relevant to access enforcement."
+    }
+  },
+  {
+    "question": "A startup deploys a web app on Azure, using virtual machines and storage accounts across two regions. They aim to track spending and optimize costs by setting budgets and identifying resource usage trends. Which Azure cost management capabilities support these goals?",
+    "options": [
+      "Azure Cost Analysis",
+      "Azure Advisor",
+      "Tags",
+      "Azure Blueprints"
+    ],
+    "correct": ["Azure Cost Analysis", "Azure Advisor", "Tags"],
+    "explanations": {
+      "Azure Cost Analysis": "Provides insights into spending trends over time.",
+      "Azure Advisor": "Recommends ways to optimize resources and reduce cost.",
+      "Tags": "Enable resource categorization for department-level budgeting.",
+      "Azure Blueprints": "Used for deploying resource templates, not for cost analysis."
+    }
+  },
+  {
+    "question": "Which Azure service allows you to create, assign, and manage policies to enforce different rules and stay compliant with your Service Level Agreements (SLAs)?",
+    "options": [
+      "Azure Security Center",
+      "Azure Policy",
+      "Azure Trust Portal",
+      "Azure Blueprints"
+    ],
+    "correct": "Azure Policy",
+    "explanations": {
+      "Azure Security Center": "Focused on security posture, not compliance policy enforcement.",
+      "Azure Policy": "Correct – used to define and enforce compliance rules.",
+      "Azure Trust Portal": "Not a valid Azure service.",
+      "Azure Blueprints": "Deploys standardized resources but does not manage policy rules."
+    }
+  },
+  {
+    "question": "A retail chain collaborates with suppliers and engages customers via an Azure-hosted portal. Suppliers use their own corporate credentials to access inventory data, while customers sign in with social media accounts. Which Azure feature manages these identities?",
+    "options": [
+      "Microsoft Entra B2C",
+      "Microsoft Entra B2B",
+      "Microsoft Entra Domain Services",
+      "Azure Active Directory Premium"
+    ],
+    "correct": ["Microsoft Entra B2C", "Microsoft Entra B2B"],
+    "explanations": {
+      "Microsoft Entra B2C": "Manages external customers signing in with social media accounts.",
+      "Microsoft Entra B2B": "Allows suppliers to access using their own corporate credentials.",
+      "Microsoft Entra Domain Services": "Used to integrate on-prem AD with Azure, not customer/supplier logins.",
+      "Azure Active Directory Premium": "Provides enhanced security and features, but B2B/B2C fits better here."
+    }
+  },
+  {
+    "question": "A university tracks Azure costs for its research labs, labeling VMs by department, analyzing usage spikes during experiments, and recommending VM resizing to cut expenses. Which Azure tools or features support this cost management strategy? (Select all that apply.)",
+    "options": [
+      "Azure Cost Analysis",
+      "Azure Pricing Calculator",
+      "Azure Advisor",
+      "Tags"
+    ],
+    "correct": ["Azure Cost Analysis", "Azure Advisor", "Tags"],
+    "explanations": {
+      "Azure Cost Analysis": "Helps track spending and analyze spikes during experiments.",
+      "Azure Pricing Calculator": "Used for estimating costs, not for active cost management.",
+      "Azure Advisor": "Recommends resource optimization including VM resizing.",
+      "Tags": "Enables labeling of resources for cost tracking."
+    }
+  },
+  {
+    "question": "Which of the following services can be used to store unstructured/semi-structured data in Azure?",
+    "options": [
+      "Azure Queue Storage",
+      "Azure Table Storage",
+      "Azure Blob Storage",
+      "Azure File Storage"
+    ],
+    "correct": ["Azure Table Storage", "Azure Blob Storage", "Azure File Storage"],
+    "explanations": {
+      "Azure Queue Storage": "Used for messaging, not unstructured data storage.",
+      "Azure Table Storage": "Suitable for semi-structured NoSQL data.",
+      "Azure Blob Storage": "Best for storing unstructured data like files and media.",
+      "Azure File Storage": "Used to store unstructured data like shared files."
+    }
+  },
+  {
+    "question": "Your company is considering migrating its on-premises infrastructure to Azure. The management team wants to compare the costs of running the existing infrastructure in-house to the projected costs in Azure. Which tool should you use to provide this comparison?",
+    "options": [
+      "Resource cost calculator",
+      "Billing calculator",
+      "Total Cost of Ownership calculator",
+      "Pricing calculator"
+    ],
+    "correct": "Total Cost of Ownership calculator",
+    "explanations": {
+      "Resource cost calculator": "Not a valid Azure tool.",
+      "Billing calculator": "Azure does not have a tool with this name.",
+      "Total Cost of Ownership calculator": "Correct – compares on-prem vs. Azure cost across multiple factors.",
+      "Pricing calculator": "Estimates Azure service costs but doesn’t compare with on-prem infrastructure."
+    }
+  },
+  {
+    "question": "A gaming company uses Azure Cost Management to set a $5,000 monthly spending cap and receive alerts when nearing it, expecting this to automatically halt resource usage. Does this reflect an accurate use of Azure cost management capabilities?",
+    "options": ["Yes", "No"],
+    "correct": "No",
+    "explanations": {
+      "Yes": "Incorrect. Azure Budgets only sends alerts; it doesn’t automatically halt resource usage.",
+      "No": "Correct. Azure Cost Management allows setting budgets and alerts but not auto-stopping resources. Additional tools like Automation are required for that."
+    }
+  },
+  {
+    "question": "You have configured a VPN connection between an on-premises network and an Azure virtual network using Site-to-Site VPN (IPsec). However, you are experiencing connectivity issues and suspect that there is an issue with the VPN gateway. Which Azure service can you use to diagnose connectivity issues for your VPN gateway?",
+    "options": [
+      "Azure Application Gateway",
+      "Azure ExpressRoute",
+      "Azure Traffic Manager",
+      "Azure Network Watcher"
+    ],
+    "correct": "Azure Network Watcher",
+    "explanations": {
+      "Azure Application Gateway": "Incorrect. It is a load balancer, not a diagnostic tool.",
+      "Azure ExpressRoute": "Incorrect. It is a dedicated private connection, not for troubleshooting VPN.",
+      "Azure Traffic Manager": "Incorrect. Used for DNS-based traffic routing, not diagnostics.",
+      "Azure Network Watcher": "Correct. Used for monitoring and diagnosing network connectivity issues, including VPN."
+    }
+  },
+  {
+    "question": "Which of the following would you use if you want to keep track of the performance or issues related to your specific VM or container instances, databases, your applications?",
+    "options": [
+      "Azure Monitor",
+      "Azure Service Health"
+    ],
+    "correct": "Azure Monitor",
+    "explanations": {
+      "Azure Monitor": "Correct. It provides telemetry and performance tracking for Azure resources.",
+      "Azure Service Health": "Incorrect. Focuses on service outages and maintenance, not specific resource performance."
+    }
+  },
+  {
+    "question": "A data analytics company uses Azure to store sensitive information and wants to ensure its stored data is protected even if a storage account is compromised. Which Azure feature best addresses this requirement?",
+    "options": [
+      "Network Security Groups",
+      "Disk Encryption",
+      "Role-Based Access Control",
+      "Private Endpoint"
+    ],
+    "correct": "Disk Encryption",
+    "explanations": {
+      "Network Security Groups": "Controls traffic but doesn’t encrypt data.",
+      "Disk Encryption": "Correct. Encrypts data at rest to prevent exposure in case of compromise.",
+      "Role-Based Access Control": "Controls access but doesn’t encrypt data.",
+      "Private Endpoint": "Ensures private connectivity but not encryption."
+    }
+  },
+  {
+    "question": "A developer uses a cloud service where they write small code snippets triggered by events, like user uploads, without provisioning or managing servers. Which characteristics define this as serverless computing? (Select all that apply.)",
+    "options": [
+      "Billing occurs only when the code executes",
+      "It requires dedicated virtual machines for each function",
+      "The provider automatically scales resources based on event frequency",
+      "The customer manages the underlying operating system"
+    ],
+    "correct": [
+      "Billing occurs only when the code executes",
+      "The provider automatically scales resources based on event frequency"
+    ],
+    "explanations": {
+      "Billing occurs only when the code executes": "Correct. Serverless pricing is event-driven.",
+      "It requires dedicated virtual machines for each function": "Incorrect. Serverless doesn’t require dedicated VMs.",
+      "The provider automatically scales resources based on event frequency": "Correct. Auto-scaling is built-in.",
+      "The customer manages the underlying operating system": "Incorrect. The provider manages infrastructure in serverless."
+    }
+  },
+  {
+    "question": "How is the cost of network traffic in Azure affected?",
+    "options": [
+      "By the type of subscription",
+      "By resource type",
+      "By the number of users",
+      "By geography"
+    ],
+    "correct": "By geography",
+    "explanations": {
+      "By the type of subscription": "Incorrect. Subscription types don’t directly affect network traffic cost.",
+      "By resource type": "Incorrect. Cost depends on transfer volume and distance.",
+      "By the number of users": "Incorrect. Users impact load but not network pricing directly.",
+      "By geography": "Correct. Costs vary depending on source and destination Azure regions."
+    }
+  },
+  {
+    "question": "A developer needs to rapidly build and deploy web applications without managing the underlying infrastructure. Which Azure computing model is most suitable?",
+    "options": [
+      "Infrastructure as a Service (IaaS)",
+      "Platform as a Service (PaaS)",
+      "Software as a Service (SaaS)",
+      "Function as a Service (FaaS)"
+    ],
+    "correct": "Platform as a Service (PaaS)",
+    "explanations": {
+      "Infrastructure as a Service (IaaS)": "Requires VM and OS management.",
+      "Platform as a Service (PaaS)": "Correct. Provides a managed platform for app development.",
+      "Software as a Service (SaaS)": "Provides finished apps, not a development platform.",
+      "Function as a Service (FaaS)": "Used for running event-driven functions, not full apps."
+    }
+  },
+  {
+    "question": "A global retailer wants to restrict access to their Azure apps based on user location and enforce MFA only for untrusted countries. Which Azure identity feature provides this control?",
+    "options": [
+      "Azure AD Connect",
+      "Azure Role-Based Access Control",
+      "Azure Monitor",
+      "Conditional Access"
+    ],
+    "correct": "Conditional Access",
+    "explanations": {
+      "Azure AD Connect": "Used for syncing identities, not access policy enforcement.",
+      "Azure Role-Based Access Control": "Manages permissions, not conditions like geography.",
+      "Azure Monitor": "Used for monitoring, not access control.",
+      "Conditional Access": "Correct. Enables policies based on conditions like location, device, or risk."
+    }
+  },
+  {
+    "question": "Which of the following statements about Azure regions is TRUE?",
+    "options": [
+      "Every Azure region has a single data center",
+      "An Azure region can span multiple continents",
+      "Each Azure region is composed of multiple datacenters",
+      "Azure regions and availability zones are the same"
+    ],
+    "correct": "Each Azure region is composed of multiple datacenters",
+    "explanations": {
+      "Every Azure region has a single data center": "Incorrect. Regions typically have multiple datacenters.",
+      "An Azure region can span multiple continents": "Incorrect. Azure regions are geographically bounded.",
+      "Each Azure region is composed of multiple datacenters": "Correct. Ensures availability and redundancy.",
+      "Azure regions and availability zones are the same": "Incorrect. Availability zones are subsets within regions."
+    }
+  },
+  {
+    "question": "A large company wants to compare the total cost of running on-prem infrastructure with Azure cloud for 3 years. Which tool should they use?",
+    "options": [
+      "Azure Pricing Calculator",
+      "Azure TCO Calculator",
+      "Azure Advisor",
+      "Azure Cost Management"
+    ],
+    "correct": "Azure TCO Calculator",
+    "explanations": {
+      "Azure Pricing Calculator": "Estimates Azure service costs but not on-prem vs. cloud comparisons.",
+      "Azure TCO Calculator": "Correct. Compares on-premises and Azure costs over time.",
+      "Azure Advisor": "Gives optimization recommendations, not cost comparison.",
+      "Azure Cost Management": "Used for monitoring existing Azure spend, not forecasting comparisons."
+    }
+  },
+  {
+    "question": "What is the primary benefit of Azure's scalability for businesses experiencing rapid growth?",
+    "options": [
+      "Improved compliance reporting",
+      "The ability to handle increased workloads without infrastructure changes",
+      "Reduction in staff requirements",
+      "Automatic software updates"
+    ],
+    "correct": "The ability to handle increased workloads without infrastructure changes",
+    "explanations": {
+      "Improved compliance reporting": "Incorrect. Compliance reporting is not the main benefit of scalability.",
+      "The ability to handle increased workloads without infrastructure changes": "Correct. Scalability allows businesses to grow seamlessly without re-architecting infrastructure.",
+      "Reduction in staff requirements": "Incorrect. Staff needs may or may not change with scalability.",
+      "Automatic software updates": "Incorrect. That relates more to platform management, not scalability."
+    }
+  },
+  {
+    "question": "An organization wishes to estimate the cost of using Azure services based on expected configurations. Which Azure tool helps with this?",
+    "options": [
+      "Azure TCO Calculator",
+      "Azure Pricing Calculator",
+      "Azure Monitor",
+      "Azure Resource Manager"
+    ],
+    "correct": "Azure Pricing Calculator",
+    "explanations": {
+      "Azure TCO Calculator": "Incorrect. This compares on-premises to Azure cost, not direct pricing estimation.",
+      "Azure Pricing Calculator": "Correct. It estimates the cost of provisioning Azure resources based on configurations.",
+      "Azure Monitor": "Incorrect. This tool is for monitoring resource usage and performance.",
+      "Azure Resource Manager": "Incorrect. Used for deployment and management, not pricing estimation."
+    }
+  },
+  {
+    "question": "A developer wants to run small code snippets in response to events without managing infrastructure. What Azure service fits this need?",
+    "options": [
+      "Azure Virtual Machines",
+      "Azure App Service",
+      "Azure Functions",
+      "Azure Kubernetes Service"
+    ],
+    "correct": "Azure Functions",
+    "explanations": {
+      "Azure Virtual Machines": "Incorrect. VMs require infrastructure management.",
+      "Azure App Service": "Partially correct but still requires managing app runtime environments.",
+      "Azure Functions": "Correct. It's a serverless compute service that runs event-triggered code.",
+      "Azure Kubernetes Service": "Incorrect. Used for container orchestration, which still involves infrastructure."
+    }
+  },
+  {
+    "question": "Which Azure service enables federated identity so that users from partner organizations can access applications with their own credentials?",
+    "options": [
+      "Microsoft Entra B2C",
+      "Microsoft Entra B2B",
+      "Azure Active Directory Domain Services",
+      "Azure Application Gateway"
+    ],
+    "correct": "Microsoft Entra B2B",
+    "explanations": {
+      "Microsoft Entra B2C": "Incorrect. B2C is for customer identity management.",
+      "Microsoft Entra B2B": "Correct. Enables external users to access resources using their credentials.",
+      "Azure Active Directory Domain Services": "Incorrect. Provides domain services, not identity federation.",
+      "Azure Application Gateway": "Incorrect. It's a load balancer for web traffic."
+    }
+  },
+  {
+    "question": "Which Azure service would you use to deploy infrastructure using templates for consistent environments?",
+    "options": [
+      "Azure Resource Manager",
+      "Azure DevOps",
+      "Azure Automation",
+      "Azure Monitor"
+    ],
+    "correct": "Azure Resource Manager",
+    "explanations": {
+      "Azure Resource Manager": "Correct. Allows deployment and management of infrastructure using templates.",
+      "Azure DevOps": "Used for CI/CD but not for infrastructure provisioning templates.",
+      "Azure Automation": "Automates processes but not infrastructure deployment.",
+      "Azure Monitor": "Used for performance monitoring, not infrastructure provisioning."
+    }
+  },
+  {
+    "question": "Which benefit of cloud computing allows companies to avoid capital expense and pay only for what they use?",
+    "options": [
+      "Scalability",
+      "Elasticity",
+      "Pay-as-you-go",
+      "High availability"
+    ],
+    "correct": "Pay-as-you-go",
+    "explanations": {
+      "Scalability": "Allows increasing/decreasing resources, but not cost-based directly.",
+      "Elasticity": "Focuses on automated resource scaling.",
+      "Pay-as-you-go": "Correct. Enables businesses to pay only for resources consumed.",
+      "High availability": "Refers to uptime and redundancy, not billing."
+    }
+  },
+  {
+    "question": "Which Azure solution enables secure remote access to a virtual machine without exposing a public IP?",
+    "options": [
+      "Azure Bastion",
+      "Azure Firewall",
+      "Azure VPN Gateway",
+      "Azure Load Balancer"
+    ],
+    "correct": "Azure Bastion",
+    "explanations": {
+      "Azure Bastion": "Correct. Provides secure RDP/SSH access via Azure Portal without public IP.",
+      "Azure Firewall": "Protects against threats but doesn’t provide direct access to VMs.",
+      "Azure VPN Gateway": "Connects networks securely, not individual VM access.",
+      "Azure Load Balancer": "Distributes network traffic, not used for remote access."
+    }
+  },
+  {
+    "question": "Which of the following best describes horizontal scaling?",
+    "options": [
+      "Adding more CPUs to an existing VM",
+      "Adding more memory to an existing resource",
+      "Increasing IOPS for a disk",
+      "Adding more instances of a resource"
+    ],
+    "correct": "Adding more instances of a resource",
+    "explanations": {
+      "Adding more CPUs to an existing VM": "Vertical scaling increases resource power.",
+      "Adding more memory to an existing resource": "Also vertical scaling.",
+      "Increasing IOPS for a disk": "Performance tuning, not scaling.",
+      "Adding more instances of a resource": "Correct. Horizontal scaling adds resources to distribute load."
+    }
+  },
+  {
+    "question": "What Azure service helps enforce organizational standards and assess compliance across resources?",
+    "options": [
+      "Azure Policy",
+      "Azure DevTest Labs",
+      "Azure Monitor",
+      "Azure Lighthouse"
+    ],
+    "correct": "Azure Policy",
+    "explanations": {
+      "Azure Policy": "Correct. Defines and enforces rules for compliance across Azure resources.",
+      "Azure DevTest Labs": "Provides test environments, not governance.",
+      "Azure Monitor": "Focuses on telemetry and alerts.",
+      "Azure Lighthouse": "Manages resources across tenants, not policies."
+    }
+  },
+  {
+    "question": "What happens when a budget alert in Azure Cost Management is triggered?",
+    "options": [
+      "Azure suspends the resource",
+      "You receive a notification",
+      "A VM is deleted",
+      "A billing invoice is immediately generated"
+    ],
+    "correct": "You receive a notification",
+    "explanations": {
+      "Azure suspends the resource": "Incorrect. Budget alerts don’t affect resources automatically.",
+      "You receive a notification": "Correct. Alerts notify users about budget thresholds being reached.",
+      "A VM is deleted": "Incorrect. Budget alerts don’t delete resources.",
+      "A billing invoice is immediately generated": "Incorrect. Invoices are separate from budget alerts."
+    }
+  },
+  {
+    "question": "Which of the following alert types are available in the Cost Management service? (Select all that apply)",
+    "options": [
+      "Budget alerts",
+      "Credit alerts",
+      "Department spending quota alerts",
+      "Resource usage alerts"
+    ],
+    "correct": ["Budget alerts", "Credit alerts", "Department spending quota alerts"],
+    "explanations": {
+      "Budget alerts": "Correct. These notify when spending exceeds a defined budget threshold.",
+      "Credit alerts": "Correct. These notify when Azure credit balances are consumed.",
+      "Department spending quota alerts": "Correct. These notify departments when their spending reaches a quota.",
+      "Resource usage alerts": "Incorrect. These are part of monitoring services, not cost management."
+    }
+  },
+  {
+    "question": "What is the key difference between vertical scaling and horizontal scaling?",
+    "options": [
+      "Vertical scaling only applies to virtual machines, while horizontal scaling applies to containers.",
+      "Vertical scaling adds more processing power, while horizontal scaling increases storage capacity.",
+      "Vertical scaling is automatic, while horizontal scaling requires manual intervention.",
+      "Horizontal scaling adjusts the number of resources, while vertical scaling adjusts capabilities."
+    ],
+    "correct": "Horizontal scaling adjusts the number of resources, while vertical scaling adjusts capabilities.",
+    "explanations": {
+      "Vertical scaling only applies to virtual machines, while horizontal scaling applies to containers.": "Incorrect. Both scaling types apply across services.",
+      "Vertical scaling adds more processing power, while horizontal scaling increases storage capacity.": "Incorrect. This oversimplifies their definitions.",
+      "Vertical scaling is automatic, while horizontal scaling requires manual intervention.": "Incorrect. Both can be automated.",
+      "Horizontal scaling adjusts the number of resources, while vertical scaling adjusts capabilities.": "Correct. This describes the true difference."
+    }
+  },
+  {
+    "question": "What is the maximum allowed number of tags per Azure resource?",
+    "options": [
+      "15",
+      "30",
+      "50",
+      "10"
+    ],
+    "correct": "50",
+    "explanations": {
+      "15": "Incorrect. Limit is higher.",
+      "30": "Incorrect. Limit is 50.",
+      "50": "Correct. Azure supports up to 50 tags per resource.",
+      "10": "Incorrect. Too low."
+    }
+  },
+  {
+    "question": "A gaming company tracks its Azure app, querying VM logs for errors, setting CPU usage alerts, and diagnosing crashes. Which Azure Monitor components are in use?",
+    "options": [
+      "Azure Service Health",
+      "Application Insights",
+      "Log Analytics",
+      "Azure Monitor Alerts"
+    ],
+    "correct": ["Application Insights", "Log Analytics", "Azure Monitor Alerts"],
+    "explanations": {
+      "Azure Service Health": "Incorrect. Focuses on service outages, not application metrics.",
+      "Application Insights": "Correct. Used to track application health and behavior.",
+      "Log Analytics": "Correct. Used to query and analyze VM logs.",
+      "Azure Monitor Alerts": "Correct. Used to create alerts based on metrics such as CPU usage."
+    }
+  },
+  {
+    "question": "Which of the following services is used to enforce compliance policies and automate remediation in Azure?",
+    "options": [
+      "Azure Advisor",
+      "Azure Security Center",
+      "Azure Policy",
+      "Azure Monitor"
+    ],
+    "correct": "Azure Policy",
+    "explanations": {
+      "Azure Advisor": "Provides optimization recommendations, not policy enforcement.",
+      "Azure Security Center": "Focuses on security, not compliance policies.",
+      "Azure Policy": "Correct. Used to enforce rules and automate remediation.",
+      "Azure Monitor": "Used for performance tracking, not policy enforcement."
+    }
+  },
+  {
+    "question": "What is the concept of sharing resources among multiple tenants to reduce cost and increase efficiency called?",
+    "options": [
+      "Autonomy",
+      "Monolithic architecture",
+      "Multi-Tenancy",
+      "Redundancy"
+    ],
+    "correct": "Multi-Tenancy",
+    "explanations": {
+      "Autonomy": "Incorrect. Autonomy refers to independence, not shared use.",
+      "Monolithic architecture": "Incorrect. A software architecture pattern, not about resource sharing.",
+      "Multi-Tenancy": "Correct. It refers to sharing resources among multiple customers to reduce cost.",
+      "Redundancy": "Incorrect. Refers to duplication for high availability."
+    }
+  },
+  {
+    "question": "Which of the following Azure resource types does NOT support tagging?",
+    "options": [
+      "Azure App Service",
+      "Azure Container Registry",
+      "Virtual Machines",
+      "Azure Cosmos DB"
+    ],
+    "correct": "Azure Container Registry",
+    "explanations": {
+      "Azure App Service": "Incorrect. Supports tagging.",
+      "Azure Container Registry": "Correct. Does not support tagging.",
+      "Virtual Machines": "Incorrect. Supports tagging.",
+      "Azure Cosmos DB": "Incorrect. Supports tagging."
+    }
+  },
+  {
+    "question": "Which of the following is a free tool to conveniently manage your Azure cloud storage resources from your desktop?",
+    "options": [
+      "Azure Migrate",
+      "Azure Storage Explorer",
+      "Azure AzCopy",
+      "Azure FileSync"
+    ],
+    "correct": "Azure Storage Explorer",
+    "explanations": {
+      "Azure Migrate": "Incorrect. Used for migration assessment.",
+      "Azure Storage Explorer": "Correct. Free tool to manage Azure Storage accounts from desktop.",
+      "Azure AzCopy": "Incorrect. CLI tool for transferring data.",
+      "Azure FileSync": "Incorrect. Used to sync file servers with Azure Files."
+    }
+  },
+  {
+    "question": "_____________ copies your data synchronously three times within a single physical location in the primary region.",
+    "options": [
+      "Geo-zone-redundant storage (GZRS)",
+      "Worldwide Redundant Storage (WRS)",
+      "Zone-redundant storage (ZRS)",
+      "Locally redundant storage (LRS)"
+    ],
+    "correct": "Locally redundant storage (LRS)",
+    "explanations": {
+      "Geo-zone-redundant storage (GZRS)": "Incorrect. GZRS includes replication across regions and zones.",
+      "Worldwide Redundant Storage (WRS)": "Incorrect. Not a valid Azure redundancy model.",
+      "Zone-redundant storage (ZRS)": "Incorrect. Copies data across multiple zones, not within one location.",
+      "Locally redundant storage (LRS)": "Correct. Replicates data three times within a single data center."
+    }
+  },
+  {
+    "question": "Azure _____________ are unique physical buildings—located all over the globe—that house a group of networked computer servers.",
+    "options": [
+      "Availability Zones",
+      "Datacenters",
+      "Regions",
+      "Geographies"
+    ],
+    "correct": "Datacenters",
+    "explanations": {
+      "Availability Zones": "Incorrect. These are logical groupings within regions, each composed of datacenters.",
+      "Datacenters": "Correct. Physical facilities hosting Azure's hardware infrastructure.",
+      "Regions": "Incorrect. Geographic areas composed of multiple datacenters.",
+      "Geographies": "Incorrect. Groups of regions with data compliance boundaries."
+    }
+  },
+  {
+    "question": "Which of these is NOT a valid Azure resource group constraint?",
+    "options": [
+      "A Resource group must be in the same region as its resources",
+      "A Resource group can contain resources located in different regions",
+      "A Resource group can be used to apply consistent policies to resources using another service.",
+      "A Resource group can contain resources that belong to different subscriptions"
+    ],
+    "correct": "A Resource group must be in the same region as its resources",
+    "explanations": {
+      "A Resource group must be in the same region as its resources": "Correct. This is not true. Azure resource groups can contain resources from different regions.",
+      "A Resource group can contain resources located in different regions": "True. Resource groups can span across regions.",
+      "A Resource group can be used to apply consistent policies to resources using another service.": "True. Services like Azure Policy can apply governance rules at the resource group level.",
+      "A Resource group can contain resources that belong to different subscriptions": "True. Resource groups can span multiple subscriptions."
+    }
+  },
+  {
+    "question": "A finance team applies metadata labels to Azure resources, enabling them to allocate expenses to specific departments and projects for better cost tracking. This leverages the Azure feature known as __.",
+    "options": [
+      "labels",
+      "tags",
+      "classifications",
+      "properties"
+    ],
+    "correct": "tags",
+    "explanations": {
+      "labels": "Incorrect. 'Labels' is not the terminology used in Azure.",
+      "tags": "Correct. Azure Tags are used to apply metadata for cost tracking and organization.",
+      "classifications": "Incorrect. Azure doesn't use this term for organizing resources.",
+      "properties": "Incorrect. Properties are metadata but not used the same way as tags."
+    }
+  },
+  {
+    "question": "A government agency deploys a sensitive application in Azure, requiring data to remain within national boundaries and leveraging a dedicated region isolated from public access. This setup utilizes Azure’s __ regions, designed for compliance with sovereignty laws.",
+    "options": [
+      "global",
+      "isolated",
+      "dedicated",
+      "sovereign"
+    ],
+    "correct": "sovereign",
+    "explanations": {
+      "global": "Incorrect. Global refers to worldwide Azure services, not isolated regions.",
+      "isolated": "Incorrect. Not the official term used by Azure.",
+      "dedicated": "Incorrect. While these regions may be dedicated, the term is not 'dedicated regions'.",
+      "sovereign": "Correct. Azure sovereign regions are designed for compliance with national sovereignty laws."
+    }
+  },
+  {
+    "question": "A retailer automates VM deployments across subscriptions using a standardized JSON configuration, ensuring consistent networking and storage settings. Which Azure feature enables this declarative resource management?",
+    "options": [
+      "Azure Arc",
+      "Azure Service Health",
+      "Azure Resource Manager (ARM)",
+      "Azure Cloud Shell"
+    ],
+    "correct": "Azure Resource Manager (ARM)",
+    "explanations": {
+      "Azure Arc": "Incorrect. Azure Arc manages non-Azure resources.",
+      "Azure Service Health": "Incorrect. Provides health status, not deployment capabilities.",
+      "Azure Resource Manager (ARM)": "Correct. ARM allows resource provisioning through JSON templates.",
+      "Azure Cloud Shell": "Incorrect. A command-line interface, not for declarative management."
+    }
+  },
+  {
+    "question": "An IT team manages a hybrid Azure environment, enforcing a rule that all VMs must use a specific OS version across cloud and on-premises servers. Which Azure tool ensures this consistent configuration?",
+    "options": [
+      "Azure Monitor",
+      "Azure Resource Manager",
+      "Azure Policy",
+      "Azure Arc"
+    ],
+    "correct": "Azure Policy",
+    "explanations": {
+      "Azure Monitor": "Incorrect. Used for monitoring and diagnostics.",
+      "Azure Resource Manager": "Incorrect. Manages resources but does not enforce policies.",
+      "Azure Policy": "Correct. Enforces configuration rules across cloud and hybrid environments.",
+      "Azure Arc": "Incorrect. Manages resources across environments, but enforcement comes via Azure Policy."
+    }
+  },
+  {
+    "question": "A logistics firm builds a hybrid network connecting its on-premises datacenter to Azure, requiring encrypted public internet access and high-speed private connectivity for sensitive data. Which Azure networking services support this? (Select all that apply.)",
+    "options": [
+      "Azure VPN Gateway",
+      "ExpressRoute",
+      "Azure Bastion",
+      "Azure Load Balancer"
+    ],
+    "correct": ["Azure VPN Gateway", "ExpressRoute"],
+    "explanations": {
+      "Azure VPN Gateway": "Correct. Provides encrypted communication over the public internet.",
+      "ExpressRoute": "Correct. Offers private, high-speed connectivity to Azure.",
+      "Azure Bastion": "Incorrect. Secure RDP access, not for network connectivity between sites.",
+      "Azure Load Balancer": "Incorrect. Distributes traffic but doesn’t provide secure hybrid connectivity."
+    }
+  },
+  {
+    "question": "What is the main purpose of the Azure Pricing Calculator?",
+    "options": [
+      "To provision resources in Azure",
+      "To estimate the cost of provisioning resources in Azure",
+      "To compare the costs of running on-premises and Azure Cloud infrastructure",
+      "To manage the billing of your Azure account"
+    ],
+    "correct": "To estimate the cost of provisioning resources in Azure",
+    "explanations": {
+      "To provision resources in Azure": "Incorrect. Azure portal or CLI is used for provisioning.",
+      "To estimate the cost of provisioning resources in Azure": "Correct. Pricing Calculator is for cost estimation.",
+      "To compare the costs of running on-premises and Azure Cloud infrastructure": "Incorrect. TCO Calculator does that.",
+      "To manage the billing of your Azure account": "Incorrect. Billing is managed through Azure Cost Management."
+    }
+  },
+  {
+    "question": "Azure _____________ are unique physical buildings—located all over the globe—that house a group of networked computer servers.",
+    "options": [
+      "Availability Zones",
+      "Datacenters",
+      "Regions",
+      "Geographies"
+    ],
+    "correct": "Datacenters",
+    "explanations": {
+      "Availability Zones": "Incorrect. Zones are logical groupings within regions.",
+      "Datacenters": "Correct. These are the physical facilities that host Azure infrastructure.",
+      "Regions": "Incorrect. Regions are collections of datacenters in a specific location.",
+      "Geographies": "Incorrect. Geographies group multiple regions."
+    }
+  },
+  {
+    "question": "A government agency collaborates with other public sector entities to deploy a shared cloud environment tailored to stringent security standards, while also seeking to benefit from pooled resources. Which characteristics align with the cloud deployment model they are likely adopting? (Select all that apply.)",
+    "options": [
+      "Infrastructure is fully managed by a third-party provider",
+      "Resources are shared among a specific group with common needs",
+      "It offers the broadest accessibility to the general public",
+      "It supports compliance with industry-specific regulations"
+    ],
+    "correct": [
+      "Resources are shared among a specific group with common needs",
+      "It supports compliance with industry-specific regulations"
+    ],
+    "explanations": {
+      "Infrastructure is fully managed by a third-party provider": "Incorrect. Management could be shared or self-managed.",
+      "Resources are shared among a specific group with common needs": "Correct. This aligns with the Community Cloud model.",
+      "It offers the broadest accessibility to the general public": "Incorrect. Describes Public Cloud.",
+      "It supports compliance with industry-specific regulations": "Correct. Community Cloud often addresses specific compliance needs."
+    }
+  },
+  {
+    "question": "You plan to provision Infrastructure as a Service (IaaS) resources in Azure. Which of the following is an example of IaaS in Azure?",
+    "options": [
+      "Azure Event Hubs",
+      "Azure Machine Learning",
+      "Azure Virtual Machines",
+      "Azure Functions"
+    ],
+    "correct": "Azure Virtual Machines",
+    "explanations": {
+      "Azure Event Hubs": "Incorrect. This is a PaaS event ingestion service.",
+      "Azure Machine Learning": "Incorrect. This is a PaaS offering.",
+      "Azure Virtual Machines": "Correct. VMs are classic examples of IaaS.",
+      "Azure Functions": "Incorrect. This is a serverless (FaaS) service."
+    }
+  },
+  {
+    "question": "A finance team applies metadata labels to Azure resources, enabling them to allocate expenses to specific departments and projects for better cost tracking. This leverages the Azure feature known as __.",
+    "options": ["labels", "tags", "classifications", "properties"],
+    "correct": "tags",
+    "explanations": {
+      "labels": "Incorrect. Azure does not use the term 'labels' for this purpose.",
+      "tags": "Correct. Tags are used for categorizing resources for management and cost tracking.",
+      "classifications": "Incorrect. Not a feature used for billing or organizing Azure resources.",
+      "properties": "Incorrect. Properties are metadata, but not for tagging or organizing."
+    }
+  },
+  {
+    "question": "A government agency deploys a sensitive application in Azure, requiring data to remain within national boundaries and leveraging a dedicated region isolated from public access. This setup utilizes Azure’s __ regions, designed for compliance with sovereignty laws.",
+    "options": ["global", "isolated", "dedicated", "sovereign"],
+    "correct": "sovereign",
+    "explanations": {
+      "global": "Incorrect. Refers to Azure’s worldwide services.",
+      "isolated": "Incorrect. Not the standard Azure term.",
+      "dedicated": "Incorrect. Not the official designation for such regions.",
+      "sovereign": "Correct. Sovereign regions support national data residency requirements."
+    }
+  },
+  {
+    "question": "A retailer automates VM deployments across subscriptions using a standardized JSON configuration, ensuring consistent networking and storage settings. Which Azure feature enables this declarative resource management?",
+    "options": ["Azure Arc", "Azure Service Health", "Azure Resource Manager (ARM)", "Azure Cloud Shell"],
+    "correct": "Azure Resource Manager (ARM)",
+    "explanations": {
+      "Azure Arc": "Incorrect. Arc manages hybrid infrastructure, not ARM templates.",
+      "Azure Service Health": "Incorrect. Focuses on Azure outages and service status.",
+      "Azure Resource Manager (ARM)": "Correct. ARM enables declarative resource deployments using JSON templates.",
+      "Azure Cloud Shell": "Incorrect. CLI interface for Azure, not for declarative management."
+    }
+  },
+  {
+    "question": "An IT team manages a hybrid Azure environment, enforcing a rule that all VMs must use a specific OS version across cloud and on-premises servers. Which Azure tool ensures this consistent configuration?",
+    "options": ["Azure Monitor", "Azure Resource Manager", "Azure Policy", "Azure Arc"],
+    "correct": "Azure Policy",
+    "explanations": {
+      "Azure Monitor": "Incorrect. Used for metrics and telemetry.",
+      "Azure Resource Manager": "Incorrect. Does not enforce compliance rules.",
+      "Azure Policy": "Correct. Used for compliance enforcement like OS version enforcement.",
+      "Azure Arc": "Incorrect. Supports management, but enforcement comes from Azure Policy."
+    }
+  },
+  {
+    "question": "A logistics firm builds a hybrid network connecting its on-premises datacenter to Azure, requiring encrypted public internet access and high-speed private connectivity for sensitive data. Which Azure networking services support this? (Select all that apply.)",
+    "options": ["Azure VPN Gateway", "ExpressRoute", "Azure Bastion", "Azure Load Balancer"],
+    "correct": ["Azure VPN Gateway", "ExpressRoute"],
+    "explanations": {
+      "Azure VPN Gateway": "Correct. Provides secure encrypted connection over the public internet.",
+      "ExpressRoute": "Correct. Provides dedicated private high-speed connectivity.",
+      "Azure Bastion": "Incorrect. Used for secure RDP/SSH, not hybrid connectivity.",
+      "Azure Load Balancer": "Incorrect. For distributing traffic, not connecting datacenters."
+    }
+  },
+  {
+    "question": "What is the main purpose of the Azure Pricing Calculator?",
+    "options": [
+      "To provision resources in Azure",
+      "To estimate the cost of provisioning resources in Azure",
+      "To compare the costs of running on-premises and Azure Cloud infrastructure",
+      "To manage the billing of your Azure account"
+    ],
+    "correct": "To estimate the cost of provisioning resources in Azure",
+    "explanations": {
+      "To provision resources in Azure": "Incorrect. You use the Azure portal for that.",
+      "To estimate the cost of provisioning resources in Azure": "Correct. The calculator estimates potential costs.",
+      "To compare the costs of running on-premises and Azure Cloud infrastructure": "Incorrect. That is the job of the TCO calculator.",
+      "To manage the billing of your Azure account": "Incorrect. Azure Cost Management is used for that."
+    }
+  },
+  {
+    "question": "Azure _____________ are unique physical buildings—located all over the globe—that house a group of networked computer servers.",
+    "options": ["Availability Zones", "Datacenters", "Regions", "Geographies"],
+    "correct": "Datacenters",
+    "explanations": {
+      "Availability Zones": "Incorrect. Logical groupings of datacenters.",
+      "Datacenters": "Correct. The physical structures housing servers.",
+      "Regions": "Incorrect. Comprise multiple datacenters.",
+      "Geographies": "Incorrect. Larger groupings of multiple regions."
+    }
+  },
+  {
+    "question": "A government agency collaborates with other public sector entities to deploy a shared cloud environment tailored to stringent security standards, while also seeking to benefit from pooled resources. Which characteristics align with the cloud deployment model they are likely adopting? (Select all that apply.)",
+    "options": [
+      "Infrastructure is fully managed by a third-party provider",
+      "Resources are shared among a specific group with common needs",
+      "It offers the broadest accessibility to the general public",
+      "It supports compliance with industry-specific regulations"
+    ],
+    "correct": [
+      "Resources are shared among a specific group with common needs",
+      "It supports compliance with industry-specific regulations"
+    ],
+    "explanations": {
+      "Infrastructure is fully managed by a third-party provider": "Incorrect. Community clouds may be jointly managed.",
+      "Resources are shared among a specific group with common needs": "Correct. This defines the community cloud model.",
+      "It offers the broadest accessibility to the general public": "Incorrect. This defines public cloud.",
+      "It supports compliance with industry-specific regulations": "Correct. Common for government and healthcare."
+    }
+  },
+  {
+    "question": "You plan to provision Infrastructure as a Service (IaaS) resources in Azure. Which of the following is an example of IaaS in Azure?",
+    "options": ["Azure Event Hubs", "Azure Machine Learning", "Azure Virtual Machines", "Azure Functions"],
+    "correct": "Azure Virtual Machines",
+    "explanations": {
+      "Azure Event Hubs": "Incorrect. Event ingestion platform (PaaS).",
+      "Azure Machine Learning": "Incorrect. A PaaS solution.",
+      "Azure Virtual Machines": "Correct. VMs are the classic example of IaaS.",
+      "Azure Functions": "Incorrect. Serverless compute (FaaS)."
+    }
+  },
+  {
+    "question": "Which of the following is the mission-critical cloud deployment available only to US Federal, State, Local and Tribal Governments and their partners?",
+    "options": ["ISO", "Azure Federal", "Azure Government", "Azure Nation"],
+    "correct": "Azure Government",
+    "explanations": {
+      "ISO": "Incorrect. ISO refers to standards, not a cloud deployment.",
+      "Azure Federal": "Incorrect. Not the official name.",
+      "Azure Government": "Correct. Dedicated Azure instance for US government entities.",
+      "Azure Nation": "Incorrect. Not an Azure product."
+    }
+  },
+  {
+    "question": "A startup builds an app with lightweight, dependency-bundled compute units for microservices and event-driven code snippets that execute without server management. Which Azure compute options are they using? (Select all that apply.)",
+    "options": [
+      "Azure Functions",
+      "Azure Virtual Desktop",
+      "Availability Sets",
+      "Azure Container Instances"
+    ],
+    "correct": ["Azure Functions", "Azure Container Instances"],
+    "explanations": {
+      "Azure Functions": "Correct. Enables serverless execution for event-driven code without managing infrastructure.",
+      "Azure Virtual Desktop": "Incorrect. Designed for virtualizing desktop environments, not event-driven compute.",
+      "Availability Sets": "Incorrect. Focused on VM fault tolerance, not lightweight compute or serverless.",
+      "Azure Container Instances": "Correct. Runs containers without managing VMs, suitable for lightweight microservices."
+    }
+  },
+  {
+    "question": "Yes or No: You can use Azure DNS to buy a domain name.",
+    "options": ["Yes", "No"],
+    "correct": "No",
+    "explanations": {
+      "Yes": "Incorrect. Azure DNS does not offer domain purchasing functionality.",
+      "No": "Correct. Azure DNS is used to host domains and manage DNS records, not to register domains."
+    }
+  },
+  {
+    "question": "Azure _____________ are unique physical buildings—located all over the globe—that house a group of networked computer servers.",
+    "options": [
+      "Availability Zones",
+      "Datacenters",
+      "Regions",
+      "Geographies"
+    ],
+    "correct": "Datacenters",
+    "explanations": {
+      "Availability Zones": "Incorrect. These are logical groupings of datacenters.",
+      "Datacenters": "Correct. Datacenters are the physical locations hosting Azure infrastructure.",
+      "Regions": "Incorrect. A region consists of multiple datacenters.",
+      "Geographies": "Incorrect. A grouping of multiple regions for data residency."
+    }
+  },
+  {
+    "question": "A government agency collaborates with other public sector entities to deploy a shared cloud environment tailored to stringent security standards, while also seeking to benefit from pooled resources. Which characteristics align with the cloud deployment model they are likely adopting? (Select all that apply.)",
+    "options": [
+      "Infrastructure is fully managed by a third-party provider",
+      "Resources are shared among a specific group with common needs",
+      "It offers the broadest accessibility to the general public",
+      "It supports compliance with industry-specific regulations"
+    ],
+    "correct": [
+      "Resources are shared among a specific group with common needs",
+      "It supports compliance with industry-specific regulations"
+    ],
+    "explanations": {
+      "Infrastructure is fully managed by a third-party provider": "Incorrect. Community clouds may or may not be managed by third-party providers.",
+      "Resources are shared among a specific group with common needs": "Correct. A core characteristic of community cloud models.",
+      "It offers the broadest accessibility to the general public": "Incorrect. This applies to public cloud models.",
+      "It supports compliance with industry-specific regulations": "Correct. One of the goals of a community cloud is regulatory alignment."
+    }
+  },
+  {
+    "question": "You plan to provision Infrastructure as a Service (IaaS) resources in Azure. Which of the following is an example of IaaS in Azure?",
+    "options": [
+      "Azure Event Hubs",
+      "Azure Machine Learning",
+      "Azure Virtual Machines",
+      "Azure Functions"
+    ],
+    "correct": "Azure Virtual Machines",
+    "explanations": {
+      "Azure Event Hubs": "Incorrect. This is a PaaS event ingestion service.",
+      "Azure Machine Learning": "Incorrect. This is a PaaS offering for ML.",
+      "Azure Virtual Machines": "Correct. VMs are classic examples of IaaS.",
+      "Azure Functions": "Incorrect. A serverless (FaaS) compute service."
+    }
+  },
+  {
+    "question": "True or False: Each Azure Subscription can trust multiple Active Directories.",
+    "options": ["True", "False"],
+    "correct": "False",
+    "explanations": {
+      "True": "Incorrect. Each Azure subscription can only be associated with one Azure AD tenant.",
+      "False": "Correct. A subscription can trust only one directory at a time."
+    }
+  },
+  {
+    "question": "An organization is planning to migrate large amounts of data from their On-Prem storage to Azure. However, they are worried of incurring huge costs for this transfer and have halted their plans for now. Is this assumption valid?",
+    "options": ["Yes", "No"],
+    "correct": "No",
+    "explanations": {
+      "Yes": "Incorrect. Data ingress (upload to Azure) is free.",
+      "No": "Correct. Azure does not charge for incoming data (ingress); only egress costs apply."
+    }
+  },
+  {
+    "question": "You are designing a solution to improve the resiliency of your application in Azure. Which of the following would you choose to ensure your application remains available during planned maintenance events?",
+    "options": [
+      "Azure Container Registry",
+      "Scale Sets",
+      "Availability Sets",
+      "Availability Zones"
+    ],
+    "correct": "Availability Zones",
+    "explanations": {
+      "Azure Container Registry": "Incorrect. Used for storing container images, not availability.",
+      "Scale Sets": "Incorrect. Focused on scaling VMs, not specifically on resiliency during maintenance.",
+      "Availability Sets": "Incorrect. Helps with unplanned maintenance, not zone-level protection.",
+      "Availability Zones": "Correct. Ensures high availability by spreading resources across multiple datacenters in a region."
+    }
+  },
+  {
+    "question": "Which Azure feature enables organizations to define and enforce access rules based on location and device compliance for internal and external users?",
+    "options": [
+      "Azure Monitor",
+      "Microsoft Entra B2B",
+      "Microsoft Entra Conditional Access",
+      "Microsoft Entra B2C"
+    ],
+    "correct": "Microsoft Entra Conditional Access",
+    "explanations": {
+      "Azure Monitor": "Incorrect. Used for monitoring, not access control.",
+      "Microsoft Entra B2B": "Incorrect. Manages external user collaboration, not access conditions.",
+      "Microsoft Entra Conditional Access": "Correct. Enforces conditional policies like location, device compliance, and user risk.",
+      "Microsoft Entra B2C": "Incorrect. Designed for customer identity management, not access policy enforcement."
+    }
+  },
+  {
+    "question": "A consulting firm grants Azure portal access to clients using their own company logins, restricted to specific IPs, while internal staff face stricter sign-in rules. Which Azure feature enforces these location-based access policies?",
+    "options": [
+      "Azure Monitor",
+      "Microsoft Entra B2B",
+      "Microsoft Entra Conditional Access",
+      "Microsoft Entra B2C"
+    ],
+    "correct": "Microsoft Entra Conditional Access",
+    "explanations": {
+      "Azure Monitor": "Incorrect. Used for performance monitoring, not access enforcement.",
+      "Microsoft Entra B2B": "Incorrect. Supports external access but does not enforce policies like IP restrictions.",
+      "Microsoft Entra Conditional Access": "Correct. Enforces access based on user conditions such as IP, risk, and location.",
+      "Microsoft Entra B2C": "Incorrect. Focuses on consumer identity management, not corporate conditional access."
+    }
+  },
+  {
+    "question": "A development team is tasked with deploying a microservices-based application where each service needs to be independently scalable, with minimal management overhead and the ability to run code in response to events. Which Azure services would be best suited for this architecture?",
+    "options": [
+      "Azure Kubernetes Service (AKS) for container orchestration, and Azure Functions for event-driven code execution",
+      "Azure App Service for deploying the microservices, and Azure Logic Apps for event-driven integration",
+      "Azure Service Fabric for container orchestration, and Azure Functions for event-driven code execution",
+      "Azure Virtual Machines for each microservice, and Azure Event Grid for event routing"
+    ],
+    "correct": "Azure Kubernetes Service (AKS) for container orchestration, and Azure Functions for event-driven code execution",
+    "explanations": {
+      "Azure Kubernetes Service (AKS) for container orchestration, and Azure Functions for event-driven code execution": "Correct. AKS is ideal for container-based microservices, and Azure Functions supports serverless event-driven compute.",
+      "Azure App Service for deploying the microservices, and Azure Logic Apps for event-driven integration": "Incorrect. App Service and Logic Apps may not offer the same scalability and independence.",
+      "Azure Service Fabric for container orchestration, and Azure Functions for event-driven code execution": "Incorrect. Service Fabric is valid but AKS is more common and fully managed.",
+      "Azure Virtual Machines for each microservice, and Azure Event Grid for event routing": "Incorrect. VMs add management overhead and Event Grid alone does not support code execution."
+    }
+  },
+  {
+    "question": "A company uses the ________ Calculator to estimate monthly Azure VM costs and the ________ Calculator to compare five-year savings against an on-premises datacenter.",
+    "options": [
+      "Total Cost of Ownership, Pricing",
+      "Estimation, Pricing",
+      "Pricing, Total Cost of Ownership",
+      "Pricing, Subscription"
+    ],
+    "correct": "Pricing, Total Cost of Ownership",
+    "explanations": {
+      "Total Cost of Ownership, Pricing": "Incorrect. This reverses the tools’ purposes.",
+      "Estimation, Pricing": "Incorrect. No such Estimation calculator exists in Azure.",
+      "Pricing, Total Cost of Ownership": "Correct. Pricing Calculator estimates monthly costs; TCO compares long-term savings.",
+      "Pricing, Subscription": "Incorrect. Subscription is not a cost tool."
+    }
+  },
+  {
+    "question": "Yes or No: A SaaS solution allows access to the underlying Operating System of the application.",
+    "options": ["Yes", "No"],
+    "correct": "No",
+    "explanations": {
+      "Yes": "Incorrect. SaaS abstracts the OS from the end user.",
+      "No": "Correct. SaaS does not provide access to the underlying OS—it is managed by the provider."
+    }
+  },
+  {
+    "question": "Yes or No: Azure Advisor has the ability to provide recommendations for Azure ExpressRoute.",
+    "options": ["Yes", "No"],
+    "correct": "Yes",
+    "explanations": {
+      "Yes": "Correct. Azure Advisor provides optimization recommendations for multiple services, including ExpressRoute.",
+      "No": "Incorrect. Advisor does support ExpressRoute suggestions."
+    }
+  },
+  {
+    "question": "What information can you input into the TCO calculator to estimate the cost difference between your current datacenter and Azure? (Select all that apply)",
+    "options": [
+      "IT labor costs",
+      "Current infrastructure configuration",
+      "Power costs",
+      "Subscription type"
+    ],
+    "correct": [
+      "IT labor costs",
+      "Current infrastructure configuration",
+      "Power costs"
+    ],
+    "explanations": {
+      "IT labor costs": "Correct. TCO considers personnel expenses.",
+      "Current infrastructure configuration": "Correct. This is essential for comparison.",
+      "Power costs": "Correct. Included in cost estimation.",
+      "Subscription type": "Incorrect. TCO calculator doesn't consider subscription types directly."
+    }
+  },
+  {
+    "question": "In which of the following scenarios, would an IaaS deployment make the most sense?",
+    "options": [
+      "For finance and expense tracking",
+      "For customer engagement with chatbots",
+      "For a lift-and-shift migration",
+      "For email hosting with full SaaS control"
+    ],
+    "correct": "For a lift-and-shift migration",
+    "explanations": {
+      "For finance and expense tracking": "Incorrect. Could use PaaS or SaaS.",
+      "For customer engagement with chatbots": "Incorrect. Better suited for PaaS or serverless.",
+      "For a lift-and-shift migration": "Correct. IaaS replicates on-premise setup in the cloud.",
+      "For email hosting with full SaaS control": "Incorrect. SaaS is better suited, but does not involve IaaS."
+    }
+  },
+  {
+    "question": "Which Azure service allows you to create, assign and manage policies to enforce different rules and stay compliant with your Service Level Agreements (SLAs)?",
+    "options": [
+      "Azure Security Center",
+      "Azure Policy",
+      "Azure Trust Portal",
+      "Azure Blueprints"
+    ],
+    "correct": "Azure Policy",
+    "explanations": {
+      "Azure Security Center": "Incorrect. It enhances security but isn’t focused on policy enforcement.",
+      "Azure Policy": "Correct. This service enforces rules and policies across Azure resources.",
+      "Azure Trust Portal": "Incorrect. Not a real Azure service.",
+      "Azure Blueprints": "Incorrect. Helps with repeatable deployments but not direct policy enforcement."
+    }
+  },
+  {
+    "question": "A retail chain collaborates with suppliers and engages customers via an Azure-hosted portal. Suppliers use their own corporate credentials to access inventory data, while customers sign in with social media accounts. Which Azure feature manages these identities?",
+    "options": [
+      "Microsoft Entra B2C",
+      "Microsoft Entra B2B",
+      "Microsoft Entra Domain Services",
+      "Azure Active Directory P1"
+    ],
+    "correct": ["Microsoft Entra B2C", "Microsoft Entra B2B"],
+    "explanations": {
+      "Microsoft Entra B2C": "Correct. Supports social identities and customer logins.",
+      "Microsoft Entra B2B": "Correct. Supports external partner access using their own credentials.",
+      "Microsoft Entra Domain Services": "Incorrect. Used for integrating traditional AD services, not managing partner/customer logins.",
+      "Azure Active Directory P1": "Incorrect. This is a licensing tier, not a feature for B2B or B2C identity management."
+    }
+  },
+  {
+    "question": "True or False: Azure Advisor can recommend actions to reduce cost and improve performance.",
+    "options": ["True", "False"],
+    "correct": "True",
+    "explanations": {
+      "True": "Correct. Azure Advisor provides personalized recommendations for cost, performance, security, and high availability.",
+      "False": "Incorrect. It does provide such recommendations."
+    }
+  },
+  {
+    "question": "Which tool should be used to monitor Azure virtual machine performance, set alerts, and visualize logs?",
+    "options": [
+      "Azure Advisor",
+      "Azure Monitor",
+      "Azure Resource Manager",
+      "Azure Security Center"
+    ],
+    "correct": "Azure Monitor",
+    "explanations": {
+      "Azure Advisor": "Incorrect. Offers best practices, not detailed monitoring.",
+      "Azure Monitor": "Correct. Central service for performance metrics, alerts, and logs.",
+      "Azure Resource Manager": "Incorrect. Used for deploying and managing resources, not monitoring.",
+      "Azure Security Center": "Incorrect. Security-focused; not for VM performance monitoring."
+    }
+  },
+  {
+    "question": "Which Azure service provides a browser-accessible shell for managing Azure resources using CLI or PowerShell without local installation?",
+    "options": [
+      "Azure CLI",
+      "Azure Cloud Shell",
+      "Azure Resource Manager",
+      "Azure PowerShell"
+    ],
+    "correct": "Azure Cloud Shell",
+    "explanations": {
+      "Azure CLI": "Incorrect. CLI requires local installation unless used within Cloud Shell.",
+      "Azure Cloud Shell": "Correct. Cloud Shell is browser-based and comes with pre-configured tools.",
+      "Azure Resource Manager": "Incorrect. ARM is for managing deployments, not a shell environment.",
+      "Azure PowerShell": "Incorrect. Like CLI, it normally requires installation unless accessed via Cloud Shell."
+    }
+  },
+  {
+    "question": "What is the key advantage of using zone-redundant storage (ZRS) in the primary region?",
+    "options": [
+      "It allows data to be accessible even if a zone becomes unavailable.",
+      "It guarantees data replication to a secondary region.",
+      "It offers the highest level of durability compared to other options.",
+      "It provides read access to replicated data in the secondary region."
+    ],
+    "correct": "It allows data to be accessible even if a zone becomes unavailable.",
+    "explanations": {
+      "It allows data to be accessible even if a zone becomes unavailable.": "Correct. ZRS replicates data across availability zones to ensure high availability.",
+      "It guarantees data replication to a secondary region.": "Incorrect. That is provided by geo-redundant storage (GRS), not ZRS.",
+      "It offers the highest level of durability compared to other options.": "Incorrect. GRS offers higher durability across regions.",
+      "It provides read access to replicated data in the secondary region.": "Incorrect. ZRS is region-local and does not offer geo-replication."
+    }
+  },
+  {
+    "question": "Which of the following does not affect costs in Azure?",
+    "options": [
+      "Location",
+      "Resource Type",
+      "Instance Size of VMs",
+      "Tags"
+    ],
+    "correct": "Tags",
+    "explanations": {
+      "Location": "Incorrect. Region selection can affect pricing.",
+      "Resource Type": "Incorrect. Different services have different cost models.",
+      "Instance Size of VMs": "Incorrect. VM size directly impacts cost.",
+      "Tags": "Correct. Tags help with cost tracking but do not influence billing."
+    }
+  },
+  {
+    "question": "True or False: Azure Advisor can recommend actions to reduce cost and improve performance.",
+    "options": ["True", "False"],
+    "correct": "True",
+    "explanations": {
+      "True": "Correct. Azure Advisor gives personalized recommendations on cost, performance, and security.",
+      "False": "Incorrect. Advisor does provide such recommendations."
+    }
+  },
+  {
+    "question": "Which tool should be used to monitor Azure virtual machine performance, set alerts, and visualize logs?",
+    "options": [
+      "Azure Advisor",
+      "Azure Monitor",
+      "Azure Resource Manager",
+      "Azure Security Center"
+    ],
+    "correct": "Azure Monitor",
+    "explanations": {
+      "Azure Advisor": "Incorrect. Advisor provides optimization tips but not monitoring capabilities.",
+      "Azure Monitor": "Correct. It tracks metrics, logs, and alerts for Azure services.",
+      "Azure Resource Manager": "Incorrect. Used for deployment and management, not monitoring.",
+      "Azure Security Center": "Incorrect. Focuses on security posture rather than VM performance."
+    }
+  },
+  {
+    "question": "A DevOps team uses Azure Cloud Shell to run az vm create commands and PowerShell scripts from a browser, expecting to manage VMs without installing local tools. Does this accurately reflect Azure Cloud Shell’s capabilities?",
+    "options": ["Yes", "No"],
+    "correct": "Yes",
+    "explanations": {
+      "Yes": "Correct. Azure Cloud Shell supports CLI and PowerShell directly from the browser.",
+      "No": "Incorrect. No local installation is needed with Cloud Shell."
+    }
+  },
+  {
+    "question": "Which Azure service allows you to create, assign, and manage policies to enforce different rules and stay compliant with your SLAs?",
+    "options": [
+      "Azure Security Center",
+      "Azure Policy",
+      "Azure Trust Portal",
+      "Azure Blueprints"
+    ],
+    "correct": "Azure Policy",
+    "explanations": {
+      "Azure Security Center": "Incorrect. It's for security monitoring, not policy enforcement.",
+      "Azure Policy": "Correct. It ensures compliance by enforcing organizational rules.",
+      "Azure Trust Portal": "Incorrect. Not an active Azure service.",
+      "Azure Blueprints": "Incorrect. Used for repeatable deployments, not for direct policy enforcement."
+    }
+  },
+  {
+    "question": "A retail chain collaborates with suppliers and engages customers via an Azure-hosted portal. Suppliers use their own corporate credentials to access inventory data, while customers sign in with social media accounts. Which Azure feature manages these identities?",
+    "options": [
+      "Microsoft Entra B2C",
+      "Microsoft Entra B2B",
+      "Microsoft Entra Domain Services",
+      "Azure Active Directory P1"
+    ],
+    "correct": ["Microsoft Entra B2C", "Microsoft Entra B2B"],
+    "explanations": {
+      "Microsoft Entra B2C": "Correct. B2C supports social identity sign-ins for consumers.",
+      "Microsoft Entra B2B": "Correct. B2B allows external partners to use their own corporate credentials.",
+      "Microsoft Entra Domain Services": "Incorrect. It's used to support legacy authentication, not customer/supplier identity.",
+      "Azure Active Directory P1": "Incorrect. It's a license tier, not a feature for B2B/B2C identity."
+    }
+  },
+  {
+    "question": "Which of the following is the key advantage of Azure Cloud Shell?",
+    "options": [
+      "Provides GUI-based resource provisioning",
+      "Allows running CLI and PowerShell scripts without local setup",
+      "Offers advanced machine learning features",
+      "Manages user identities in Azure AD"
+    ],
+    "correct": "Allows running CLI and PowerShell scripts without local setup",
+    "explanations": {
+      "Provides GUI-based resource provisioning": "Incorrect. This is done through Azure Portal.",
+      "Allows running CLI and PowerShell scripts without local setup": "Correct. Cloud Shell is a browser-based environment with built-in tools.",
+      "Offers advanced machine learning features": "Incorrect. That is Azure Machine Learning.",
+      "Manages user identities in Azure AD": "Incorrect. That role belongs to Azure Active Directory."
+    }
+  },
+  {
+    "question": "Which of the following is NOT a valid Azure Blob Storage access tier?",
+    "options": [
+      "Hot Tier",
+      "Cold Tier",
+      "Archive Tier",
+      "Deep Sleep Tier"
+    ],
+    "correct": "Deep Sleep Tier",
+    "explanations": {
+      "Hot Tier": "Incorrect. Optimized for frequently accessed data.",
+      "Cold Tier": "Incorrect. Optimized for infrequent access.",
+      "Archive Tier": "Incorrect. Designed for rarely accessed data.",
+      "Deep Sleep Tier": "Correct. This is not a valid Azure storage tier."
+    }
+  },
+  {
+    "question": "A cloud admin receives real-time alerts about a regional Azure outage affecting their app’s VMs, using a tool that tracks service issues and planned maintenance. Does this describe the purpose of Azure Service Health?",
+    "options": ["Yes", "No"],
+    "correct": "Yes",
+    "explanations": {
+      "Yes": "Correct. Azure Service Health tracks outages, service issues, and maintenance, providing alerts to users.",
+      "No": "Incorrect. This is exactly what Azure Service Health is designed to do."
+    }
+  },
+  {
+    "question": "Which of the following tools should be used to set up alerts for outages or when autoscaling is about to deploy new instances?",
+    "options": ["Azure Advisor", "Azure Monitor", "Azure Service Health", "Azure Bastion"],
+    "correct": "Azure Monitor",
+    "explanations": {
+      "Azure Advisor": "Incorrect. Advisor provides optimization recommendations, not real-time alerts.",
+      "Azure Monitor": "Correct. Azure Monitor enables alerts for outages, scaling events, and resource metrics.",
+      "Azure Service Health": "Incorrect. Provides notifications about Azure service status but not autoscaling alerts.",
+      "Azure Bastion": "Incorrect. Used for secure RDP/SSH access, not for monitoring or alerts."
+    }
+  },
+  {
+    "question": "A startup deploys a web app on Azure using VMs and storage accounts across two regions. They aim to track spending and optimize costs by setting budgets and identifying resource usage trends. Which Azure cost management capabilities support these goals? (Select all that apply.)",
+    "options": ["Azure Budgets", "Azure Cost Analysis", "Azure Pricing Calculator", "Azure Advisor"],
+    "correct": ["Azure Budgets", "Azure Cost Analysis", "Azure Advisor"],
+    "explanations": {
+      "Azure Budgets": "Correct. Enables setting spending thresholds and tracking costs against them.",
+      "Azure Cost Analysis": "Correct. Helps visualize and analyze resource usage and spending trends.",
+      "Azure Pricing Calculator": "Incorrect. It's for estimating costs before deployment, not ongoing management.",
+      "Azure Advisor": "Correct. Provides cost optimization recommendations like resizing underused VMs."
+    }
+  },
+  {
+    "question": "Which of the following Azure tools enables monitoring of application availability, performance, and usage, offering smart alerts and usage insights?",
+    "options": ["Azure Security Center", "Azure Monitor - Application Insights", "Azure Service Health", "Azure Policy"],
+    "correct": "Azure Monitor - Application Insights",
+    "explanations": {
+      "Azure Security Center": "Incorrect. Focuses on security posture and compliance, not performance monitoring.",
+      "Azure Monitor - Application Insights": "Correct. Provides telemetry and diagnostics for applications.",
+      "Azure Service Health": "Incorrect. Not focused on application telemetry.",
+      "Azure Policy": "Incorrect. Used for governance and compliance, not app monitoring."
+    }
+  },
+  {
+    "question": "A company with multiple departments needs to ensure only specific users can access certain Azure resources. What feature helps enforce this access control?",
+    "options": ["Azure Monitor", "Role-Based Access Control (RBAC)", "Azure Advisor", "Azure Arc"],
+    "correct": "Role-Based Access Control (RBAC)",
+    "explanations": {
+      "Azure Monitor": "Incorrect. Used for monitoring, not access control.",
+      "Role-Based Access Control (RBAC)": "Correct. Allows resource-level permission assignment.",
+      "Azure Advisor": "Incorrect. Provides performance and cost recommendations.",
+      "Azure Arc": "Incorrect. Used for managing non-Azure resources, not enforcing access control."
+    }
+  },
+  {
+    "question": "A university tags Azure resources by department. Which feature enables the university to analyze costs by these tags?",
+    "options": ["Azure Monitor", "Azure Policy", "Azure Cost Management", "Azure DevTest Labs"],
+    "correct": "Azure Cost Management",
+    "explanations": {
+      "Azure Monitor": "Incorrect. Provides telemetry data, not cost breakdowns.",
+      "Azure Policy": "Incorrect. Used for enforcing rules, not for cost analysis.",
+      "Azure Cost Management": "Correct. Helps break down costs by tags, resource groups, and more.",
+      "Azure DevTest Labs": "Incorrect. Supports test environments, not billing analysis."
+    }
+  },
+  {
+    "question": "Which of the following services can store unstructured data such as images, videos, and documents in Azure?",
+    "options": ["Azure Queue Storage", "Azure Table Storage", "Azure Blob Storage", "Azure File Storage"],
+    "correct": ["Azure Blob Storage", "Azure File Storage"],
+    "explanations": {
+      "Azure Queue Storage": "Incorrect. Meant for message queues, not unstructured data.",
+      "Azure Table Storage": "Incorrect. Stores structured/semi-structured NoSQL data.",
+      "Azure Blob Storage": "Correct. Ideal for storing large unstructured data like media files.",
+      "Azure File Storage": "Correct. Provides file shares accessible across VMs and apps."
+    }
+  },
+  {
+    "question": "True or False: Azure Advisor helps you implement Azure security best practices.",
+    "options": ["True", "False"],
+    "correct": "True",
+    "explanations": {
+      "True": "Correct. Azure Advisor gives recommendations on cost, performance, availability, and security.",
+      "False": "Incorrect. Azure Advisor does provide security best practice recommendations."
+    }
+  },
+  {
+    "question": "A systems engineer needs to enforce resource naming conventions across multiple subscriptions in Azure. Which Azure service can help enforce this rule?",
+    "options": ["Azure Resource Manager", "Azure Blueprints", "Azure Policy", "Azure Cost Management"],
+    "correct": "Azure Policy",
+    "explanations": {
+      "Azure Resource Manager": "Incorrect. Manages deployments, but doesn’t enforce policy rules.",
+      "Azure Blueprints": "Incorrect. Combines policies and templates but doesn't enforce by itself.",
+      "Azure Policy": "Correct. Used to define and enforce resource rules like naming, region, tags.",
+      "Azure Cost Management": "Incorrect. Used for tracking and managing costs, not enforcing policies."
+    }
+  },
+  {
+    "question": "An organization needs to ensure that a VM’s OS version complies with internal standards. What service allows defining and enforcing such rules?",
+    "options": ["Azure Monitor", "Azure Resource Manager", "Azure Policy", "Azure Blueprints"],
+    "correct": "Azure Policy",
+    "explanations": {
+      "Azure Monitor": "Incorrect. Used for monitoring, not policy enforcement.",
+      "Azure Resource Manager": "Incorrect. Handles deployment and management of resources.",
+      "Azure Policy": "Correct. Enforces compliance standards such as OS version or SKU restrictions.",
+      "Azure Blueprints": "Incorrect. Useful for packaged governance setups, but policy does the enforcement."
+    }
+  },
+  {
+    "question": "A healthcare provider uses Azure to manage patient data, needing to ensure compliance with privacy regulations across all resources and unify governance for data stored in Azure SQL and external SaaS apps. Which Azure tools address these governance needs? (Select all that apply.)",
+    "options": [
+      "Azure Arc",
+      "Microsoft Purview",
+      "Azure Resource Manager",
+      "Azure Policy"
+    ],
+    "correct": ["Microsoft Purview", "Azure Policy"],
+    "explanations": {
+      "Azure Arc": "Incorrect. Azure Arc extends management to on-prem or multi-cloud environments, but doesn't directly manage data governance.",
+      "Microsoft Purview": "Correct. Microsoft Purview provides unified data governance and compliance for data across Azure and SaaS apps.",
+      "Azure Resource Manager": "Incorrect. Used for resource deployment, not data governance.",
+      "Azure Policy": "Correct. Azure Policy enforces compliance rules across Azure resources."
+    }
+  },
+  {
+    "question": "A retailer runs an e-commerce platform on Azure, facing cost overruns from auto-scaling VMs, high outbound data transfers to Asia, and premium storage tiers. Which factors are driving these Azure costs? (Select all that apply.)",
+    "options": [
+      "Usage patterns",
+      "Resource type",
+      "Data egress",
+      "Subscription type"
+    ],
+    "correct": ["Usage patterns", "Resource type", "Data egress"],
+    "explanations": {
+      "Usage patterns": "Correct. Auto-scaling and inconsistent usage can significantly increase costs.",
+      "Resource type": "Correct. Premium storage and VM sizes affect costs.",
+      "Data egress": "Correct. Transferring data to other regions incurs charges.",
+      "Subscription type": "Incorrect. Not directly mentioned or influential in this scenario."
+    }
+  },
+  {
+    "question": "A university tracks Azure costs for its research labs, labeling VMs by department, analyzing usage spikes during experiments, and recommending VM resizing to cut expenses. Which Azure tools or features support this cost management strategy? (Select all that apply.)",
+    "options": [
+      "Azure Cost Analysis",
+      "Azure Pricing Calculator",
+      "Azure Advisor",
+      "Tags"
+    ],
+    "correct": ["Azure Cost Analysis", "Azure Advisor", "Tags"],
+    "explanations": {
+      "Azure Cost Analysis": "Correct. Used to visualize and analyze usage trends and costs.",
+      "Azure Pricing Calculator": "Incorrect. Useful for cost planning, not management.",
+      "Azure Advisor": "Correct. Offers recommendations like resizing VMs.",
+      "Tags": "Correct. Enables cost tracking by department."
+    }
+  },
+  {
+    "question": "Which of the following services can be used to store unstructured/semi-structured data in Azure?",
+    "options": [
+      "Azure Queue Storage",
+      "Azure Table Storage",
+      "Azure Blob Storage",
+      "Azure File Storage"
+    ],
+    "correct": ["Azure Table Storage", "Azure Blob Storage", "Azure File Storage"],
+    "explanations": {
+      "Azure Queue Storage": "Incorrect. Designed for message queues, not data storage.",
+      "Azure Table Storage": "Correct. Stores semi-structured NoSQL data.",
+      "Azure Blob Storage": "Correct. Suitable for large unstructured data like files, media.",
+      "Azure File Storage": "Correct. For unstructured file storage accessible by VMs."
+    }
+  },
+  {
+    "question": "Your company is considering migrating its on-premises infrastructure to Azure. The management team wants to compare the costs of running the existing infrastructure in-house to the projected costs in Azure. Which tool should you use to provide this comparison?",
+    "options": [
+      "Resource cost calculator",
+      "Billing calculator",
+      "Total Cost of Ownership calculator",
+      "Pricing calculator"
+    ],
+    "correct": "Total Cost of Ownership calculator",
+    "explanations": {
+      "Resource cost calculator": "Incorrect. Not a valid Azure tool.",
+      "Billing calculator": "Incorrect. Not a recognized Azure cost comparison tool.",
+      "Total Cost of Ownership calculator": "Correct. Used to compare on-prem vs Azure costs across various factors.",
+      "Pricing calculator": "Incorrect. Used for estimating cost of services, not comparisons."
+    }
+  },
+  {
+    "question": "A gaming company monitors its Azure-hosted game, collecting logs from VMs, setting alerts for high CPU usage, and analyzing app crashes to improve performance. Which Azure Monitor components support this? (Select all that apply.)",
+    "options": [
+      "Application Insights",
+      "Azure Policy",
+      "Log Analytics",
+      "Azure Service Health"
+    ],
+    "correct": ["Application Insights", "Log Analytics"],
+    "explanations": {
+      "Application Insights": "Correct. Tracks app telemetry and performance.",
+      "Azure Policy": "Incorrect. Used for compliance, not performance tracking.",
+      "Log Analytics": "Correct. Collects and queries log data across VMs.",
+      "Azure Service Health": "Incorrect. Monitors Azure service status, not app logs."
+    }
+  },
+  {
+    "question": "A sysadmin accesses a web-based interface to monitor Azure VMs, create storage accounts, and review cost reports, all from a single pane of glass. This centralized management is enabled by the Azure __.",
+    "options": [
+      "portal",
+      "PowerShell",
+      "Cloud Shell",
+      "Monitor"
+    ],
+    "correct": "portal",
+    "explanations": {
+      "portal": "Correct. Azure Portal provides a GUI-based interface for unified resource management.",
+      "PowerShell": "Incorrect. CLI tool, not a centralized GUI.",
+      "Cloud Shell": "Incorrect. Browser-based CLI, not GUI dashboard.",
+      "Monitor": "Incorrect. Focuses on telemetry, not full management."
+    }
+  },
+  {
+    "question": "Which of the following is NOT a valid Azure Blob Storage access tier?",
+    "options": [
+      "Hot Tier",
+      "Cold Tier",
+      "Archive Tier",
+      "Deep Sleep Tier"
+    ],
+    "correct": "Deep Sleep Tier",
+    "explanations": {
+      "Hot Tier": "Incorrect. Designed for frequently accessed data.",
+      "Cold Tier": "Incorrect. Valid tier for infrequent access.",
+      "Archive Tier": "Incorrect. Used for long-term storage.",
+      "Deep Sleep Tier": "Correct. This tier does not exist in Azure."
+    }
+  },
+  {
+    "question": "You have managed an app deployed on-prem for a long time and want to move it to Azure, eliminating manual maintenance. Which cloud model best fits your use case?",
+    "options": [
+      "Software as a Service (SaaS)",
+      "Platform as a Service (PaaS)",
+      "Database as a Service (DaaS)",
+      "Infrastructure as a Service (IaaS)"
+    ],
+    "correct": "Platform as a Service (PaaS)",
+    "explanations": {
+      "Software as a Service (SaaS)": "Incorrect. SaaS is for using pre-built software apps, not hosting your own.",
+      "Platform as a Service (PaaS)": "Correct. PaaS provides hosting with no infrastructure management.",
+      "Database as a Service (DaaS)": "Incorrect. DaaS is only for databases, not full apps.",
+      "Infrastructure as a Service (IaaS)": "Incorrect. IaaS still requires manual maintenance of OS and middleware."
+    }
+  },
+  {
+    "question": "Which Azure service allows access policies and authentication for cloud and on-premises apps, supporting SSO, conditional access, and device registration?",
+    "options": [
+      "Azure Monitor",
+      "Microsoft Entra ID",
+      "Azure Resource Manager",
+      "Azure Subscription"
+    ],
+    "correct": "Microsoft Entra ID",
+    "explanations": {
+      "Azure Monitor": "Incorrect. Used for telemetry and alerts, not identity management.",
+      "Microsoft Entra ID": "Correct. Manages authentication, policies, SSO, and device access.",
+      "Azure Resource Manager": "Incorrect. Used for resource deployment, not identity.",
+      "Azure Subscription": "Incorrect. Refers to billing and access scope, not a service."
+    }
+  },
+  {
+    "question": "A logistics firm builds a hybrid network connecting its on-premises datacenter to Azure, requiring encrypted public internet access and high-speed private connectivity for sensitive data. Which Azure networking services support this? (Select all that apply.)",
+    "options": [
+      "Azure VPN Gateway",
+      "ExpressRoute",
+      "Azure Load Balancer",
+      "Azure Front Door"
+    ],
+    "correct": ["Azure VPN Gateway", "ExpressRoute"],
+    "explanations": {
+      "Azure VPN Gateway": "Correct. Provides encrypted connections over public internet between on-premises datacenters and Azure.",
+      "ExpressRoute": "Correct. Enables high-speed private connectivity, bypassing the public internet.",
+      "Azure Load Balancer": "Incorrect. Distributes traffic across VMs but doesn’t provide secure or private connectivity to on-premises.",
+      "Azure Front Door": "Incorrect. Used for global web traffic routing and acceleration, not hybrid network connectivity."
+    }
+  },
+  {
+    "question": "Your organization wants to ensure all Azure VMs use a specific OS version across cloud and on-prem servers. Which Azure tool enforces this configuration?",
+    "options": [
+      "Azure Policy",
+      "Azure Monitor",
+      "Azure Arc",
+      "Azure Resource Manager"
+    ],
+    "correct": "Azure Policy",
+    "explanations": {
+      "Azure Policy": "Correct. Can enforce rules like OS versions across environments including hybrid via Azure Arc.",
+      "Azure Monitor": "Incorrect. Used for monitoring performance, not enforcement.",
+      "Azure Arc": "Incorrect. Helps manage hybrid environments, but doesn’t enforce compliance alone.",
+      "Azure Resource Manager": "Incorrect. Used for managing deployments, not enforcing policies."
+    }
+  },
+  {
+    "question": "Which tool helps you estimate the cost of provisioning Azure resources but doesn't compare costs between on-premises and Azure?",
+    "options": [
+      "Azure Pricing Calculator",
+      "TCO Calculator",
+      "Azure Cost Management",
+      "Azure Budgets"
+    ],
+    "correct": "Azure Pricing Calculator",
+    "explanations": {
+      "Azure Pricing Calculator": "Correct. It estimates Azure service costs based on configuration and usage.",
+      "TCO Calculator": "Incorrect. It compares on-prem vs Azure costs.",
+      "Azure Cost Management": "Incorrect. Tracks and analyzes actual usage costs.",
+      "Azure Budgets": "Incorrect. Helps define spending limits and track against them."
+    }
+  },
+  {
+    "question": "Which of the following statements is FALSE regarding Azure Resource Groups?",
+    "options": [
+      "Resource groups can be nested",
+      "A resource can only belong to one resource group",
+      "Resources in a resource group can be in different regions",
+      "You can move resources between resource groups"
+    ],
+    "correct": "Resource groups can be nested",
+    "explanations": {
+      "Resource groups can be nested": "Correct. This is false—resource groups cannot be nested in Azure.",
+      "A resource can only belong to one resource group": "Incorrect. True—resources are assigned to only one group.",
+      "Resources in a resource group can be in different regions": "Incorrect. True—resources can be in different regions.",
+      "You can move resources between resource groups": "Incorrect. True—Azure supports moving resources across groups."
+    }
+  },
+  {
+    "question": "Which cloud deployment model is used by a government agency sharing a secure environment with other agencies and complying with regulations?",
+    "options": [
+      "Public Cloud",
+      "Private Cloud",
+      "Hybrid Cloud",
+      "Community Cloud"
+    ],
+    "correct": "Community Cloud",
+    "explanations": {
+      "Public Cloud": "Incorrect. Not suitable for sensitive or restricted environments.",
+      "Private Cloud": "Incorrect. Only one organization uses the infrastructure.",
+      "Hybrid Cloud": "Incorrect. Combines on-prem and cloud—not shared among orgs.",
+      "Community Cloud": "Correct. Shared among organizations with common compliance needs, like government entities."
+    }
+  },
+  {
+    "question": "You are using Azure for disaster recovery and replicating VMs to another region. Which factor affects the cost?",
+    "options": [
+      "The number of Azure subscriptions",
+      "The types of virtual machines being replicated",
+      "The number of users accessing the VM",
+      "The usage of Azure Resource Groups"
+    ],
+    "correct": "The types of virtual machines being replicated",
+    "explanations": {
+      "The number of Azure subscriptions": "Incorrect. Subscriptions do not directly affect replication costs.",
+      "The types of virtual machines being replicated": "Correct. VM types influence replication and storage cost.",
+      "The number of users accessing the VM": "Incorrect. Does not affect disaster recovery costs.",
+      "The usage of Azure Resource Groups": "Incorrect. Resource groups don’t impact replication pricing."
+    }
+  },
+  {
+    "question": "Which Azure service provides domain-join capabilities for legacy applications and supports syncing on-prem AD for authentication?",
+    "options": [
+      "Microsoft Entra ID",
+      "Microsoft Entra B2C",
+      "Microsoft Entra Domain Services",
+      "Azure RBAC"
+    ],
+    "correct": "Microsoft Entra Domain Services",
+    "explanations": {
+      "Microsoft Entra ID": "Incorrect. Used for modern identity and app access.",
+      "Microsoft Entra B2C": "Incorrect. Used for customer-facing identity management.",
+      "Microsoft Entra Domain Services": "Correct. Supports domain-join and legacy protocols like NTLM, Kerberos.",
+      "Azure RBAC": "Incorrect. Used for resource-level access control, not authentication."
+    }
+  },
+  {
+    "question": "Which Azure service helps organizations classify, manage, and govern data across on-prem and cloud environments?",
+    "options": [
+      "Azure Monitor",
+      "Azure Policy",
+      "Microsoft Purview",
+      "Azure Resource Locks"
+    ],
+    "correct": "Microsoft Purview",
+    "explanations": {
+      "Azure Monitor": "Incorrect. Monitors performance, not governance.",
+      "Azure Policy": "Incorrect. Enforces rules but doesn’t classify or manage data.",
+      "Microsoft Purview": "Correct. Provides data governance, classification, and compliance tools.",
+      "Azure Resource Locks": "Incorrect. Prevents resource changes, not data governance."
+    }
+  },
+  {
+    "question": "You want to enforce specific OS versions across Azure and on-premises VMs. Which Azure service supports this through policies?",
+    "options": [
+      "Azure Monitor",
+      "Azure Arc",
+      "Azure Policy",
+      "Azure Blueprints"
+    ],
+    "correct": "Azure Policy",
+    "explanations": {
+      "Azure Monitor": "Incorrect. Used for metrics and logs.",
+      "Azure Arc": "Incorrect. Extends management, but doesn’t enforce policies alone.",
+      "Azure Policy": "Correct. Defines and enforces configuration rules, including OS versions.",
+      "Azure Blueprints": "Incorrect. Used for deploying sets of resources and policies, but policies do the enforcement."
+    }
+  },
+  {
+    "question": "An IT team restricts access to Azure apps based on user location and requires phone verification. Which feature enforces this?",
+    "options": [
+      "Microsoft Entra ID",
+      "Microsoft Entra Conditional Access",
+      "Azure AD B2C",
+      "Azure Bastion"
+    ],
+    "correct": "Microsoft Entra Conditional Access",
+    "explanations": {
+      "Microsoft Entra ID": "Incorrect. Provides identity management but not conditional rules.",
+      "Microsoft Entra Conditional Access": "Correct. Enforces access policies based on user/location/device conditions.",
+      "Azure AD B2C": "Incorrect. For customer-facing identity scenarios.",
+      "Azure Bastion": "Incorrect. Provides secure VM access, unrelated to access policies."
+    }
+  }
+]

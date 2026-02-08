@@ -1,14 +1,8 @@
 {
-    "buildCommand": null,
-    "outputDirectory": "project",
     "rewrites": [
         {
-            "source": "/project/(.*)",
-            "destination": "/project/$1"
-        },
-        {
             "source": "/(.*)",
-            "destination": "/project/$1"
+            "destination": "/$1"
         }
     ]
 }

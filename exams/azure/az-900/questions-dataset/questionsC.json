@@ -1,0 +1,547 @@
+[
+  {
+    "question": "True or false: If your feature is in the General Availability phase, then your feature will receive support from all Microsoft support channels.",
+    "options": ["FALSE", "TRUE"],
+    "correct": "TRUE",
+    "explanations": {
+      "FALSE": "Incorrect. GA features are fully supported.",
+      "TRUE": "Correct. General Availability means full support from Microsoft support channels."
+    }
+  },
+  {
+    "question": "TRUE OR FALSE: Azure Tenant is a dedicated and trusted instance of Microsoft Entra ID that's automatically created when your organization signs up for a Microsoft cloud service subscription.",
+    "options": ["TRUE", "FALSE"],
+    "correct": "TRUE",
+    "explanations": {
+      "TRUE": "Correct. Azure Tenant is created automatically when subscribing to a Microsoft cloud service.",
+      "FALSE": "Incorrect. The tenant is indeed created automatically and is a trusted instance of Entra ID."
+    }
+  },
+  {
+    "question": "Which of the following would be an example of an Internet of Things (IoT) device?",
+    "options": [
+      "A web application that people use to perform their banking tasks",
+      "A video game, installed on Windows clients around the world, that keep user scores in the cloud.",
+      "A refrigerator that monitors how much milk you have left and sends you a text message when you are running low",
+      "A mobile application that is used to watch online video courses"
+    ],
+    "correct": "A refrigerator that monitors how much milk you have left and sends you a text message when you are running low",
+    "explanations": {
+      "A web application that people use to perform their banking tasks": "Incorrect. Web apps are not IoT devices.",
+      "A video game, installed on Windows clients around the world, that keep user scores in the cloud.": "Incorrect. Not a physical device connected to the Internet to send data.",
+      "A refrigerator that monitors how much milk you have left and sends you a text message when you are running low": "Correct. This is a classic example of an IoT device.",
+      "A mobile application that is used to watch online video courses": "Incorrect. Mobile apps are not IoT devices."
+    }
+  },
+  {
+    "question": "What does the letter R in RBAC stand for?",
+    "options": ["Rule", "Role", "Review", "Rights"],
+    "correct": "Role",
+    "explanations": {
+      "Rule": "Incorrect. RBAC is not rule-based.",
+      "Role": "Correct. RBAC stands for Role-Based Access Control.",
+      "Review": "Incorrect. Review is not what the R stands for.",
+      "Rights": "Incorrect. Rights are granted based on roles."
+    }
+  },
+  {
+    "question": "What data format are ARM templates created in?",
+    "options": ["XML", "HTML", "JSON", "YAML"],
+    "correct": "JSON",
+    "explanations": {
+      "XML": "Incorrect. ARM templates use JSON.",
+      "HTML": "Incorrect. HTML is used for web layout, not infrastructure templates.",
+      "JSON": "Correct. Azure Resource Manager (ARM) templates are written in JSON.",
+      "YAML": "Incorrect. YAML is used in some other cloud platforms like Kubernetes, but not for ARM templates."
+    }
+  },
+  {
+    "question": "How does Multi-Factor Authentication make a system more secure?",
+    "options": [
+      "It is another password that a user has to memorize, making it more secure",
+      "It requires the user to have access to their verified phone in order to log in",
+      "It doesn't make it more secure",
+      "It allows the user to log in without a password because they have already previously been validated using a browser cookie"
+    ],
+    "correct": "It requires the user to have access to their verified phone in order to log in",
+    "explanations": {
+      "It is another password that a user has to memorize, making it more secure": "Incorrect. MFA involves something you *have*, not just another password.",
+      "It requires the user to have access to their verified phone in order to log in": "Correct. MFA adds a second layer of authentication such as a phone.",
+      "It doesn't make it more secure": "Incorrect. MFA significantly enhances security.",
+      "It allows the user to log in without a password because they have already previously been validated using a browser cookie": "Incorrect. That’s session management, not MFA."
+    }
+  },
+  {
+    "question": "What software is used to synchronize your on premises AD with your Azure AD?",
+    "options": ["Azure AD Federation Services", "AD Connect", "Azure AD Domain Services", "LDAP"],
+    "correct": "AD Connect",
+    "explanations": {
+      "Azure AD Federation Services": "Incorrect. Used for federated identity but not synchronization.",
+      "AD Connect": "Correct. Azure AD Connect is the tool used to sync on-prem AD to Azure AD.",
+      "Azure AD Domain Services": "Incorrect. Provides domain join services but not sync.",
+      "LDAP": "Incorrect. LDAP is a protocol, not the sync tool."
+    }
+  },
+  {
+    "question": "What is the service level agreement for two or more Azure Virtual Machines that have been manually placed into different Availability Zones in the same region?",
+    "options": ["99.90%", "100%", "99.99%", "99.95%"],
+    "correct": "99.99%",
+    "explanations": {
+      "99.90%": "Too low for Availability Zone-based deployments.",
+      "100%": "No Azure SLA guarantees 100% uptime.",
+      "99.99%": "Correct. Using multiple Availability Zones gives this high SLA.",
+      "99.95%": "Applies to availability sets or single VM with premium SSD."
+    }
+  },
+  {
+    "question": "Deploying Azure App Services applications consists of what two components? Pick two.",
+    "options": ["Configuration", "Packaged code", "Database scripts", "Managing operating system updates"],
+    "correct": ["Configuration", "Packaged code"],
+    "explanations": {
+      "Configuration": "Correct. Defines how the app runs.",
+      "Packaged code": "Correct. The actual logic of the app.",
+      "Database scripts": "Not a requirement for all apps.",
+      "Managing operating system updates": "Handled by Azure — not part of your deployment."
+    }
+  },
+  {
+    "question": "Which two features does Virtual Machine Scale Sets provide as part of the core product? Pick two.",
+    "options": [
+      "Firewall",
+      "Automatic installation of supporting apps and deployment of custom code",
+      "Content Delivery Network",
+      "Autoscaling of virtual machines",
+      "Load balancing between virtual machines"
+    ],
+    "correct": ["Autoscaling of virtual machines", "Load balancing between virtual machines"],
+    "explanations": {
+      "Firewall": "Incorrect. Not a built-in feature of VMSS.",
+      "Automatic installation of supporting apps and deployment of custom code": "Custom code deployment must be managed externally.",
+      "Content Delivery Network": "CDN is separate from VMSS.",
+      "Autoscaling of virtual machines": "Correct. VMSS automatically scales VMs.",
+      "Load balancing between virtual machines": "Correct. VMSS includes a built-in load balancer."
+    }
+  },
+  {
+    "question": "What is the service level agreement for two or more Azure Virtual Machines that have been placed into the same Availability Set in the same region?",
+    "options": ["99.90%", "100%", "99.99%", "99.95%"],
+    "correct": "99.95%",
+    "explanations": {
+      "99.90%": "Too low for VMs in an availability set.",
+      "100%": "Azure does not offer 100% uptime SLA.",
+      "99.99%": "This SLA applies to VMs in Availability Zones.",
+      "99.95%": "Correct. This SLA applies to VMs in the same Availability Set."
+    }
+  },
+  {
+    "question": "What are groups of subscriptions called?",
+    "options": ["ARM Groups", "Azure Policy", "Subscription Groups", "Management Groups"],
+    "correct": "Management Groups",
+    "explanations": {
+      "ARM Groups": "Not a valid Azure grouping feature.",
+      "Azure Policy": "Used for governance, not grouping subscriptions.",
+      "Subscription Groups": "Not a recognized Azure term.",
+      "Management Groups": "Correct. They help organize and manage subscriptions."
+    }
+  },
+  {
+    "question": "What operating systems does an Azure Virtual Machine support?",
+    "options": ["Windows, Linux and macOS", "Linux", "Windows", "macOS", "Windows and Linux"],
+    "correct": "Windows and Linux",
+    "explanations": {
+      "Windows, Linux and macOS": "macOS is not supported in Azure VMs.",
+      "Linux": "Azure supports more than just Linux.",
+      "Windows": "Azure also supports Linux.",
+      "macOS": "Not supported for Azure VMs.",
+      "Windows and Linux": "Correct. Azure supports these OSes in VMs."
+    }
+  },
+  {
+    "question": "Which style of computing is easiest when migrating an existing hosted application from your own data center into the cloud?",
+    "options": ["PaaS", "IaaS", "FaaS", "Serverless"],
+    "correct": "IaaS",
+    "explanations": {
+      "PaaS": "Requires refactoring the application.",
+      "IaaS": "Correct. IaaS supports 'lift and shift' migrations.",
+      "FaaS": "Function-as-a-Service requires major architectural changes.",
+      "Serverless": "Requires rearchitecting the application code."
+    }
+  },
+  {
+    "question": "What are resource groups?",
+    "options": [
+      "Based on the tag assigned to a resource by the deployment script, it is assigned to a group",
+      "Automatically assigned groups of resources that all have the same type (virtual machine, app service, etc)",
+      "Within Azure security model, users are organized into groups, and those groups are granted permissions to resources",
+      "A folder structure in Azure in which you organize resources like databases, virtual machines, virtual networks, or almost any resource"
+    ],
+    "correct": "A folder structure in Azure in which you organize resources like databases, virtual machines, virtual networks, or almost any resource",
+    "explanations": {
+      "Based on the tag assigned...": "Incorrect. Tagging is separate from resource group assignment.",
+      "Automatically assigned groups...": "You assign resources to groups manually.",
+      "Within Azure security model...": "This describes Azure AD groups, not resource groups.",
+      "A folder structure in Azure...": "Correct. Resource groups help organize resources logically."
+    }
+  },
+  {
+    "question": "How do you stop your Azure account from incurring costs above a certain level without your knowledge?",
+    "options": [
+      "Set up a billing alert to send you an email when it reaches a certain level",
+      "Switch to Azure Reserved Instances with Hybrid Benefit for VMs",
+      "Implement the Azure spending limit in the Account Center",
+      "Only use Azure Functions which have a significant free limit"
+    ],
+    "correct": "Implement the Azure spending limit in the Account Center",
+    "explanations": {
+      "Set up a billing alert...": "Alerts notify you but don’t stop charges.",
+      "Switch to Azure Reserved Instances...": "This helps reduce cost, not limit it.",
+      "Implement the Azure spending limit in the Account Center": "Correct. It stops charges once a threshold is hit.",
+      "Only use Azure Functions...": "Helpful but doesn't guarantee no charges."
+    }
+  },
+  {
+    "question": "Which of the following scenarios is best addressed by using Microsoft Entra ID?",
+    "options": [
+      "Storing and analyzing large volumes of structured data.",
+      "Automating the deployment of virtual machines using Infrastructure as Code (IaC).",
+      "Monitoring the performance of Azure resources in real-time.",
+      "Providing a centralized identity management solution for hybrid cloud environments."
+    ],
+    "correct": "Providing a centralized identity management solution for hybrid cloud environments.",
+    "explanations": {
+      "Storing and analyzing large volumes of structured data.": "Better suited for Azure Synapse or Cosmos DB.",
+      "Automating deployment...": "Managed by ARM templates or Bicep.",
+      "Monitoring performance...": "Handled by Azure Monitor.",
+      "Providing a centralized identity management solution for hybrid cloud environments.": "Correct. Entra ID is designed for this."
+    }
+  },
+  {
+    "question": "What type of documents does the Microsoft Service Trust Portal provide?",
+    "options": [
+      "Documentation on the individual Azure services and solutions",
+      "A list of standards that Microsoft follows, pen test results, security assessments, white papers",
+      "Guides for developing secure Azure applications",
+      "Pricing calculators and TCO estimators"
+    ],
+    "correct": "A list of standards that Microsoft follows, pen test results, security assessments, white papers",
+    "explanations": {
+      "Documentation on the individual Azure services...": "Available on Microsoft Learn, not the Trust Portal.",
+      "A list of standards...": "Correct. This is what the Trust Portal offers.",
+      "Guides for developing secure Azure applications": "Found in the Azure Architecture Center.",
+      "Pricing calculators and TCO estimators": "Available on Azure Pricing pages."
+    }
+  },
+  {
+    "question": "What is the primary purpose of Azure Sovereign Regions?",
+    "options": [
+      "To provide free Azure services for educational institutions and non-profits.",
+      "To enable faster performance for global applications by reducing latency.",
+      "To offer Azure services that comply with specific government regulations and data residency requirements.",
+      "To provide lower-cost Azure services for small and medium-sized businesses."
+    ],
+    "correct": "To offer Azure services that comply with specific government regulations and data residency requirements.",
+    "explanations": {
+      "To provide free Azure services...": "Not the purpose of Sovereign Regions.",
+      "To enable faster performance...": "They may help, but it's not the main goal.",
+      "To offer Azure services that comply...": "Correct. Sovereign regions focus on compliance and residency.",
+      "To provide lower-cost Azure services...": "Not necessarily more affordable."
+    }
+  },
+  {
+    "question": "What happens if Azure does not meet its own Service Level Agreement guarantee (SLA)?",
+    "options": [
+      "You will be financially refunded a small amount of your monthly fee",
+      "It's not possible. Azure will always meet its SLA?",
+      "The service will be free that month"
+    ],
+    "correct": "You will be financially refunded a small amount of your monthly fee",
+    "explanations": {
+      "You will be financially refunded a small amount of your monthly fee": "Correct. Microsoft refunds 10–25% depending on SLA breach.",
+      "It's not possible. Azure will always meet its SLA?": "Incorrect. No system guarantees 100% uptime.",
+      "The service will be free that month": "Incorrect. Only partial credit is provided."
+    }
+  },
+  {
+    "question": "Which Azure management tool analyzes your usage of Azure and makes suggestions specifically targeted to help you optimize your usage of Azure regarding cost, security and performance?",
+    "options": ["Azure Firewall", "Azure Service Health", "Azure Mobile App", "Azure Advisor"],
+    "correct": "Azure Advisor",
+    "explanations": {
+      "Azure Firewall": "Incorrect. It provides network security, not optimization suggestions.",
+      "Azure Service Health": "Tracks service issues, not personalized recommendations.",
+      "Azure Mobile App": "Used for managing Azure on mobile, not optimization.",
+      "Azure Advisor": "Correct. It provides tailored suggestions to improve cost, performance, security."
+    }
+  },
+  {
+    "question": "Where can you go to see what standards Microsoft is in compliance with?",
+    "options": ["Azure Privacy Page", "Azure Security Center", "Azure Service Health", "Trust Center"],
+    "correct": "Trust Center",
+    "explanations": {
+      "Azure Privacy Page": "Provides privacy-related information, not compliance standards.",
+      "Azure Security Center": "Focuses on threat protection and security management.",
+      "Azure Service Health": "Monitors Azure service status and issues.",
+      "Trust Center": "Correct. Lists all compliance certifications and standards."
+    }
+  },
+  {
+    "question": "Which database product offers 'sub 5 millisecond' response times as a feature?",
+    "options": ["SQL Server in a VM", "Azure SQL Database", "Cosmos DB", "SQL Data Warehouse"],
+    "correct": "Cosmos DB",
+    "explanations": {
+      "SQL Server in a VM": "Relational database not optimized for ultra-low latency.",
+      "Azure SQL Database": "Optimized for transactional workloads, but not sub-5ms.",
+      "Cosmos DB": "Correct. Provides low-latency reads/writes globally.",
+      "SQL Data Warehouse": "Now Synapse — designed for analytics, not latency."
+    }
+  },
+  {
+    "question": "Why should you divide your application into multiple subnets as opposed to having all your web, application and database servers running on the same subnet?",
+    "options": [
+      "There are only a limited number of IP addresses available per subnet, so you need multiple subnets over a certain number.",
+      "Each server type of your application requires its own subnet. It's not possible to mix web servers, database servers and application servers on the same subnet.",
+      "Separating your application into multiple subnets allows you to have different NSG security rules for each subnet, which can make it harder for a hacker to get from one compromised server onto another."
+    ],
+    "correct": "Separating your application into multiple subnets allows you to have different NSG security rules for each subnet, which can make it harder for a hacker to get from one compromised server onto another.",
+    "explanations": {
+      "There are only a limited number of IP addresses available...": "Not the main reason in this context.",
+      "Each server type...": "It is technically possible to mix types in a subnet.",
+      "Separating... different NSG security rules": "Correct. This enhances security isolation."
+    }
+  },
+  {
+    "question": "Which Azure service can be enabled to enable Multi-Factor Authentication for administrators but not require it for regular users?",
+    "options": ["Advanced Threat Protection", "Azure Firewall", "Privileged Identity Management", "Azure AD B2B"],
+    "correct": "Privileged Identity Management",
+    "explanations": {
+      "Advanced Threat Protection": "Focuses on malware and threat detection.",
+      "Azure Firewall": "Network-level security, not user access control.",
+      "Privileged Identity Management": "Correct. Controls access for admins specifically.",
+      "Azure AD B2B": "For external user collaboration, not role-based MFA enforcement."
+    }
+  },
+  {
+    "question": "What advantage does an Application Gateway have over a Load Balancer?",
+    "options": [
+      "Application Gateway understands the HTTP protocol and can interpret the URL and make decisions based on the URL.",
+      "Application Gateway is more like an enterprise-grade product. You should not use a load balancer in production.",
+      "Application Gateway can be scaled so that two, three or more instances of the gateway can support your application."
+    ],
+    "correct": "Application Gateway understands the HTTP protocol and can interpret the URL and make decisions based on the URL.",
+    "explanations": {
+      "Application Gateway understands...": "Correct. It can make routing decisions based on URL path.",
+      "Application Gateway is more like...": "This is vague and opinion-based.",
+      "Application Gateway can be scaled...": "True but not the key differentiator."
+    }
+  },
+  {
+    "question": "If you have an Azure free account, with a $200 credit for the first month, what happens when you reach the $200 limit?",
+    "options": [
+      "Your account is automatically closed.",
+      "Your credit card is automatically billed.",
+      "You cannot create any more resources until you add more credits to the account.",
+      "All services are stopped and you must decide whether you want to convert to a paid account or not."
+    ],
+    "correct": "All services are stopped and you must decide whether you want to convert to a paid account or not.",
+    "explanations": {
+      "Your account is automatically closed.": "Incorrect. The account remains active.",
+      "Your credit card is automatically billed.": "Only if you opt-in to convert.",
+      "You cannot create any more resources...": "True partially, but doesn't cover stopping services.",
+      "All services are stopped...": "Correct. Resources are paused until upgrade."
+    }
+  },
+  {
+    "question": "What is the core problem that you need to solve in order to have a high-availability application?",
+    "options": [
+      "You need to avoid single points of failure",
+      "You need to ensure the capacity of your server exceeds your highest number of expected concurrent users",
+      "You need to ensure your server has a lot of RAM and a lot of CPUs",
+      "You should have a backup copy of your application on standby, ready to be started up when the main application fails."
+    ],
+    "correct": "You need to avoid single points of failure",
+    "explanations": {
+      "You need to avoid single points of failure": "Correct. High availability demands redundancy.",
+      "You need to ensure the capacity...": "Capacity ≠ availability.",
+      "You need to ensure your server has...": "Resources help, but do not solve failure scenarios.",
+      "You should have a backup copy...": "Helpful, but not a full HA solution alone."
+    }
+  },
+  {
+    "question": "What is the name of the collective set of APIs that provide machine learning and artificial intelligence services to your own applications like voice recognition, image tagging, and chat bot?",
+    "options": [
+      "Azure AI services (formerly Cognitive Services)",
+      "Azure Machine Learning Studio",
+      "Azure AI Language services (formerly LUIS)",
+      "Azure Batch"
+    ],
+    "correct": "Azure AI services (formerly Cognitive Services)",
+    "explanations": {
+      "Azure AI services (formerly Cognitive Services)": "Correct. This includes APIs for vision, language, and speech.",
+      "Azure Machine Learning Studio": "Used for training and deploying ML models.",
+      "Azure AI Language services (formerly LUIS)": "Subset of AI Services focused on language.",
+      "Azure Batch": "Used for running large-scale parallel workloads."
+    }
+  },
+  {
+    "question": "What does it mean that security is a 'shared model' in Azure?",
+    "options": [
+      "You must keep your security keys private and ensure it doesn't get out.",
+      "Azure takes care of security completely.",
+      "Azure takes no responsibility for security.",
+      "Both users and Azure have responsibilities for security."
+    ],
+    "correct": "Both users and Azure have responsibilities for security.",
+    "explanations": {
+      "You must keep your security keys private...": "True, but not a full definition of the model.",
+      "Azure takes care of security completely.": "Incorrect. You are responsible for workloads.",
+      "Azure takes no responsibility for security.": "Incorrect. Microsoft secures infrastructure.",
+      "Both users and Azure have responsibilities for security.": "Correct. This defines the shared responsibility model."
+    }
+  },
+  {
+    "question": "Who is responsible for the security of the physical servers in an Azure data center?",
+    "options": [
+      "Azure is responsible for securing the physical data centers",
+      "I am responsible for securing the physical data centers"
+    ],
+    "correct": "Azure is responsible for securing the physical data centers",
+    "explanations": {
+      "Azure is responsible for securing the physical data centers": "Correct. Microsoft handles the physical security under the shared responsibility model.",
+      "I am responsible for securing the physical data centers": "Incorrect. Customers manage cloud resources, not the physical infrastructure."
+    }
+  },
+  {
+    "question": "What is Single Sign-On?",
+    "options": [
+      "The ability to use an existing user id and password to sign in other applications, and not have to create/memorize a new one.",
+      "When you sign in to an application, it remembers who you are the next time you go there."
+    ],
+    "correct": "The ability to use an existing user id and password to sign in other applications, and not have to create/memorize a new one.",
+    "explanations": {
+      "The ability to use an existing user id and password to sign in other applications, and not have to create/memorize a new one.": "Correct. This defines Single Sign-On (SSO).",
+      "When you sign in to an application, it remembers who you are the next time you go there.": "Incorrect. That refers to session persistence or cookies, not SSO."
+    }
+  },
+  {
+    "question": "What is a benefit of economies of scale?",
+    "options": [
+      "Prices of cloud servers and services are always going down. It'll be cheaper next year than it is this year.",
+      "Big companies don't need to make a profit on every sale",
+      "Big companies don't need to make a profit on the first product they sell you, because they will make a profit on the second",
+      "The more you buy of something, the cheaper it is for you"
+    ],
+    "correct": "The more you buy of something, the cheaper it is for you",
+    "explanations": {
+      "Prices of cloud servers and services are always going down. It'll be cheaper next year than it is this year.": "Not always true and not the definition of economies of scale.",
+      "Big companies don't need to make a profit on every sale": "Unrelated to economies of scale.",
+      "Big companies don't need to make a profit on the first product they sell you, because they will make a profit on the second": "Irrelevant to the concept.",
+      "The more you buy of something, the cheaper it is for you": "Correct. This is the core idea of economies of scale."
+    }
+  },
+  {
+    "question": "Which Azure service is the recommended Identity-as-a-Service offering inside Azure?",
+    "options": [
+      "Microsoft Entra ID (formerly Azure Active Directory)",
+      "Azure Front Door",
+      "Azure Portal",
+      "Identity and Access Management (IAM)"
+    ],
+    "correct": "Microsoft Entra ID (formerly Azure Active Directory)",
+    "explanations": {
+      "Microsoft Entra ID (formerly Azure Active Directory)": "Correct. This is Azure’s identity management service.",
+      "Azure Front Door": "A global load balancer, not an identity service.",
+      "Azure Portal": "User interface, not a service.",
+      "Identity and Access Management (IAM)": "A concept, not a specific Azure service."
+    }
+  },
+  {
+    "question": "Where do you go within the Azure Portal to find all of the third-party virtual machine and other offers?",
+    "options": [
+      "Bing",
+      "Azure Marketplace",
+      "Choose an image when creating a VM",
+      "Azure mobile app"
+    ],
+    "correct": "Azure Marketplace",
+    "explanations": {
+      "Bing": "Search engine, not relevant.",
+      "Azure Marketplace": "Correct. This is where third-party solutions are published.",
+      "Choose an image when creating a VM": "Only shows part of the available offers.",
+      "Azure mobile app": "For monitoring and managing Azure, not browsing marketplace."
+    }
+  },
+  {
+    "question": "Which of the following is a good example of a Hybrid cloud?",
+    "options": [
+      "Using only on-premises servers",
+      "Using Microsoft 365 exclusively",
+      "Running a local server farm for apps, but storing backup data in Azure",
+      "Migrating all your apps to Azure and decommissioning your data center"
+    ],
+    "correct": "Running a local server farm for apps, but storing backup data in Azure",
+    "explanations": {
+      "Using only on-premises servers": "This is not cloud computing at all.",
+      "Using Microsoft 365 exclusively": "This is public cloud usage.",
+      "Running a local server farm for apps, but storing backup data in Azure": "Correct. Hybrid involves both on-prem and cloud.",
+      "Migrating all your apps to Azure and decommissioning your data center": "That would be full public cloud use."
+    }
+  },
+  {
+    "question": "Which type of cloud deployment gives you the most control over the underlying hardware and network?",
+    "options": [
+      "Hybrid cloud",
+      "Private cloud",
+      "Public cloud",
+      "Community cloud"
+    ],
+    "correct": "Private cloud",
+    "explanations": {
+      "Hybrid cloud": "Combines cloud and on-prem but doesn't offer full control over cloud components.",
+      "Private cloud": "Correct. Full control over hardware and configuration.",
+      "Public cloud": "Limited control — managed by provider.",
+      "Community cloud": "Shared among organizations, not full control."
+    }
+  },
+  {
+    "question": "What is the maximum number of subscriptions a single Azure account can be associated with?",
+    "options": ["One", "10", "250 per region", "No limit"],
+    "correct": "No limit",
+    "explanations": {
+      "One": "Incorrect. Users can be associated with many subscriptions.",
+      "10": "Too low. Not a real limit.",
+      "250 per region": "Arbitrary and incorrect.",
+      "No limit": "Correct. There’s no set cap on subscriptions per account."
+    }
+  },
+  {
+    "question": "Which Azure service provides a graphical interface to define workflows and integrate systems via connectors, triggers, and actions?",
+    "options": [
+      "Azure Logic Apps",
+      "Azure Functions",
+      "Power BI",
+      "Azure DevOps"
+    ],
+    "correct": "Azure Logic Apps",
+    "explanations": {
+      "Azure Logic Apps": "Correct. It’s designed for graphical workflow integration.",
+      "Azure Functions": "Serverless code execution, not workflow design.",
+      "Power BI": "Data visualization, not system integration.",
+      "Azure DevOps": "CI/CD tools, not for workflow automation."
+    }
+  },
+  {
+    "question": "Which Azure compute service allows you to run containerized applications without managing the underlying infrastructure?",
+    "options": [
+      "Azure Virtual Machines",
+      "Azure Kubernetes Service (AKS)",
+      "Azure App Service",
+      "Azure Container Instances"
+    ],
+    "correct": "Azure Container Instances",
+    "explanations": {
+      "Azure Virtual Machines": "Full infrastructure management required.",
+      "Azure Kubernetes Service (AKS)": "Still requires cluster management.",
+      "Azure App Service": "Supports containers but not optimized for container-only workflows.",
+      "Azure Container Instances": "Correct. Offers serverless container hosting."
+    }
+  }
+]

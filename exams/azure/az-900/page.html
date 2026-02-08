@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AZ-900 Practice Exam</title>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 100px 20px 150px 20px;
+      margin: 0;
+    }
+
+    .header-bar {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      background: #ffffff;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      z-index: 1000;
+    }
+
+    .header-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-right: 50px;
+    }
+
+    @media (max-width: 600px) {
+      .header-bar { flex-direction: column; align-items: flex-start; }
+      .header-right { align-items: flex-start; margin-top: 10px; }
+      .welcome, .timer { text-align: left; }
+      .progress-container { width: 100%; }
+    }
+
+    .welcome { font-size: 14px; color: #555; font-weight: bold; }
+    .timer { font-size: 16px; font-weight: bold; }
+
+    .progress-container {
+      width: 200px;
+      height: 12px;
+      background-color: #e9ecef;
+      border-radius: 6px;
+      overflow: hidden;
+      margin-top: 6px;
+    }
+
+    #progressBar {
+      height: 100%;
+      width: 100%;
+      background-color: #007bff;
+      transition: width 1s linear, background-color 0.5s ease;
+    }
+
+    .submit-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 24px;
+      font-size: 15px;
+      font-weight: bold;
+      margin: 4px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover { background-color: #0056b3; }
+
+    .summary {
+      background: #e2e3e5;
+      padding: 10px;
+      border-radius: 6px;
+      margin-top: 30px;
+      display: none;
+    }
+
+    .question-block {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .question-title { font-weight: bold; }
+    .option { display: block; margin: 8px 0; cursor: pointer; }
+    .correct { background: #d4edda; border-radius: 4px; padding: 5px; }
+    .wrong { background: #f8d7da; border-radius: 4px; padding: 5px; }
+    .explanation { margin-top: 10px; font-style: italic; }
+
+    .submit-container {
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 60px;
+    }
+
+    #progress-nav {
+      margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    #toast-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 2000;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .toast {
+      background-color: #333;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      font-size: 15px;
+      opacity: 0.95;
+      animation: fadeInOut 4s ease forwards;
+    }
+
+    .toast-warning { background-color: #ffcc00; color: #000; }
+    .toast-confirm { background-color: #007bff; }
+
+    @keyframes fadeInOut {
+      0% { opacity: 0; transform: translateY(-10px); }
+      10% { opacity: 0.95; transform: translateY(0); }
+      90% { opacity: 0.95; transform: translateY(0); }
+      100% { opacity: 0; transform: translateY(-10px); }
+    }
+
+    #fullscreen-blocker, #pause-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      display: none;
+      z-index: 3000;
+      text-align: center;
+      padding-top: 200px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    #fullscreen-blocker { background: rgba(255,255,255,0.97); }
+    #pause-overlay { background: rgba(0,0,0,0.7); color: white; font-size: 28px; z-index: 2500; }
+
+    #fullscreen-blocker button, #pause-overlay button {
+      padding: 12px 24px;
+      font-size: 18px;
+      margin-top: 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    #fullscreen-blocker button:hover, #pause-overlay button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div id="toast-container"></div>
+  <div id="fullscreen-blocker">
+    🔒 Please enter fullscreen mode to start your exam.<br><br>
+    <button onclick="goFullscreen()">Enter Fullscreen</button>
+    <button onclick="goHome()">🏠 Back to Home</button>
+  </div>
+  <div id="pause-overlay">
+    ⏸️ Exam Paused<br><br>
+    <button onclick="resumeExam()">▶️ Resume</button>
+  </div>
+  <div class="header-bar">
+    <div class="header-right">
+      <div class="welcome" id="welcomeUser">👋 Welcome</div>
+      <div class="timer" id="timer">Time Left: 45:00</div>
+      <div class="progress-container"><div id="progressBar"></div></div>
+      <div id="pauseControls">
+        <button id="pauseBtn" class="submit-btn">⏸️ Pause</button>
+      </div>
+    </div>
+  </div>
+
+  <h1>AZ-900 Practice Exam</h1>
+  <div id="progress-nav"></div>
+  <form id="quizForm"></form>
+
+  <div class="submit-container">
+    <button type="button" class="submit-btn" onclick="submitAnswers()">✅ Submit Answers</button>
+    <button type="button" class="submit-btn" onclick="downloadJSON()">🧾 Download JSON</button>
+    <button type="button" class="submit-btn" id="backHomeBtn" style="display:none;" onclick="goHome()">🏠 Back to Home</button>
+  </div>
+
+  <div class="summary" id="summary"></div>
+<script>
+
+   document.addEventListener("copy", handleViolation);
+  document.addEventListener("cut", handleViolation);
+  document.addEventListener("paste", handleViolation);
+  document.addEventListener("contextmenu", e => e.preventDefault());
+  document.addEventListener("dragstart", e => e.preventDefault());
+
+  document.addEventListener("keydown", (e) => {
+    // Block DevTools
+    if (
+      e.key === "F12" ||
+      (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J" || e.key === "C")) ||
+      (e.metaKey && e.altKey && e.key.toLowerCase() === "i")
+    ) {
+      e.preventDefault();
+      showToast("🚫 DevTools not allowed!", "toast-warning");
+      return false;
+    }
+    // Block Print
+    if ((e.ctrlKey || e.metaKey) && e.key === "p") {
+      e.preventDefault();
+      showToast("🖨️ Printing is disabled!", "toast-warning");
+      return false;
+    }
+  });
+
+  function handleViolation(e) {
+    e.preventDefault();
+    showToast("⚠️ Unauthorized action detected. Submitting exam.", "toast-warning");
+    submitAnswers(true);
+  }
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const username = sessionStorage.getItem("loggedInUser") || "User";
+    document.getElementById("welcomeUser").innerText = `👋 Welcome, ${username}`;
+    sessionStorage.setItem("lastActivity", Date.now());
+
+    const maxInactivityMinutes = 120;
+    const lastActivity = sessionStorage.getItem("lastActivity");
+    if (!username || !lastActivity || (Date.now() - parseInt(lastActivity)) / (1000 * 60) > maxInactivityMinutes) {
+      sessionStorage.clear();
+      alert("⚠️ Session expired. Redirecting to login.");
+      window.location.href = "../../../login.html";
+    }
+
+    let allowBack = false;
+    let questions = [], timerPaused = false, countdown, timeLeft, duration = 45 * 60;
+    const pauseLimit = 2;
+    let pauseCount = parseInt(sessionStorage.getItem("pauseCount"));
+    if (isNaN(pauseCount)) pauseCount = 0;
+    sessionStorage.setItem("pauseCount", pauseCount.toString());
+
+
+    document.addEventListener("mousemove", () => sessionStorage.setItem("lastActivity", Date.now()));
+    document.addEventListener("keydown", () => sessionStorage.setItem("lastActivity", Date.now()));
+    document.addEventListener("click", () => sessionStorage.setItem("lastActivity", Date.now()));
+
+    document.getElementById("pauseBtn").addEventListener("click", () => {
+      pauseCount = parseInt(sessionStorage.getItem("pauseCount")) || 0;
+      if (pauseCount >= pauseLimit) {
+        showToast("⚠️ Pause limit reached. Cannot pause anymore.", "toast-warning");
+        return;
+      }
+      pauseCount++;
+      sessionStorage.setItem("pauseCount", pauseCount.toString());
+      timerPaused = true;
+      document.getElementById("pause-overlay").style.display = "block";
+      document.querySelectorAll("input[type='radio']").forEach(i => i.disabled = true);
+      showToast(`⏸️ Exam paused. (${pauseCount}/${pauseLimit})`, "toast-confirm");
+    
+      if (pauseCount >= pauseLimit) {
+        const pauseBtn = document.getElementById("pauseBtn");
+        pauseBtn.disabled = true;
+        pauseBtn.innerText = "⏸️ Pause Limit Reached";
+      }
+    });
+
+
+    document.addEventListener("fullscreenchange", () => {
+      const blocker = document.getElementById("fullscreen-blocker");
+      if (document.fullscreenElement) blocker.style.display = "none";
+      else if (!allowBack) {
+        blocker.style.display = "block";
+        showToast("⚠️ You exited full screen. Please return to full screen to continue.", "toast-warning");
+      } else {
+        blocker.style.display = "none";
+        showToast("✅ You may now exit fullscreen and return.", "toast-confirm");
+      }
+    });
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const examFile = urlParams.get("exam") || "questionsA.json";
+
+    fetch(`./questions-dataset/${examFile}`)
+      .then(res => res.json())
+      .then(data => {
+        questions = data;
+        renderQuestions();
+        startTimer();
+        goFullscreen();
+        document.getElementById("fullscreen-blocker").style.display = "block";
+      })
+      .catch(err => {
+        document.getElementById("quizForm").innerHTML = "<p>Error loading questions.</p>";
+        console.error("Error loading JSON:", err);
+      });
+
+    function renderQuestions() {
+      const form = document.getElementById("quizForm");
+      questions.forEach((q, i) => {
+        const block = document.createElement("div");
+        block.className = "question-block";
+
+        const qTitle = document.createElement("div");
+        qTitle.className = "question-title";
+        qTitle.innerText = `Q${i + 1}. ${q.question}`;
+        block.appendChild(qTitle);
+
+        q.options.forEach((option, j) => {
+          const optionId = `q${i}opt${j}`;
+          const input = document.createElement("input");
+          input.type = "radio";
+          input.name = `question${i}`;
+          input.value = option;
+          input.id = optionId;
+
+          const label = document.createElement("label");
+          label.className = "option";
+          label.setAttribute("for", optionId);
+          label.appendChild(input);
+          label.appendChild(document.createTextNode(" " + option));
+          block.appendChild(label);
+        });
+
+        const expl = document.createElement("div");
+        expl.className = "explanation";
+        expl.id = `explanation${i}`;
+        block.appendChild(expl);
+        form.appendChild(block);
+      });
+    }
+
+    window.submitAnswers = function (timeout = false) {
+      let correct = 0, incorrect = 0, unanswered = 0;
+
+      clearInterval(countdown);
+
+      questions.forEach((q, i) => {
+        const selected = document.querySelector(`input[name='question${i}']:checked`);
+        const inputs = document.querySelectorAll(`input[name='question${i}']`);
+        const explanationDiv = document.getElementById(`explanation${i}`);
+
+        inputs.forEach(input => {
+          const label = input.parentElement;
+          label.classList.remove("correct", "wrong");
+          if (input.value === q.correct) label.classList.add("correct");
+          if (selected && input === selected && input.value !== q.correct) label.classList.add("wrong");
+        });
+
+        if (!selected) unanswered++;
+        else if (selected.value === q.correct) correct++;
+        else incorrect++;
+
+        let explanationHTML = "<strong>Explanations:</strong><ul>";
+        for (let opt of q.options) {
+          const prefix = opt === q.correct ? "✅" : "❌";
+          explanationHTML += `<li>${prefix} <strong>${opt}:</strong> ${q.explanations[opt]}</li>`;
+        }
+        explanationHTML += "</ul>";
+        explanationDiv.innerHTML = explanationHTML;
+      });
+
+      const mins = Math.floor(timeLeft / 60);
+      const secs = timeLeft % 60;
+      const timeRemaining = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+
+      const summary = document.getElementById("summary");
+      summary.style.display = "block";
+      summary.innerHTML = `<strong>Result Summary:</strong><br>
+        ✅ Correct: ${correct}<br>
+        ❌ Incorrect: ${incorrect}<br>
+        ❗ Unanswered: ${unanswered}<br>
+        🕒 Time Remaining: ${timeRemaining}<br>
+        ${timeout ? "<em>Time expired. Auto-submitted.</em>" : ""}`;
+
+      allowBack = true;
+      document.querySelectorAll("input[type='radio']").forEach(input => input.disabled = true);
+      document.getElementById("backHomeBtn").style.display = "inline-block";
+
+      // Auto scroll to summary
+      summary.scrollIntoView({ behavior: "smooth" });
+
+      // Confetti if >= 80%
+      const percentage = (correct / questions.length) * 100;
+      
+      if (percentage >= 80) { 
+        let burstCount = 0;
+        const confettiInterval = setInterval(() => {
+          confetti({
+            particleCount: 100,
+            spread: 360,
+            startVelocity: 50,
+            origin: {
+              x: Math.random(),
+              y: Math.random() - 0.2
+            }
+          });
+          burstCount++;
+          if (burstCount >= 6) clearInterval(confettiInterval); // 3 seconds
+        }, 500);
+      }
+    }; // ✅ This closes submitAnswers function properly
+
+    window.downloadJSON = function () {
+      const correct = document.querySelectorAll('.correct input:checked').length;
+      const incorrect = document.querySelectorAll('.wrong input:checked').length;
+      const unanswered = questions.length - document.querySelectorAll('input:checked').length;
+      const mins = Math.floor(timeLeft / 60);
+      const secs = timeLeft % 60;
+
+      const summaryData = {
+        correct,
+        incorrect,
+        unanswered,
+        timeRemaining: `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`,
+        timestamp: new Date().toISOString(),
+        user: sessionStorage.getItem("loggedInUser") || "User"
+      };
+
+      const blob = new Blob([JSON.stringify(summaryData, null, 2)], { type: "application/json" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "quiz-summary.json";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
+
+    function startTimer() {
+      timeLeft = duration;
+      const timerEl = document.getElementById("timer");
+      const progressBar = document.getElementById("progressBar");
+
+      countdown = setInterval(() => {
+        if (timerPaused) return;
+
+        const mins = Math.floor(timeLeft / 60);
+        const secs = timeLeft % 60;
+        timerEl.textContent = `Time Left: ${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+        const percent = (timeLeft / duration) * 100;
+        progressBar.style.width = `${percent}%`;
+
+        if (timeLeft <= 5 * 60) progressBar.style.backgroundColor = "#dc3545";
+        if (timeLeft === 5 * 60) showToast("⏰ 5 minutes left! Finish up.", "toast-warning");
+
+        timeLeft--;
+        if (timeLeft < 0) {
+          clearInterval(countdown);
+          submitAnswers(true);
+        }
+      }, 1000);
+    }
+
+    window.resumeExam = function () {
+      timerPaused = false;
+      pauseCount = parseInt(sessionStorage.getItem("pauseCount")) || 0;
+      document.getElementById("pause-overlay").style.display = "none";
+      document.querySelectorAll("input[type='radio']").forEach(i => i.disabled = false);
+      showToast("▶️ Exam resumed.", "toast-confirm");
+    };
+
+    window.goFullscreen = function () {
+      const elem = document.documentElement;
+      if (elem.requestFullscreen) elem.requestFullscreen();
+      else if (elem.webkitRequestFullscreen) elem.webkitRequestFullscreen();
+      else if (elem.mozRequestFullScreen) elem.mozRequestFullScreen();
+      else if (elem.msRequestFullscreen) elem.msRequestFullscreen();
+    };
+
+    window.goHome = function () {
+      sessionStorage.removeItem("pauseCount");
+      sessionStorage.removeItem("lastActivity");
+      //sessionStorage.removeItem("loggedInUser"); // optional, only if you want to log out user
+      window.location.href = "../../../index.html";
+    };
+
+
+    function showToast(msg, type = "") {
+      const toast = document.createElement("div");
+      toast.className = "toast " + type;
+      toast.innerText = msg;
+      document.getElementById("toast-container").appendChild(toast);
+      setTimeout(() => toast.remove(), 4000);
+    }
+
+    window.addEventListener("keydown", function (e) {
+      if ((e.key === "F5") || (e.ctrlKey && e.key.toLowerCase() === "r")) {
+        e.preventDefault();
+        showToast("Refresh is disabled during the exam.", "toast-warning");
+      }
+    });
+
+    window.addEventListener("beforeunload", function (e) {
+      if (!allowBack) {
+        e.preventDefault();
+        e.returnValue = "Your exam progress will be lost. Are you sure?";
+      }
+    });
+  });
+</script>
+</body>
+</html>

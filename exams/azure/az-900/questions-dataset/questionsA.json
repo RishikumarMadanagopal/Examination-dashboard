@@ -1,0 +1,802 @@
+[
+{
+    "question": "What is the MAIN management tool used for managing Azure resources with a graphical user interface?",
+    "options": [
+      "PowerShell",
+      "Azure Storage Explorer",
+      "Remote Desktop Protocol (RDP)",
+      "Azure Portal"
+    ],
+    "correct": "Azure Portal",
+    "explanations": {
+      "PowerShell": "PowerShell is a command-line interface used to manage Azure resources, not a graphical user interface.",
+      "Azure Storage Explorer": "This is a tool to manage storage accounts, not a general Azure resource management tool.",
+      "Remote Desktop Protocol (RDP)": "RDP is used to remotely connect to virtual machines, not to manage Azure resources.",
+      "Azure Portal": "Azure Portal is the main web-based GUI for managing all Azure services and resources."
+    }
+  },
+  {
+    "question": "What is a primary benefit of opting for a consumption-based pricing model over a time-based pricing model in cloud services?",
+    "options": [
+      "It always being cheaper to pay for consumption rather than paying hourly.",
+      "The ability to easily predict the future cost of the service.",
+      "A simpler and easier-to-understand pricing model.",
+      "Significant cost savings when the resources aren't needed for constant use."
+    ],
+    "correct": "Significant cost savings when the resources aren't needed for constant use.",
+    "explanations": {
+      "It always being cheaper to pay for consumption rather than paying hourly.": "This is not always true; cost depends on usage patterns.",
+      "The ability to easily predict the future cost of the service.": "Consumption-based pricing can be harder to predict due to variable usage.",
+      "A simpler and easier-to-understand pricing model.": "Pricing can be complex depending on resource types and meters.",
+      "Significant cost savings when the resources aren't needed for constant use.": "Pay-as-you-go models allow you to pay only when the resources are in use, which is cost-effective for intermittent workloads."
+    }
+  },
+  {
+    "question": "Which of the following statements correctly describes the difference between a public cloud and a private cloud?",
+    "options": [
+      "Both public and private clouds are owned and operated by a single organization for exclusive use.",
+      "Both public and private clouds are available to the general public and are owned by a cloud service provider.",
+      "A public cloud is owned and operated by a single organization for exclusive use, while a private cloud is available to the general public or a large industry group and is owned by a cloud service provider.",
+      "A public cloud is available to the general public or a large industry group and is owned by a cloud service provider, while a private cloud is owned and operated by a single organization for exclusive use."
+    ],
+    "correct": "A public cloud is available to the general public or a large industry group and is owned by a cloud service provider, while a private cloud is owned and operated by a single organization for exclusive use.",
+    "explanations": {
+      "Both public and private clouds are owned and operated by a single organization for exclusive use.": "Only private clouds are exclusive to one organization; public clouds serve many customers.",
+      "Both public and private clouds are available to the general public and are owned by a cloud service provider.": "Private clouds are not available to the general public.",
+      "A public cloud is owned and operated by a single organization for exclusive use, while a private cloud is available to the general public or a large industry group and is owned by a cloud service provider.": "This reverses the definitions of public and private cloud.",
+      "A public cloud is available to the general public or a large industry group and is owned by a cloud service provider, while a private cloud is owned and operated by a single organization for exclusive use.": "Correct. Public clouds serve many customers, while private clouds are used by one organization."
+    }
+  },
+  {
+    "question": "What is the name of the group of services inside Azure that hosts the Apache Hadoop big data analysis tools?",
+    "options": [
+      "Azure Data Factory",
+      "Azure Hadoop Services",
+      "Azure Kubernetes Services",
+      "HDInsight"
+    ],
+    "correct": "HDInsight",
+    "explanations": {
+      "Azure Data Factory": "This is a data integration and orchestration service, not a Hadoop service.",
+      "Azure Hadoop Services": "There is no service by this exact name in Azure.",
+      "Azure Kubernetes Services": "Used to manage containers, not Hadoop workloads.",
+      "HDInsight": "Azure HDInsight is the managed service for Apache Hadoop and related big data tools."
+    }
+  },
+  {
+    "question": "Which of the following characteristics of a cloud-based system primarily contributes to its elasticity?",
+    "options": [
+      "The system's ability to maintain availability while updates are being implemented.",
+      "The system's ability to dynamically increase and decrease capacity based on real-time demand.",
+      "The system's ability to withstand denial-of-service attacks.",
+      "The system's ability to recover automatically after a crash."
+    ],
+    "correct": "The system's ability to dynamically increase and decrease capacity based on real-time demand.",
+    "explanations": {
+      "The system's ability to maintain availability while updates are being implemented.": "This is a feature of high availability, not elasticity.",
+      "The system's ability to dynamically increase and decrease capacity based on real-time demand.": "Correct. Elasticity means scaling up/down based on workload.",
+      "The system's ability to withstand denial-of-service attacks.": "This is related to security and resilience.",
+      "The system's ability to recover automatically after a crash.": "This describes fault tolerance or resilience."
+    }
+  },
+  {
+    "question": "In Microsoft Azure, which tool or service allows for the organization and management of multiple subscriptions within hierarchical structures?",
+    "options": [
+      "Microsoft Entra ID",
+      "Resource Groups",
+      "RBAC (Role-Based Access Control)",
+      "Management Groups"
+    ],
+    "correct": "Management Groups",
+    "explanations": {
+      "Microsoft Entra ID": "This is Azure's identity platform, not used for organizing subscriptions.",
+      "Resource Groups": "These are used to group related resources, not subscriptions.",
+      "RBAC (Role-Based Access Control)": "RBAC is for assigning permissions, not organizing subscriptions.",
+      "Management Groups": "Correct. These allow for hierarchical management of multiple subscriptions."
+    }
+  },
+  {
+    "question": "If you wanted to simply use Azure as an extension of your own datacenter, not primarily hosting anything there but using it for extra storage or taking advantage of some services, what hosting model is that called?",
+    "options": [
+      "Private cloud",
+      "Public cloud",
+      "Hybrid cloud"
+    ],
+    "correct": "Hybrid cloud",
+    "explanations": {
+      "Private cloud": "This model is fully on-premise or single-tenant infrastructure.",
+      "Public cloud": "This involves using only the public cloud, without on-prem integration.",
+      "Hybrid cloud": "Correct. This model combines on-premises infrastructure with public cloud resources."
+    }
+  },
+  {
+    "question": "What is the default amount of credits that you are given when you first create an Azure Free account?",
+    "options": [
+      "The default is US$200",
+      "You are given $50 per month, for one year towards Azure services",
+      "Azure does not give you any free credits when you create a free account",
+      "You can create 1 Linux VM, 1 Windows VM, and a number of other free services for the first year."
+    ],
+    "correct": "The default is US$200",
+    "explanations": {
+      "The default is US$200": "Correct. You get $200 worth of credits valid for 30 days.",
+      "$50 per month for one year": "Incorrect. That's not the standard offer.",
+      "No free credits": "Incorrect. Azure provides $200 free credits.",
+      "You can create 1 Linux VM...": "This is a description of the included free services, not the credits."
+    }
+  },
+  {
+    "question": "When establishing a Site-to-Site VPN connection with Azure, what kind of network device needs to be present or installed in your company's on-premises network infrastructure?",
+    "options": [
+      "An Application Gateway",
+      "A compatible VPN Gateway device",
+      "A dedicated virtual machine",
+      "An Azure Virtual Network"
+    ],
+    "correct": "A compatible VPN Gateway device",
+    "explanations": {
+      "An Application Gateway": "Used for load balancing web traffic, not VPN setup.",
+      "A compatible VPN Gateway device": "Correct. You need a VPN-capable device for secure tunnel setup.",
+      "A dedicated virtual machine": "Not necessary for VPN setup.",
+      "An Azure Virtual Network": "Required on the Azure side, not on-premises."
+    }
+  },
+  {
+    "question": "In the context of cloud computing, a virtual machine (VM) is primarily associated with which type of cloud hosting model?",
+    "options": [
+      "Platform as a Service (PaaS)",
+      "Software as a Service (SaaS)",
+      "Infrastructure as a Service (IaaS)"
+    ],
+    "correct": "Infrastructure as a Service (IaaS)",
+    "explanations": {
+      "Platform as a Service (PaaS)": "PaaS abstracts away the infrastructure, offering environments for app development.",
+      "Software as a Service (SaaS)": "SaaS delivers fully managed applications, not infrastructure.",
+      "Infrastructure as a Service (IaaS)": "Correct. VMs are part of IaaS, which provides infrastructure-level access and control."
+    }
+  },
+  {
+    "question": "Which of the following is a feature of the cool access tier in Azure Storage?",
+    "options": [
+      "It is used for frequently accessed data.",
+      "It offers the lowest storage cost with the highest access cost.",
+      "It allows for instant retrieval of archived data.",
+      "It is optimized for storing data that is accessed less frequently but requires rapid access when needed."
+    ],
+    "correct": "It is optimized for storing data that is accessed less frequently but requires rapid access when needed.",
+    "explanations": {
+      "It is used for frequently accessed data.": "The hot tier is used for frequently accessed data, not the cool tier.",
+      "It offers the lowest storage cost with the highest access cost.": "This describes the archive tier, not the cool tier.",
+      "It allows for instant retrieval of archived data.": "Archived data usually has retrieval delays; this is not a feature of the cool tier.",
+      "It is optimized for storing data that is accessed less frequently but requires rapid access when needed.": "Correct. The cool tier is intended for infrequent access but with quick retrieval."
+    }
+  },
+  {
+    "question": "Which Azure service would you use to manage governance across multiple subscriptions by applying policies and monitoring compliance?",
+    "options": [
+      "Azure Monitor",
+      "Azure Advisor",
+      "Azure Policy",
+      "Azure Blueprints"
+    ],
+    "correct": "Azure Policy",
+    "explanations": {
+      "Azure Monitor": "Used for collecting and analyzing telemetry data, not for enforcing governance policies.",
+      "Azure Advisor": "Provides best practice recommendations but does not enforce policies.",
+      "Azure Policy": "Correct. Azure Policy lets you define and enforce rules across resources.",
+      "Azure Blueprints": "Used to define repeatable environments but does not enforce policy compliance."
+    }
+  },
+  {
+    "question": "What is the main benefit of Azure Availability Zones?",
+    "options": [
+      "To provide unlimited storage capacity across zones.",
+      "To isolate workloads and protect applications and data from datacenter failures.",
+      "To eliminate the need for backups.",
+      "To offer discounted pricing for high availability deployments."
+    ],
+    "correct": "To isolate workloads and protect applications and data from datacenter failures.",
+    "explanations": {
+      "To provide unlimited storage capacity across zones.": "Availability Zones are about fault isolation, not storage capacity.",
+      "To isolate workloads and protect applications and data from datacenter failures.": "Correct. They are physically separate locations within a region.",
+      "To eliminate the need for backups.": "Backups are still necessary even when using Availability Zones.",
+      "To offer discounted pricing for high availability deployments.": "No pricing discount is specifically tied to using Availability Zones."
+    }
+  },
+  {
+    "question": "Which of the following is a Platform as a Service (PaaS) offering in Azure?",
+    "options": [
+      "Azure Virtual Machines",
+      "Azure Blob Storage",
+      "Azure App Service",
+      "Microsoft Entra ID"
+    ],
+    "correct": "Azure App Service",
+    "explanations": {
+      "Azure Virtual Machines": "This is an IaaS offering.",
+      "Azure Blob Storage": "This is part of Azure Storage, not a PaaS app service.",
+      "Azure App Service": "Correct. It's a PaaS offering for hosting web apps.",
+      "Microsoft Entra ID": "This is an identity and access management service."
+    }
+  },
+  {
+    "question": "Which type of cloud service provides the most control over the underlying infrastructure?",
+    "options": [
+      "Software as a Service (SaaS)",
+      "Platform as a Service (PaaS)",
+      "Infrastructure as a Service (IaaS)",
+      "Serverless"
+    ],
+    "correct": "Infrastructure as a Service (IaaS)",
+    "explanations": {
+      "Software as a Service (SaaS)": "Provides least control as everything is managed by the provider.",
+      "Platform as a Service (PaaS)": "Provides limited control over runtime, no access to infrastructure.",
+      "Infrastructure as a Service (IaaS)": "Correct. Provides VMs and full control over OS and runtime.",
+      "Serverless": "Abstracts away infrastructure entirely."
+    }
+  },
+  {
+    "question": "Which Azure feature would help you estimate the expected monthly costs of your services before you deploy them?",
+    "options": [
+      "Azure Monitor",
+      "Azure Cost Management + Billing",
+      "Azure Pricing Calculator",
+      "Azure Advisor"
+    ],
+    "correct": "Azure Pricing Calculator",
+    "explanations": {
+      "Azure Monitor": "Used for performance and diagnostics after deployment.",
+      "Azure Cost Management + Billing": "Monitors and analyzes actual costs, not estimates.",
+      "Azure Pricing Calculator": "Correct. It helps estimate costs before deploying resources.",
+      "Azure Advisor": "Provides best practice recommendations, not cost estimates."
+    }
+  },
+  {
+    "question": "You need to restrict users from launching resources in specific Azure regions. Which tool should you use?",
+    "options": [
+      "Azure Monitor",
+      "Azure Resource Locks",
+      "Azure Policy",
+      "Azure Blueprints"
+    ],
+    "correct": "Azure Policy",
+    "explanations": {
+      "Azure Monitor": "Used for monitoring resources, not restricting deployment.",
+      "Azure Resource Locks": "Prevents modification/deletion of resources, not region restriction.",
+      "Azure Policy": "Correct. Azure Policy can restrict deployments to specific regions.",
+      "Azure Blueprints": "Defines templates and governance, but does not enforce region limits."
+    }
+  },
+  {
+    "question": "Which Azure tool provides a centralized view of the health of Azure services globally and regionally?",
+    "options": [
+      "Azure Advisor",
+      "Azure Monitor",
+      "Azure Resource Health",
+      "Azure Service Health"
+    ],
+    "correct": "Azure Service Health",
+    "explanations": {
+      "Azure Advisor": "Gives performance and cost recommendations, not health status.",
+      "Azure Monitor": "Monitors metrics/logs of individual resources, not Azure service status.",
+      "Azure Resource Health": "Shows health of specific resources, not global Azure status.",
+      "Azure Service Health": "Correct. It provides Azure-wide and regional service health updates."
+    }
+  },
+  {
+    "question": "You want to identify unused or underutilized resources in your Azure subscription. Which tool can help with that?",
+    "options": [
+      "Azure Policy",
+      "Azure Advisor",
+      "Azure Monitor",
+      "Azure Blueprints"
+    ],
+    "correct": "Azure Advisor",
+    "explanations": {
+      "Azure Policy": "Used for governance and compliance, not performance analysis.",
+      "Azure Advisor": "Correct. It recommends actions to optimize performance and reduce costs.",
+      "Azure Monitor": "Used for observing metrics and telemetry, not cost recommendations.",
+      "Azure Blueprints": "Defines resource deployment templates but doesn’t provide usage insights."
+    }
+  },
+  {
+    "question": "What is the Azure feature that lets you track who did what and when in your subscription?",
+    "options": [
+      "Azure Monitor",
+      "Azure Policy",
+      "Azure Activity Log",
+      "Azure Service Health"
+    ],
+    "correct": "Azure Activity Log",
+    "explanations": {
+      "Azure Monitor": "Collects performance metrics, not audit logs.",
+      "Azure Policy": "Used to enforce governance rules, not track user actions.",
+      "Azure Activity Log": "Correct. It logs all user and system actions within the subscription.",
+      "Azure Service Health": "Shows the health status of Azure services, not user activity."
+    }
+  },
+  {
+    "question": "Which of the following is true about Azure Free Tier?",
+    "options": [
+      "It offers unlimited free use of all Azure services.",
+      "It provides $500 in free credits for one month.",
+      "It includes access to a limited set of services for 12 months, plus $200 credit for 30 days.",
+      "It requires a paid subscription to access any services."
+    ],
+    "correct": "It includes access to a limited set of services for 12 months, plus $200 credit for 30 days.",
+    "explanations": {
+      "It offers unlimited free use of all Azure services.": "Azure Free Tier limits access to certain services and usage levels.",
+      "It provides $500 in free credits for one month.": "Azure provides $200 in credits, not $500.",
+      "It includes access to a limited set of services for 12 months, plus $200 credit for 30 days.": "Correct. This is Azure's standard Free Tier offering.",
+      "It requires a paid subscription to access any services.": "Azure Free Tier allows limited free access without a paid subscription."
+    }
+  },
+  {
+    "question": "Which Azure service helps you create, monitor, and manage applications across a range of services and resources?",
+    "options": [
+      "Azure Advisor",
+      "Azure Monitor",
+      "Azure DevTest Labs",
+      "Azure Resource Manager"
+    ],
+    "correct": "Azure Monitor",
+    "explanations": {
+      "Azure Advisor": "Provides best practice recommendations, not monitoring.",
+      "Azure Monitor": "Correct. Azure Monitor provides full observability of applications and services.",
+      "Azure DevTest Labs": "Used to create and manage dev/test environments, not general monitoring.",
+      "Azure Resource Manager": "Used to deploy/manage resources but not primarily for monitoring."
+    }
+  },
+  {
+    "question": "What is the role of Azure Resource Groups?",
+    "options": [
+      "They define the region where your subscription is located.",
+      "They allow grouping of virtual machines only.",
+      "They are used to organize and manage Azure resources like VMs, databases, and networks.",
+      "They serve as pricing tiers for Azure services."
+    ],
+    "correct": "They are used to organize and manage Azure resources like VMs, databases, and networks.",
+    "explanations": {
+      "They define the region where your subscription is located.": "Regions are separate from resource groups.",
+      "They allow grouping of virtual machines only.": "Resource groups can include many types of resources.",
+      "They are used to organize and manage Azure resources like VMs, databases, and networks.": "Correct. Resource groups act as logical containers for related resources.",
+      "They serve as pricing tiers for Azure services.": "Pricing tiers are not determined by resource groups."
+    }
+  },
+  {
+    "question": "What type of agreement defines the guaranteed uptime and performance of an Azure service?",
+    "options": [
+      "Service Usage Agreement (SUA)",
+      "Performance Guarantee Contract (PGC)",
+      "Service Level Agreement (SLA)",
+      "Cloud Performance Assurance (CPA)"
+    ],
+    "correct": "Service Level Agreement (SLA)",
+    "explanations": {
+      "Service Usage Agreement (SUA)": "Not a valid Azure agreement type.",
+      "Performance Guarantee Contract (PGC)": "Not an actual Azure term.",
+      "Service Level Agreement (SLA)": "Correct. An SLA defines uptime and performance guarantees for services.",
+      "Cloud Performance Assurance (CPA)": "Not a recognized Azure document."
+    }
+  },
+  {
+    "question": "Which Azure service allows you to create and manage users, groups, and access to resources?",
+    "options": [
+      "Azure Active Directory",
+      "Azure Policy",
+      "Azure Key Vault",
+      "Azure App Service"
+    ],
+    "correct": "Azure Active Directory",
+    "explanations": {
+      "Azure Active Directory": "Correct. Azure AD handles identity and access management.",
+      "Azure Policy": "Used to enforce governance, not manage identities.",
+      "Azure Key Vault": "Used to store secrets and keys securely.",
+      "Azure App Service": "Used for hosting applications, not identity management."
+    }
+  },
+  {
+    "question": "What is Azure Advisor primarily used for?",
+    "options": [
+      "To configure DNS settings for your domain.",
+      "To provide personalized best practices recommendations on high availability, security, performance, and cost.",
+      "To deploy web applications.",
+      "To monitor resource health."
+    ],
+    "correct": "To provide personalized best practices recommendations on high availability, security, performance, and cost.",
+    "explanations": {
+      "To configure DNS settings for your domain.": "DNS is handled separately, not via Azure Advisor.",
+      "To provide personalized best practices recommendations on high availability, security, performance, and cost.": "Correct. Azure Advisor analyzes your setup and provides optimization suggestions.",
+      "To deploy web applications.": "Azure App Service or DevOps tools are used for deployment.",
+      "To monitor resource health.": "Azure Monitor or Resource Health is used for this purpose."
+    }
+  },
+  {
+    "question": "Which Azure storage option is best for storing large amounts of unstructured data such as documents and media files?",
+    "options": [
+      "Azure File Storage",
+      "Azure Table Storage",
+      "Azure Blob Storage",
+      "Azure Queue Storage"
+    ],
+    "correct": "Azure Blob Storage",
+    "explanations": {
+      "Azure File Storage": "Used for shared file access via SMB protocol.",
+      "Azure Table Storage": "Stores structured NoSQL data, not ideal for media.",
+      "Azure Blob Storage": "Correct. Blob Storage is optimized for unstructured data like images and documents.",
+      "Azure Queue Storage": "Used for messaging between components."
+    }
+  },
+  {
+    "question": "Which Azure feature provides automatic distribution of incoming traffic across multiple instances of an application?",
+    "options": [
+      "Azure ExpressRoute",
+      "Azure Load Balancer",
+      "Azure VPN Gateway",
+      "Azure DNS"
+    ],
+    "correct": "Azure Load Balancer",
+    "explanations": {
+      "Azure ExpressRoute": "Provides private connectivity to Azure, not traffic distribution.",
+      "Azure Load Balancer": "Correct. Distributes incoming traffic across multiple resources for reliability.",
+      "Azure VPN Gateway": "Establishes secure site-to-site connections.",
+      "Azure DNS": "Resolves domain names but doesn’t distribute application traffic."
+    }
+  },
+  {
+    "question": "What is the benefit of deploying resources into different resource groups?",
+    "options": [
+      "It reduces the cost of the subscription.",
+      "It allows different teams to manage access, policies, and billing separately.",
+      "It combines multiple regions into one global group.",
+      "It enables the use of only one virtual network across all services."
+    ],
+    "correct": "It allows different teams to manage access, policies, and billing separately.",
+    "explanations": {
+      "It reduces the cost of the subscription.": "Resource groups are for organization and management, not cost reduction.",
+      "It allows different teams to manage access, policies, and billing separately.": "Correct. Resource groups can have individual access controls and policies.",
+      "It combines multiple regions into one global group.": "Resource groups do not combine regions.",
+      "It enables the use of only one virtual network across all services.": "Virtual networks are defined per region, not by resource group."
+    }
+  },
+  {
+    "question": "Which Azure pricing calculator feature helps you model your expected cloud spend before deployment?",
+    "options": [
+      "Azure Policy",
+      "Azure Marketplace",
+      "Azure Pricing Calculator",
+      "Azure Billing Portal"
+    ],
+    "correct": "Azure Pricing Calculator",
+    "explanations": {
+      "Azure Policy": "Used for governance, not cost estimation.",
+      "Azure Marketplace": "Used to browse solutions and services, not to estimate cost.",
+      "Azure Pricing Calculator": "Correct. This tool helps you estimate the cost of Azure services.",
+      "Azure Billing Portal": "Used to review actual billing and payments."
+    }
+  },
+  {
+    "question": "Which Azure tool helps you implement repeatable environments for compliance and standardization?",
+    "options": [
+      "Azure Advisor",
+      "Azure Blueprints",
+      "Azure Monitor",
+      "Azure Cost Management"
+    ],
+    "correct": "Azure Blueprints",
+    "explanations": {
+      "Azure Advisor": "Gives optimization recommendations but doesn't define environments.",
+      "Azure Blueprints": "Correct. Allows you to define and deploy repeatable, governed environments.",
+      "Azure Monitor": "Used for monitoring performance and logs.",
+      "Azure Cost Management": "Tracks spending and budgets, not environment templates."
+    }
+  },
+  {
+    "question": "Which Azure feature lets you restrict access to resources by assigning roles to users?",
+    "options": [
+      "Azure Policy",
+      "Network Security Groups",
+      "Azure Monitor",
+      "Role-Based Access Control (RBAC)"
+    ],
+    "correct": "Role-Based Access Control (RBAC)",
+    "explanations": {
+      "Azure Policy": "Enforces compliance rules but doesn't assign access rights.",
+      "Network Security Groups": "Controls network traffic, not user access.",
+      "Azure Monitor": "Monitors metrics and logs, not access control.",
+      "Role-Based Access Control (RBAC)": "Correct. RBAC restricts access by assigning roles to users and groups."
+    }
+  },
+  {
+    "question": "What is the benefit of using Availability Sets in Azure?",
+    "options": [
+      "They provide better cost management.",
+      "They automatically back up your virtual machines.",
+      "They ensure your VMs are distributed across fault and update domains.",
+      "They allow you to group all your resources together."
+    ],
+    "correct": "They ensure your VMs are distributed across fault and update domains.",
+    "explanations": {
+      "They provide better cost management.": "Availability Sets are for reliability, not cost.",
+      "They automatically back up your virtual machines.": "Backup is handled separately via Azure Backup.",
+      "They ensure your VMs are distributed across fault and update domains.": "Correct. This helps reduce downtime during maintenance or failures.",
+      "They allow you to group all your resources together.": "This is the purpose of Resource Groups, not Availability Sets."
+    }
+  },
+  {
+    "question": "Which Azure feature would you use to encrypt secrets like API keys and passwords?",
+    "options": [
+      "Azure App Configuration",
+      "Azure Firewall",
+      "Azure Key Vault",
+      "Azure Active Directory"
+    ],
+    "correct": "Azure Key Vault",
+    "explanations": {
+      "Azure App Configuration": "Used for managing application settings, not secrets.",
+      "Azure Firewall": "Provides network security, not secret management.",
+      "Azure Key Vault": "Correct. Key Vault is used to securely store and manage secrets and keys.",
+      "Azure Active Directory": "Handles identity and access management, not secret storage."
+    }
+  },
+  {
+    "question": "You want to analyze the logs and metrics collected by Azure Monitor. Which service should you use?",
+    "options": [
+      "Log Analytics",
+      "Azure Policy",
+      "Azure Blueprints",
+      "Azure Key Vault"
+    ],
+    "correct": "Log Analytics",
+    "explanations": {
+      "Log Analytics": "Correct. Part of Azure Monitor, it helps query and analyze log and telemetry data.",
+      "Azure Policy": "Used to enforce resource rules, not for analyzing logs.",
+      "Azure Blueprints": "Used for deploying standard environments.",
+      "Azure Key Vault": "Used for storing keys and secrets securely."
+    }
+  },
+  {
+    "question": "Which Azure service is best suited to distribute high volumes of incoming internet traffic across multiple virtual machines?",
+    "options": [
+      "Azure VPN Gateway",
+      "Azure Traffic Manager",
+      "Azure Load Balancer",
+      "Azure Content Delivery Network (CDN)"
+    ],
+    "correct": "Azure Load Balancer",
+    "explanations": {
+      "Azure VPN Gateway": "Used for secure cross-premises connections.",
+      "Azure Traffic Manager": "Routes traffic based on DNS, not volume/load across VMs.",
+      "Azure Load Balancer": "Correct. Distributes incoming traffic across multiple VMs for performance and redundancy.",
+      "Azure Content Delivery Network (CDN)": "Delivers cached content globally, not used for load balancing VMs."
+    }
+  },
+  {
+    "question": "Which Azure component acts as a logical container for resources like databases, VMs, and networks?",
+    "options": [
+      "Management Groups",
+      "Resource Groups",
+      "Azure Subscriptions",
+      "Availability Zones"
+    ],
+    "correct": "Resource Groups",
+    "explanations": {
+      "Management Groups": "Used to organize subscriptions, not individual resources.",
+      "Resource Groups": "Correct. Logical containers for grouping related Azure resources.",
+      "Azure Subscriptions": "Used for billing and access control across resource groups.",
+      "Availability Zones": "Used for distributing resources across datacenters, not for grouping."
+    }
+  },
+  {
+    "question": "Which Azure service allows you to define a workflow of steps triggered by events or schedules?",
+    "options": [
+      "Azure Functions",
+      "Azure Logic Apps",
+      "Azure Automation",
+      "Azure DevOps"
+    ],
+    "correct": "Azure Logic Apps",
+    "explanations": {
+      "Azure Functions": "Runs code in response to events but not for orchestrating multiple steps.",
+      "Azure Logic Apps": "Correct. Used to build workflows that integrate apps, data, and services.",
+      "Azure Automation": "Automates operational tasks like patching and configuration.",
+      "Azure DevOps": "Used for CI/CD and development lifecycle management."
+    }
+  },
+  {
+    "question": "Which Azure service offers a fully managed platform for building, deploying, and scaling web apps?",
+    "options": [
+      "Azure Virtual Machines",
+      "Azure Functions",
+      "Azure App Service",
+      "Azure Kubernetes Service"
+    ],
+    "correct": "Azure App Service",
+    "explanations": {
+      "Azure Virtual Machines": "Provides infrastructure, not a managed app platform.",
+      "Azure Functions": "Executes small pieces of code, not full web apps.",
+      "Azure App Service": "Correct. It is a PaaS offering for hosting web apps with built-in scaling and integration.",
+      "Azure Kubernetes Service": "Used to orchestrate containers, not directly host web apps."
+    }
+  },
+  {
+    "question": "Which of the following provides a way to securely connect your on-premises network to Azure over the internet?",
+    "options": [
+      "Azure VPN Gateway",
+      "Azure Load Balancer",
+      "Azure ExpressRoute",
+      "Azure Bastion"
+    ],
+    "correct": "Azure VPN Gateway",
+    "explanations": {
+      "Azure VPN Gateway": "Correct. Establishes secure site-to-site connections over the public internet.",
+      "Azure Load Balancer": "Distributes traffic, doesn't provide secure connectivity.",
+      "Azure ExpressRoute": "Provides private, not internet-based, connectivity to Azure.",
+      "Azure Bastion": "Provides secure RDP/SSH access to Azure VMs without exposing them to the public internet."
+    }
+  },
+  {
+    "question": "What is the purpose of Azure ExpressRoute?",
+    "options": [
+      "To connect users to Azure services over the public Internet.",
+      "To establish a private connection to Azure that doesn’t go over the Internet.",
+      "To manage role-based access to Azure resources.",
+      "To enforce compliance through Azure Policy."
+    ],
+    "correct": "To establish a private connection to Azure that doesn’t go over the Internet.",
+    "explanations": {
+      "To connect users to Azure services over the public Internet.": "Public Internet connections use VPN, not ExpressRoute.",
+      "To establish a private connection to Azure that doesn’t go over the Internet.": "Correct. ExpressRoute provides dedicated private connectivity to Azure.",
+      "To manage role-based access to Azure resources.": "That is done with Azure RBAC.",
+      "To enforce compliance through Azure Policy.": "Azure Policy governs resource compliance, not networking."
+    }
+  },
+  {
+    "question": "What is Azure Bastion used for?",
+    "options": [
+      "To host web applications in a secure containerized environment.",
+      "To enable secure RDP/SSH access to virtual machines without exposing public IP addresses.",
+      "To perform automated deployments of Azure infrastructure.",
+      "To store credentials and certificates securely."
+    ],
+    "correct": "To enable secure RDP/SSH access to virtual machines without exposing public IP addresses.",
+    "explanations": {
+      "To host web applications in a secure containerized environment.": "This is the purpose of Azure App Service or AKS, not Bastion.",
+      "To enable secure RDP/SSH access to virtual machines without exposing public IP addresses.": "Correct. Azure Bastion allows secure browser-based access to VMs.",
+      "To perform automated deployments of Azure infrastructure.": "This can be done using ARM templates or Azure DevOps.",
+      "To store credentials and certificates securely.": "That is handled by Azure Key Vault."
+    }
+  },
+  {
+    "question": "Which of the following features of cloud computing enables customers to only pay for what they use?",
+    "options": [
+      "Elasticity",
+      "Scalability",
+      "Pay-as-you-go",
+      "High Availability"
+    ],
+    "correct": "Pay-as-you-go",
+    "explanations": {
+      "Elasticity": "This allows resources to scale automatically, but does not directly refer to billing.",
+      "Scalability": "Refers to the system’s ability to grow with demand, not billing.",
+      "Pay-as-you-go": "Correct. It means customers are billed based on their actual usage.",
+      "High Availability": "Ensures uptime but does not address pricing."
+    }
+  },
+  {
+    "question": "Which of the following is an example of Infrastructure as a Service (IaaS)?",
+    "options": [
+      "Azure App Service",
+      "Azure Virtual Machine",
+      "Microsoft 365",
+      "Azure Functions"
+    ],
+    "correct": "Azure Virtual Machine",
+    "explanations": {
+      "Azure App Service": "This is a Platform as a Service (PaaS) offering.",
+      "Azure Virtual Machine": "Correct. IaaS provides control over virtual machines and infrastructure.",
+      "Microsoft 365": "This is a Software as a Service (SaaS) offering.",
+      "Azure Functions": "Serverless compute, not IaaS."
+    }
+  },
+  {
+    "question": "What is a benefit of using containers in Azure?",
+    "options": [
+      "They provide a consistent development and deployment environment.",
+      "They eliminate the need for any infrastructure.",
+      "They allow access only through the Azure Portal.",
+      "They prevent network-based attacks by default."
+    ],
+    "correct": "They provide a consistent development and deployment environment.",
+    "explanations": {
+      "They provide a consistent development and deployment environment.": "Correct. Containers encapsulate application dependencies, ensuring consistency.",
+      "They eliminate the need for any infrastructure.": "Infrastructure is still required, although it’s abstracted.",
+      "They allow access only through the Azure Portal.": "Containers can be accessed and deployed through various tools, not just the portal.",
+      "They prevent network-based attacks by default.": "Security must still be configured properly for containers."
+    }
+  },
+  {
+    "question": "Which Azure service is best suited for sending alerts and notifications when your resource usage exceeds certain thresholds?",
+    "options": [
+      "Azure Monitor",
+      "Azure Advisor",
+      "Azure Policy",
+      "Azure App Service"
+    ],
+    "correct": "Azure Monitor",
+    "explanations": {
+      "Azure Monitor": "Correct. Azure Monitor allows you to configure alerts based on usage metrics.",
+      "Azure Advisor": "Gives recommendations but does not trigger real-time alerts.",
+      "Azure Policy": "Enforces compliance rules but does not handle alerts.",
+      "Azure App Service": "Used for hosting apps, not for monitoring alerts."
+    }
+  },
+  {
+    "question": "Which Azure pricing model provides the lowest cost for predictable workloads over a long period?",
+    "options": [
+      "Free Tier",
+      "Pay-as-you-go",
+      "Spot Pricing",
+      "Reserved Instances"
+    ],
+    "correct": "Reserved Instances",
+    "explanations": {
+      "Free Tier": "Offers limited services and is not suited for long-term predictable workloads.",
+      "Pay-as-you-go": "Provides flexibility but is generally more expensive over time.",
+      "Spot Pricing": "Lowest cost but not reliable for predictable workloads as instances can be interrupted.",
+      "Reserved Instances": "Correct. You commit to a 1- or 3-year term in exchange for a discount."
+    }
+  },
+  {
+    "question": "Which feature of Azure automatically replicates data to a paired region for disaster recovery?",
+    "options": [
+      "Azure Backup",
+      "Geo-Redundant Storage (GRS)",
+      "Azure Policy",
+      "Azure Monitor"
+    ],
+    "correct": "Geo-Redundant Storage (GRS)",
+    "explanations": {
+      "Azure Backup": "Backs up resources but does not automatically replicate to a paired region.",
+      "Geo-Redundant Storage (GRS)": "Correct. GRS replicates data to another geographic region.",
+      "Azure Policy": "Used for governance, not data replication.",
+      "Azure Monitor": "Used for performance monitoring and alerts."
+    }
+  },
+  {
+    "question": "What does Azure Compliance Manager help organizations do?",
+    "options": [
+      "Manage billing and costs.",
+      "Monitor virtual machine usage.",
+      "Assess and manage compliance with regulatory requirements.",
+      "Provide access control for network security groups."
+    ],
+    "correct": "Assess and manage compliance with regulatory requirements.",
+    "explanations": {
+      "Manage billing and costs.": "Handled by Azure Cost Management.",
+      "Monitor virtual machine usage.": "Handled by Azure Monitor.",
+      "Assess and manage compliance with regulatory requirements.": "Correct. Compliance Manager helps track and manage compliance documentation and requirements.",
+      "Provide access control for network security groups.": "This is part of Azure networking, not compliance."
+    }
+  },
+  {
+    "question": "Which Azure service helps protect your applications from Distributed Denial of Service (DDoS) attacks?",
+    "options": [
+      "Azure Firewall",
+      "Azure Bastion",
+      "Azure DDoS Protection",
+      "Azure Application Gateway"
+    ],
+    "correct": "Azure DDoS Protection",
+    "explanations": {
+      "Azure Firewall": "Provides network filtering and rules, not DDoS-specific protection.",
+      "Azure Bastion": "Used for secure VM access, not traffic protection.",
+      "Azure DDoS Protection": "Correct. It mitigates volumetric DDoS attacks automatically.",
+      "Azure Application Gateway": "Handles HTTP load balancing, not volumetric attack protection."
+    }
+  }
+]
+
+
+
+
