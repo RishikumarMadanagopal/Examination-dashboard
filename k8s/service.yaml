@@ -1,0 +1,34 @@
+# ==============================================================================
+# KUBERNETES SERVICE MANIFEST
+# ==============================================================================
+# This file defines the Service to expose the AZ-900 Practice Portal
+# ==============================================================================
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: az900-portal-service
+  labels:
+    app: az900-portal
+  annotations:
+    service.beta.kubernetes.io/azure-load-balancer-health-probe-request-path: /health
+spec:
+  # Service type - LoadBalancer creates an Azure Load Balancer with public IP
+  type: LoadBalancer
+  
+  # Session affinity (optional - for sticky sessions)
+  sessionAffinity: ClientIP
+  sessionAffinityConfig:
+    clientIP:
+      timeoutSeconds: 10800
+  
+  # Ports configuration
+  ports:
+  - name: http
+    port: 80              # External port (what users access)
+    targetPort: 8080      # Container port (where app listens)
+    protocol: TCP
+  
+  # Selector to match pods
+  selector:
+    app: az900-portal

@@ -1,0 +1,792 @@
+[
+  {
+    "question": "What is the concept of being able to get your applications and data running in another environment quickly?",
+    "options": [
+      "Azure Blueprint",
+      "Azure Devops",
+      "Business Continuity / Disaster Recovery (BC/DR)",
+      "Reproducible deployments"
+    ],
+    "correct": "Business Continuity / Disaster Recovery (BC/DR)",
+    "explanations": {
+      "Azure Blueprint": "Used for creating repeatable deployments, not for disaster recovery.",
+      "Azure Devops": "Primarily used for continuous integration and delivery, not DR.",
+      "Business Continuity / Disaster Recovery (BC/DR)": "Correct. This concept ensures quick recovery in another environment.",
+      "Reproducible deployments": "Helps redeploy resources consistently, but not the same as BC/DR."
+    }
+  },
+  {
+    "question": "True or false: Azure Cloud Shell allows access to the Bash and Powershell consoles in the Azure Portal",
+    "options": [
+      "TRUE",
+      "FALSE"
+    ],
+    "correct": "TRUE",
+    "explanations": {
+      "TRUE": "Correct. Azure Cloud Shell supports both Bash and PowerShell in-browser.",
+      "FALSE": "Incorrect. Cloud Shell enables access to both command environments."
+    }
+  },
+  {
+    "question": "Each person has their own user ID and password to log into Azure. But how many subscriptions can a single account be associated with?",
+    "options": [
+      "No limit",
+      "10",
+      "250 per region",
+      "One"
+    ],
+    "correct": "No limit",
+    "explanations": {
+      "No limit": "Correct. A user can be associated with any number of Azure subscriptions.",
+      "10": "There's no fixed limit like 10.",
+      "250 per region": "This is unrelated to user-subscription associations.",
+      "One": "A user is not limited to a single subscription."
+    }
+  },
+  {
+    "question": "Which of the following is not a feature of Azure Functions?",
+    "options": [
+      "Designed for backend batch applications that are continuously running",
+      "Can edit the code right in the Azure Portal using a code editor",
+      "Can possibly cost you nothing as there is a generous free tier",
+      "Can trigger the function based off of Azure events such as a new file being saved to a storage account blob container"
+    ],
+    "correct": "Designed for backend batch applications that are continuously running",
+    "explanations": {
+      "Designed for backend batch applications that are continuously running": "Correct. Azure Functions are meant for short-lived executions.",
+      "Can edit the code right in the Azure Portal using a code editor": "This is a valid feature of Azure Functions.",
+      "Can possibly cost you nothing as there is a generous free tier": "This is true for low-volume use.",
+      "Can trigger the function based off of Azure events such as a new file being saved to a storage account blob container": "This is a valid Azure Function trigger."
+    }
+  },
+  {
+    "question": "Which of the following elements is considered part of the 'perimeter' layer of security?",
+    "options": [
+      "Keep operating systems up to date with patches",
+      "Use a firewall",
+      "Separate servers into distinct subnets by role",
+      "Locks on the data center doors"
+    ],
+    "correct": "Use a firewall",
+    "explanations": {
+      "Keep operating systems up to date with patches": "This is part of the host layer, not perimeter.",
+      "Use a firewall": "Correct. Firewalls are part of perimeter defense.",
+      "Separate servers into distinct subnets by role": "This is a network layer control.",
+      "Locks on the data center doors": "This is a physical security control, not perimeter."
+    }
+  },
+  {
+    "question": "Select the way(s) to increase the security of a traditional user ID and password system?",
+    "options": [
+      "Do not allow users to log into an application except using a company registered device.",
+      "Use multi-factor authentication which requires an additional device (something you have) to verify identity.",
+      "Require longer and more complex passwords.",
+      "Require users to change their passwords more frequently."
+    ],
+    "correct": [
+      "Do not allow users to log into an application except using a company registered device.",
+      "Use multi-factor authentication which requires an additional device (something you have) to verify identity.",
+      "Require longer and more complex passwords.",
+      "Require users to change their passwords more frequently."
+    ],
+    "explanations": {
+      "Do not allow users to log into an application except using a company registered device.": "Enhances security by enforcing known trusted devices.",
+      "Use multi-factor authentication which requires an additional device (something you have) to verify identity.": "Correct. MFA adds a strong additional layer.",
+      "Require longer and more complex passwords.": "Strong passwords reduce the risk of brute force attacks.",
+      "Require users to change their passwords more frequently.": "Periodic password changes help protect compromised accounts."
+    }
+  },
+  {
+    "question": "What is the service level agreement for two or more Azure Virtual Machines that have been manually placed into different Availability Zones in the same region?",
+    "options": [
+      "99.9%",
+      "99.95%",
+      "99.99%",
+      "100%"
+    ],
+    "correct": "99.99%",
+    "explanations": {
+      "99.9%": "Applies to single VM without high availability setup.",
+      "99.95%": "For VMs in an availability set.",
+      "99.99%": "Correct. VMs in separate Availability Zones receive the highest SLA.",
+      "100%": "No Azure service offers 100% SLA."
+    }
+  },
+  {
+    "question": "What is the difference between Capital Expenditure (CapEx) and Operational Expenditure (OpEx)?",
+    "options": [
+      "CapEx is recurring, OpEx is a one-time purchase.",
+      "CapEx is an ongoing operational cost, OpEx is for major infrastructure purchases.",
+      "CapEx is a major investment upfront, OpEx is a pay-as-you-go model.",
+      "There is no difference."
+    ],
+    "correct": "CapEx is a major investment upfront, OpEx is a pay-as-you-go model.",
+    "explanations": {
+      "CapEx is recurring, OpEx is a one-time purchase.": "Incorrect — CapEx is usually a one-time upfront investment.",
+      "CapEx is an ongoing operational cost, OpEx is for major infrastructure purchases.": "The definitions are reversed.",
+      "CapEx is a major investment upfront, OpEx is a pay-as-you-go model.": "Correct. OpEx is typical in cloud models.",
+      "There is no difference.": "They are fundamentally different financial models."
+    }
+  },
+  {
+    "question": "What Azure feature helps you identify potential cost savings in your subscription?",
+    "options": [
+      "Azure Monitor",
+      "Azure Service Health",
+      "Azure Advisor",
+      "Azure Blueprints"
+    ],
+    "correct": "Azure Advisor",
+    "explanations": {
+      "Azure Monitor": "Used for performance and diagnostic monitoring.",
+      "Azure Service Health": "Shows service issues but doesn’t advise on costs.",
+      "Azure Advisor": "Correct. It provides recommendations for cost savings, performance, and more.",
+      "Azure Blueprints": "Helps with environment setup, not cost analysis."
+    }
+  },
+  {
+    "question": "Which Azure tool provides an interactive shell for managing resources via Bash or PowerShell?",
+    "options": [
+      "Azure CLI",
+      "Azure PowerShell",
+      "Azure Cloud Shell",
+      "Azure Portal"
+    ],
+    "correct": "Azure Cloud Shell",
+    "explanations": {
+      "Azure CLI": "Command-line tool but not browser-based.",
+      "Azure PowerShell": "PowerShell module, not the web shell itself.",
+      "Azure Cloud Shell": "Correct. Provides in-browser Bash and PowerShell consoles.",
+      "Azure Portal": "Graphical UI, not a shell."
+    }
+  },
+  {
+    "question": "Which Azure pricing model allows you to pay for compute resources by the second, with no long-term commitment?",
+    "options": [
+      "Spot Pricing",
+      "Pay-As-You-Go",
+      "Enterprise Agreement",
+      "Reserved Instances"
+    ],
+    "correct": "Pay-As-You-Go",
+    "explanations": {
+      "Spot Pricing": "Spot pricing lets you bid on unused capacity but isn't suited for continuous use.",
+      "Pay-As-You-Go": "Correct. This model allows billing per second, with no commitment.",
+      "Enterprise Agreement": "This is a volume licensing deal, not a flexible pay model.",
+      "Reserved Instances": "Requires upfront commitment in exchange for discounts."
+    }
+  },
+  {
+    "question": "Which Azure Storage service is best suited for storing unstructured data such as text or binary data?",
+    "options": [
+      "Azure Queue Storage",
+      "Azure Table Storage",
+      "Azure File Storage",
+      "Azure Blob Storage"
+    ],
+    "correct": "Azure Blob Storage",
+    "explanations": {
+      "Azure Queue Storage": "Used for messaging, not unstructured data.",
+      "Azure Table Storage": "Stores structured NoSQL data.",
+      "Azure File Storage": "Provides file shares, not optimized for blobs.",
+      "Azure Blob Storage": "Correct. Ideal for unstructured data like images or binary files."
+    }
+  },
+  {
+    "question": "Which Azure product allows you to autoscale virtual machines from 1 to 1000 instances, and also provides load balancing services built in?",
+    "options": [
+      "Azure App Services",
+      "Azure Virtual Machines",
+      "Application Gateway",
+      "Virtual Machine Scale Sets"
+    ],
+    "correct": "Virtual Machine Scale Sets",
+    "explanations": {
+      "Azure App Services": "Hosts apps but doesn't autoscale VM infrastructure.",
+      "Azure Virtual Machines": "Requires manual scaling.",
+      "Application Gateway": "Provides load balancing, but not autoscaling VMs.",
+      "Virtual Machine Scale Sets": "Correct. Built-in autoscaling and load balancing for VMs."
+    }
+  },
+  {
+    "question": "What is a benefit of using Azure Reservations?",
+    "options": [
+      "Access to preview features",
+      "Pay by the second with no commitment",
+      "Significant discounts for long-term use",
+      "Unlimited scalability during peak usage"
+    ],
+    "correct": "Significant discounts for long-term use",
+    "explanations": {
+      "Access to preview features": "Unrelated to Reserved Instances.",
+      "Pay by the second with no commitment": "That's Pay-As-You-Go.",
+      "Significant discounts for long-term use": "Correct. Reservations offer reduced prices for 1–3 year commitments.",
+      "Unlimited scalability during peak usage": "Scalability depends on service, not reservation."
+    }
+  },
+  {
+    "question": "Within the context of privacy and compliance, what does the acronym ISO stand for, in English?",
+    "options": [
+      "Information Systems Officer",
+      "Instead of",
+      "Intelligence and Security Office",
+      "International Organization for Standardization"
+    ],
+    "correct": "International Organization for Standardization",
+    "explanations": {
+      "Information Systems Officer": "Incorrect expansion of ISO.",
+      "Instead of": "Not a relevant expansion.",
+      "Intelligence and Security Office": "Not related to ISO standards.",
+      "International Organization for Standardization": "Correct. ISO sets international standards for systems and security."
+    }
+  },
+  {
+    "question": "What is the primary purpose of Microsoft Purview in Azure?",
+    "options": [
+      "To enable real-time data analytics and visualization.",
+      "To provide virtual machine scalability and performance monitoring.",
+      "To automate the deployment of infrastructure as code (IaC).",
+      "To offer a unified data governance solution for managing on-premises, multi-cloud, and SaaS data."
+    ],
+    "correct": "To offer a unified data governance solution for managing on-premises, multi-cloud, and SaaS data.",
+    "explanations": {
+      "To enable real-time data analytics and visualization.": "That’s a function of services like Power BI, not Purview.",
+      "To provide virtual machine scalability and performance monitoring.": "Handled by tools like Azure Monitor.",
+      "To automate the deployment of infrastructure as code (IaC).": "Managed by ARM templates or Bicep.",
+      "To offer a unified data governance solution for managing on-premises, multi-cloud, and SaaS data.": "Correct. This is Purview’s core function."
+    }
+  },
+  {
+    "question": "Application Gateway contains what additional optional security feature over a regular Load Balancer?",
+    "options": [
+      "Azure AD Advanced Information Protection",
+      "Web Application Firewall (or WAF)",
+      "Advanced DDoS Protection",
+      "Multi-Factor Authentication"
+    ],
+    "correct": "Web Application Firewall (or WAF)",
+    "explanations": {
+      "Azure AD Advanced Information Protection": "Not part of Application Gateway.",
+      "Web Application Firewall (or WAF)": "Correct. WAF protects against common web vulnerabilities.",
+      "Advanced DDoS Protection": "Available separately, not specific to Gateway.",
+      "Multi-Factor Authentication": "Applies to identity access, not load balancers."
+    }
+  },
+  {
+    "question": "What types of files can a Content Delivery Network speed up the delivery of?",
+    "options": [
+      "JavaScript files",
+      "Images",
+      "Videos",
+      "PDFs"
+    ],
+    "correct": [
+      "JavaScript files",
+      "Images",
+      "Videos",
+      "PDFs"
+    ],
+    "explanations": {
+      "JavaScript files": "Correct. CDNs cache static files like JS for faster access.",
+      "Images": "Correct. CDNs store images closer to users.",
+      "Videos": "Correct. Ideal for streaming media.",
+      "PDFs": "Correct. Any static file benefits from CDN delivery."
+    }
+  },
+  {
+    "question": "What is the minimum charge for having an Azure Account each month, even if you don't use any resources?",
+    "options": [
+      "$1",
+      "Negotiated with your enterprise manager",
+      "$0",
+      "$200"
+    ],
+    "correct": "$0",
+    "explanations": {
+      "$1": "There’s no minimum charge of $1 for unused accounts.",
+      "Negotiated with your enterprise manager": "Not applicable to individual/freelancer use.",
+      "$0": "Correct. If you don’t consume any billable resources, you pay nothing.",
+      "$200": "That's the initial free credit for new accounts, not a monthly charge."
+    }
+  },
+  {
+    "question": "Why is a user ID and password sometimes not enough to prove someone is who they say they are?",
+    "options": [
+      "User ID and password can be used by anyone such as a co-worker, ex-employee or hacker half-way around the world",
+      "Passwords are usually easy to forget",
+      "Passwords must be encrypted before being stored",
+      "Some people might choose the same user ID and password"
+    ],
+    "correct": "User ID and password can be used by anyone such as a co-worker, ex-employee or hacker half-way around the world",
+    "explanations": {
+      "User ID and password can be used by anyone such as a co-worker, ex-employee or hacker half-way around the world": "Correct. Credentials can be compromised, hence not secure alone.",
+      "Passwords are usually easy to forget": "That’s an inconvenience, not a security flaw.",
+      "Passwords must be encrypted before being stored": "True, but not the reason why they’re insufficient.",
+      "Some people might choose the same user ID and password": "Poor practice, but not the core reason MFA is needed."
+    }
+  },
+  {
+    "question": "What Azure product allows you to autoscale virtual machines from 1 to 1000 instances, and also provides load balancing services built in?",
+    "options": [
+      "Azure App Services",
+      "Azure Virtual Machines",
+      "Application Gateway",
+      "Virtual Machine Scale Sets"
+    ],
+    "correct": "Virtual Machine Scale Sets",
+    "explanations": {
+      "Azure App Services": "PaaS offering for hosting web apps, not VM scaling.",
+      "Azure Virtual Machines": "Does not scale automatically or include load balancing.",
+      "Application Gateway": "Primarily for routing HTTP traffic, not autoscaling VMs.",
+      "Virtual Machine Scale Sets": "Correct. Designed to autoscale and balance VM instances."
+    }
+  },
+  {
+    "question": "Which Azure pricing model allows you to pay for compute resources by the second, with no long-term commitment?",
+    "options": [
+      "Spot Pricing",
+      "Pay-As-You-Go",
+      "Enterprise Agreement",
+      "Reserved Instances"
+    ],
+    "correct": "Pay-As-You-Go",
+    "explanations": {
+      "Spot Pricing": "Based on unused capacity with risk of eviction.",
+      "Pay-As-You-Go": "Correct. Charges based on actual usage per second with no commitment.",
+      "Enterprise Agreement": "Volume license agreement, not usage-based billing.",
+      "Reserved Instances": "Requires upfront commitment for discount."
+    }
+  },
+  {
+    "question": "Which Azure Storage service is best suited for storing unstructured data such as text or binary data?",
+    "options": [
+      "Azure Queue Storage",
+      "Azure Table Storage",
+      "Azure File Storage",
+      "Azure Blob Storage"
+    ],
+    "correct": "Azure Blob Storage",
+    "explanations": {
+      "Azure Queue Storage": "Message queueing service, not for data storage.",
+      "Azure Table Storage": "Stores structured NoSQL data.",
+      "Azure File Storage": "Provides SMB protocol-based shared storage.",
+      "Azure Blob Storage": "Correct. Best for storing large unstructured data like media files."
+    }
+  },
+  {
+    "question": "Which database service is specifically designed to be extremely fast in responding to requests for small amounts of data (called low latency)?",
+    "options": [
+      "SQL Database",
+      "SQL Data Warehouse",
+      "Cosmos DB",
+      "SQL Server in a VM"
+    ],
+    "correct": "Cosmos DB",
+    "explanations": {
+      "SQL Database": "Relational database with standard latency.",
+      "SQL Data Warehouse": "Optimized for large-scale analytics, not low latency.",
+      "Cosmos DB": "Correct. Designed for sub-10ms response time and global distribution.",
+      "SQL Server in a VM": "Traditional database hosted on VM, not optimized for extreme speed."
+    }
+  },
+  {
+    "question": "How do you get access to services in Private Preview mode?",
+    "options": [
+      "They are available in the marketplace. You simply use them.",
+      "You cannot use private preview services.",
+      "You must agree to a terms of use first.",
+      "You must apply to use them."
+    ],
+    "correct": "You must apply to use them.",
+    "explanations": {
+      "They are available in the marketplace. You simply use them.": "Incorrect. Private previews require approval.",
+      "You cannot use private preview services.": "You *can* use them with permission.",
+      "You must agree to a terms of use first.": "Not sufficient for private previews.",
+      "You must apply to use them.": "Correct. Access is restricted and must be requested."
+    }
+  },
+  {
+    "question": "In what way does Multi-Factor Authentication increase the security of a user account?",
+    "options": [
+      "It requires single sign-on functionality.",
+      "It requires users to be approved before they can log in for the first time.",
+      "It requires the user to possess something like their phone to read an SMS, use a mobile app, or biometric identification.",
+      "It doesn't. Multi-Factor Authentication is more about access and authentication than account security."
+    ],
+    "correct": "It requires the user to possess something like their phone to read an SMS, use a mobile app, or biometric identification.",
+    "explanations": {
+      "It requires single sign-on functionality.": "SSO is unrelated to MFA.",
+      "It requires users to be approved before they can log in for the first time.": "That’s not the purpose of MFA.",
+      "It requires the user to possess something like their phone to read an SMS, use a mobile app, or biometric identification.": "Correct. MFA strengthens identity verification.",
+      "It doesn't. Multi-Factor Authentication is more about access and authentication than account security.": "Incorrect. MFA *is* a security mechanism."
+    }
+  },
+  {
+    "question": "Which of the following scenarios would Azure Policy be a recommended method for enforcement?",
+    "options": [
+      "Require a virtual machine to always update to the latest security patches",
+      "Allow only one specific roles of users to have access to a resource group",
+      "Add an additional prompt when creating a resource without a specific tag to ask the user if they are really sure they want to continue?",
+      "Prevent certain Azure Virtual Machine instance types from being used in a resource group"
+    ],
+    "correct": "Prevent certain Azure Virtual Machine instance types from being used in a resource group",
+    "explanations": {
+      "Require a virtual machine to always update to the latest security patches": "Patch compliance is better managed with Update Management.",
+      "Allow only one specific roles of users to have access to a resource group": "Handled with RBAC, not Policy.",
+      "Add an additional prompt when creating a resource without a specific tag to ask the user if they are really sure they want to continue?": "Policy does not provide UI prompts.",
+      "Prevent certain Azure Virtual Machine instance types from being used in a resource group": "Correct. Policy can enforce allowed VM SKUs."
+    }
+  },
+  {
+    "question": "What is the concept of paired regions?",
+    "options": [
+      "Each region in the world has at least one other region in which it shares a high-speed connection, and where Azure avoids updating both at the same time.",
+      "When you deploy your code to one region of the world, it is automatically deployed to the paired region as an emergency backup.",
+      "Each region of the world has one other region in a completely separate country for storing backups.",
+      "Azure employees in those regions sometimes go on picnics together."
+    ],
+    "correct": "Each region in the world has at least one other region in which it shares a high-speed connection, and where Azure avoids updating both at the same time.",
+    "explanations": {
+      "Each region in the world has at least one other region in which it shares a high-speed connection, and where Azure avoids updating both at the same time.": "Correct. This ensures high availability and disaster recovery.",
+      "When you deploy your code to one region of the world, it is automatically deployed to the paired region as an emergency backup.": "Failover is not automatic by default.",
+      "Each region of the world has one other region in a completely separate country for storing backups.": "Paired regions are usually in the same geography.",
+      "Azure employees in those regions sometimes go on picnics together.": "Clearly a humorous distraction!"
+    }
+  },
+  {
+    "question": "What is the primary difference between pay-as-you-go and reserved instance pricing models in the cloud?",
+    "options": [
+      "Reserved instances offer discounted rates for long-term commitments, while pay-as-you-go is billed based on usage.",
+      "Pay-as-you-go is only available for public cloud models, while reserved instances are for private cloud models.",
+      "Pay-as-you-go requires upfront payment, while reserved instances are billed hourly.",
+      "Reserved instances guarantee 100% uptime while pay-as-you-go does not."
+    ],
+    "correct": "Reserved instances offer discounted rates for long-term commitments, while pay-as-you-go is billed based on usage.",
+    "explanations": {
+      "Reserved instances offer discounted rates for long-term commitments, while pay-as-you-go is billed based on usage.": "Correct. RI gives cost savings with upfront commitment.",
+      "Pay-as-you-go is only available for public cloud models, while reserved instances are for private cloud models.": "Incorrect. Both are used in public cloud.",
+      "Pay-as-you-go requires upfront payment, while reserved instances are billed hourly.": "False. Pay-as-you-go is postpaid.",
+      "Reserved instances guarantee 100% uptime while pay-as-you-go does not.": "Neither offers 100% uptime guarantees."
+    }
+  },
+  {
+    "question": "What is the name of the database service designed to be extremely fast in responding to requests for small amounts of data?",
+    "options": [
+      "SQL Database",
+      "SQL Data Warehouse",
+      "Cosmos DB",
+      "SQL Server in a VM"
+    ],
+    "correct": "Cosmos DB",
+    "explanations": {
+      "SQL Database": "Suitable for relational data, but not optimized for low-latency global requests.",
+      "SQL Data Warehouse": "Used for big data analytics, not low-latency queries.",
+      "Cosmos DB": "Correct. It's globally distributed and optimized for sub-10ms latency.",
+      "SQL Server in a VM": "Not a managed database service and not latency-optimized."
+    }
+  },
+  {
+    "question": "How do you get access to services in Private Preview mode?",
+    "options": [
+      "They are available in the marketplace. You simply use them.",
+      "You cannot use private preview services.",
+      "You must agree to a terms of use first.",
+      "You must apply to use them."
+    ],
+    "correct": "You must apply to use them.",
+    "explanations": {
+      "They are available in the marketplace. You simply use them.": "Marketplace typically only includes public preview or GA services.",
+      "You cannot use private preview services.": "Incorrect. You can apply for access.",
+      "You must agree to a terms of use first.": "Not sufficient for private preview services.",
+      "You must apply to use them.": "Correct. Private previews are restricted and require application."
+    }
+  },
+  {
+    "question": "In what way does Multi-Factor Authentication increase the security of a user account?",
+    "options": [
+      "It requires single sign-on functionality.",
+      "It requires users to be approved before they can log in for the first time.",
+      "It requires the user to possess something like their phone to read an SMS, use a mobile app, or biometric identification.",
+      "It doesn't. Multi-Factor Authentication is more about access and authentication than account security."
+    ],
+    "correct": "It requires the user to possess something like their phone to read an SMS, use a mobile app, or biometric identification.",
+    "explanations": {
+      "It requires single sign-on functionality.": "SSO is unrelated to MFA.",
+      "It requires users to be approved before they can log in for the first time.": "Not the function of MFA.",
+      "It requires the user to possess something like their phone to read an SMS, use a mobile app, or biometric identification.": "Correct. MFA adds a second verification layer.",
+      "It doesn't. Multi-Factor Authentication is more about access and authentication than account security.": "Incorrect. MFA strengthens account security."
+    }
+  },
+  {
+    "question": "Which of the following scenarios would Azure Policy be a recommended method for enforcement?",
+    "options": [
+      "Require a virtual machine to always update to the latest security patches",
+      "Allow only one specific roles of users to have access to a resource group",
+      "Add an additional prompt when creating a resource without a specific tag to ask the user if they are really sure they want to continue?",
+      "Prevent certain Azure Virtual Machine instance types from being used in a resource group"
+    ],
+    "correct": "Prevent certain Azure Virtual Machine instance types from being used in a resource group",
+    "explanations": {
+      "Require a virtual machine to always update to the latest security patches": "Handled better by Update Management.",
+      "Allow only one specific roles of users to have access to a resource group": "Handled by RBAC, not Policy.",
+      "Add an additional prompt when creating a resource without a specific tag to ask the user if they are really sure they want to continue?": "Policy doesn’t provide interactive prompts.",
+      "Prevent certain Azure Virtual Machine instance types from being used in a resource group": "Correct. This is a direct use case for Azure Policy."
+    }
+  },
+  {
+    "question": "What is the concept of paired regions?",
+    "options": [
+      "Each region in the world has at least one other region in which it shares a high-speed connection, and where Azure avoids updating both at the same time.",
+      "When you deploy your code to one region of the world, it is automatically deployed to the paired region as an emergency backup.",
+      "Each region of the world has one other region in a completely separate country for storing backups.",
+      "Azure employees in those regions sometimes go on picnics together."
+    ],
+    "correct": "Each region in the world has at least one other region in which it shares a high-speed connection, and where Azure avoids updating both at the same time.",
+    "explanations": {
+      "Each region in the world has at least one other region in which it shares a high-speed connection, and where Azure avoids updating both at the same time.": "Correct. This ensures availability and disaster recovery.",
+      "When you deploy your code to one region of the world, it is automatically deployed to the paired region as an emergency backup.": "Failover is not automatic.",
+      "Each region of the world has one other region in a completely separate country for storing backups.": "Regions are often in the same geography.",
+      "Azure employees in those regions sometimes go on picnics together.": "Humorous, but incorrect."
+    }
+  },
+  {
+    "question": "What is the primary difference between pay-as-you-go and reserved instance pricing models in the cloud?",
+    "options": [
+      "Reserved instances offer discounted rates for long-term commitments, while pay-as-you-go is billed based on usage.",
+      "Pay-as-you-go is only available for public cloud models, while reserved instances are for private cloud models.",
+      "Pay-as-you-go requires upfront payment, while reserved instances are billed hourly.",
+      "Reserved instances guarantee 100% uptime while pay-as-you-go does not."
+    ],
+    "correct": "Reserved instances offer discounted rates for long-term commitments, while pay-as-you-go is billed based on usage.",
+    "explanations": {
+      "Reserved instances offer discounted rates for long-term commitments, while pay-as-you-go is billed based on usage.": "Correct. Reserved instances cost less but require time commitment.",
+      "Pay-as-you-go is only available for public cloud models, while reserved instances are for private cloud models.": "Both apply to public cloud.",
+      "Pay-as-you-go requires upfront payment, while reserved instances are billed hourly.": "Opposite — RIs typically involve upfront commitment.",
+      "Reserved instances guarantee 100% uptime while pay-as-you-go does not.": "No service guarantees 100% uptime."
+    }
+  },
+  {
+    "question": "What is the name of the database service designed to be extremely fast in responding to requests for small amounts of data?",
+    "options": [
+      "SQL Database",
+      "SQL Data Warehouse",
+      "Cosmos DB",
+      "SQL Server in a VM"
+    ],
+    "correct": "Cosmos DB",
+    "explanations": {
+      "SQL Database": "Good for relational data, not optimized for low latency at scale.",
+      "SQL Data Warehouse": "Built for analytical workloads.",
+      "Cosmos DB": "Correct. Cosmos DB offers ultra-low latency globally.",
+      "SQL Server in a VM": "Legacy approach, not cloud-native or latency-optimized."
+    }
+  },
+  {
+    "question": "Which of the following is not an example of Infrastructure as a Service?",
+    "options": [
+      "Virtual Machine Scale Sets",
+      "SQL Server in a VM",
+      "Azure SQL Database",
+      "Virtual Network"
+    ],
+    "correct": "Azure SQL Database",
+    "explanations": {
+      "Virtual Machine Scale Sets": "IaaS service for scaling VMs.",
+      "SQL Server in a VM": "IaaS — you manage the VM and SQL server.",
+      "Azure SQL Database": "Correct. This is a PaaS offering.",
+      "Virtual Network": "Supports IaaS infrastructure."
+    }
+  },
+  {
+    "question": "Which of the following is considered a downside to using Capital Expenditure (CapEx)?",
+    "options": [
+      "You can deduct expenses as they occur",
+      "You must wait over a period of years to depreciate that investment on your taxes",
+      "It does not require a lot of up front money",
+      "You are not guaranteed to make a profit"
+    ],
+    "correct": "You must wait over a period of years to depreciate that investment on your taxes",
+    "explanations": {
+      "You can deduct expenses as they occur": "This is true for OpEx, not CapEx.",
+      "You must wait over a period of years to depreciate that investment on your taxes": "Correct. This delays tax benefits.",
+      "It does not require a lot of up front money": "CapEx requires significant upfront investment.",
+      "You are not guaranteed to make a profit": "True, but not a unique downside to CapEx."
+    }
+  },
+  {
+    "question": "Windows servers use 'remote desktop protocol' (RDP) in order for administrators to get access to manage the server. Linux servers use SSH. What is the recommendation for ensuring the security of these protocols?",
+    "options": [
+      "Disable RDP access using the Windows Services control panel admin tool",
+      "Ensure strong passwords on your Windows admin accounts",
+      "Do not enable SSH access for Linux servers",
+      "Do not allow public Internet access over the RDP and SSH ports directly to the server. Instead use a secure server like Bastion to control access to the servers behind."
+    ],
+    "correct": "Do not allow public Internet access over the RDP and SSH ports directly to the server. Instead use a secure server like Bastion to control access to the servers behind.",
+    "explanations": {
+      "Disable RDP access using the Windows Services control panel admin tool": "Too restrictive and not scalable.",
+      "Ensure strong passwords on your Windows admin accounts": "Helpful but not sufficient alone.",
+      "Do not enable SSH access for Linux servers": "Too restrictive — SSH is essential for Linux access.",
+      "Do not allow public Internet access over the RDP and SSH ports directly to the server. Instead use a secure server like Bastion to control access to the servers behind.": "Correct. This is the best security practice."
+    }
+  },
+  {
+    "question": "What is the primary purpose of Multi-Factor Authentication (MFA)?",
+    "options": [
+      "To eliminate the need for passwords.",
+      "To simplify the login process for users.",
+      "To add an extra layer of security to user accounts by requiring multiple forms of verification.",
+      "To protect against phishing attacks."
+    ],
+    "correct": "To add an extra layer of security to user accounts by requiring multiple forms of verification.",
+    "explanations": {
+      "To eliminate the need for passwords.": "MFA complements, not replaces passwords.",
+      "To simplify the login process for users.": "It adds a layer of complexity for better security.",
+      "To add an extra layer of security to user accounts by requiring multiple forms of verification.": "Correct. This is the purpose of MFA.",
+      "To protect against phishing attacks.": "MFA helps prevent unauthorized access even after credential compromise, but this is a secondary benefit."
+    }
+  },
+  {
+    "question": "Who is responsible for the security of the physical servers in an Azure data center?",
+    "options": [
+      "Azure is responsible for securing the physical data centers",
+      "I am responsible for securing the physical data centers"
+    ],
+    "correct": "Azure is responsible for securing the physical data centers",
+    "explanations": {
+      "Azure is responsible for securing the physical data centers": "Correct. Under the shared responsibility model, Microsoft manages physical security.",
+      "I am responsible for securing the physical data centers": "Incorrect. Users manage virtual security, not the data center itself."
+    }
+  },
+  {
+    "question": "What is Single Sign-On?",
+    "options": [
+      "The ability to use an existing user id and password to sign in other applications, and not have to create/memorize a new one.",
+      "When you sign in to an application, it remembers who you are the next time you go there."
+    ],
+    "correct": "The ability to use an existing user id and password to sign in other applications, and not have to create/memorize a new one.",
+    "explanations": {
+      "The ability to use an existing user id and password to sign in other applications, and not have to create/memorize a new one.": "Correct. This is the core concept of Single Sign-On (SSO).",
+      "When you sign in to an application, it remembers who you are the next time you go there.": "Incorrect. This describes session persistence, not SSO."
+    }
+  },
+  {
+    "question": "What is a benefit of economies of scale?",
+    "options": [
+      "Prices of cloud servers and services are always going down. It'll be cheaper next year than it is this year.",
+      "Big companies don't need to make a profit on every sale",
+      "Big companies don't need to make a profit on the first product they sell you, because they will make a profit on the second",
+      "The more you buy of something, the cheaper it is for you"
+    ],
+    "correct": "The more you buy of something, the cheaper it is for you",
+    "explanations": {
+      "Prices of cloud servers and services are always going down. It'll be cheaper next year than it is this year.": "Not always true; pricing is market-dependent.",
+      "Big companies don't need to make a profit on every sale": "Not specific to economies of scale.",
+      "Big companies don't need to make a profit on the first product they sell you, because they will make a profit on the second": "This is a sales strategy, not related to scale.",
+      "The more you buy of something, the cheaper it is for you": "Correct. That is the principle behind economies of scale."
+    }
+  },
+  {
+    "question": "Which Azure service is the recommended Identity-as-a-Service offering inside Azure?",
+    "options": [
+      "Microsoft Entra ID (formerly Azure Active Directory)",
+      "Azure Front Door",
+      "Azure Portal",
+      "Identity and Access Management (IAM)"
+    ],
+    "correct": "Microsoft Entra ID (formerly Azure Active Directory)",
+    "explanations": {
+      "Microsoft Entra ID (formerly Azure Active Directory)": "Correct. This is Azure’s managed identity service.",
+      "Azure Front Door": "A load balancer and traffic router, not identity service.",
+      "Azure Portal": "Management interface, not an identity provider.",
+      "Identity and Access Management (IAM)": "IAM is a concept, not a specific Azure product."
+    }
+  },
+  {
+    "question": "Where do you go within the Azure Portal to find all of the third-party virtual machine and other offers?",
+    "options": [
+      "Bing",
+      "Azure Marketplace",
+      "Choose an image when creating a VM",
+      "Azure mobile app"
+    ],
+    "correct": "Azure Marketplace",
+    "explanations": {
+      "Bing": "This is a search engine, not a cloud marketplace.",
+      "Azure Marketplace": "Correct. The Marketplace offers third-party apps and services.",
+      "Choose an image when creating a VM": "Partial interface, not a dedicated store.",
+      "Azure mobile app": "For managing resources, not browsing third-party offers."
+    }
+  },
+  {
+    "question": "What is a good example of a Hybrid cloud?",
+    "options": [
+      "Your code is a mobile app that runs on iOS and Android phones, but it uses a database in the cloud.",
+      "Technology that allows you to grow living tissue on top of an exoskeleton, making Terminators impossible to spot among humans.",
+      "A server runs in your own environment, but places files in the cloud so that it can extend the amount of storage it has access to."
+    ],
+    "correct": "A server runs in your own environment, but places files in the cloud so that it can extend the amount of storage it has access to.",
+    "explanations": {
+      "Your code is a mobile app that runs on iOS and Android phones, but it uses a database in the cloud.": "This describes cloud-hosted backend, not hybrid architecture.",
+      "Technology that allows you to grow living tissue on top of an exoskeleton, making Terminators impossible to spot among humans.": "Clearly humorous and unrelated.",
+      "A server runs in your own environment, but places files in the cloud so that it can extend the amount of storage it has access to.": "Correct. Combines on-prem with cloud — the hybrid model."
+    }
+  },
+  {
+    "question": "What is the concept of Big Data?",
+    "options": [
+      "A form of artificial intelligence (AI) that allows systems to automatically learn and improve from experience without being explicitly programmed.",
+      "A small sensor or other device that constantly sends its status and other data to the cloud",
+      "A set of Azure services that allow you to use execute code in the cloud but don’t require (or even allow) you to manage the underlying server",
+      "An extremely large set of data that you want to ingest and do analysis on; traditional software like SQL Server cannot handle Big Data as efficiently as specialized products"
+    ],
+    "correct": "An extremely large set of data that you want to ingest and do analysis on; traditional software like SQL Server cannot handle Big Data as efficiently as specialized products",
+    "explanations": {
+      "A form of artificial intelligence (AI) that allows systems to automatically learn and improve from experience without being explicitly programmed.": "This is machine learning.",
+      "A small sensor or other device that constantly sends its status and other data to the cloud": "This is an IoT device.",
+      "A set of Azure services that allow you to use execute code in the cloud but don’t require (or even allow) you to manage the underlying server": "This is serverless computing.",
+      "An extremely large set of data that you want to ingest and do analysis on; traditional software like SQL Server cannot handle Big Data as efficiently as specialized products": "Correct. Big Data involves high-volume analytics often beyond RDBMS limits."
+    }
+  },
+  {
+    "question": "What Azure resource allows you to evenly split traffic coming in and direct it to several identical virtual machines to do the work and respond to the request?",
+    "options": [
+      "Azure Logic Apps",
+      "Azure App Services",
+      "Load Balancer or Application Gateway",
+      "Virtual Network"
+    ],
+    "correct": "Load Balancer or Application Gateway",
+    "explanations": {
+      "Azure Logic Apps": "Designed for automating workflows, not load distribution.",
+      "Azure App Services": "PaaS for hosting apps, not traffic load distribution.",
+      "Load Balancer or Application Gateway": "Correct. These balance load across VMs.",
+      "Virtual Network": "Manages network segmentation, not load."
+    }
+  },
+  {
+    "question": "What would be a good reason to have multiple Azure subscriptions?",
+    "options": [
+      "There is one person/credit card paying for resources, and only one person who logs into Azure to manage the resources, but you want to be able to know which resources are used for which client project.",
+      "There is one person/credit card paying for resources, but many people who have accounts in Azure, and you need to separate out resources between clients so that there is absolutely no chance of resources being exposed between them."
+    ],
+    "correct": "There is one person/credit card paying for resources, but many people who have accounts in Azure, and you need to separate out resources between clients so that there is absolutely no chance of resources being exposed between them.",
+    "explanations": {
+      "There is one person/credit card paying for resources, and only one person who logs into Azure to manage the resources, but you want to be able to know which resources are used for which client project.": "This could be done using tags and resource groups.",
+      "There is one person/credit card paying for resources, but many people who have accounts in Azure, and you need to separate out resources between clients so that there is absolutely no chance of resources being exposed between them.": "Correct. Subscriptions provide strong isolation."
+    }
+  },
+  {
+    "question": "What is the benefit of using a command line tool like Powershell or CLI as opposed to the Azure portal?",
+    "options": [
+      "Automation",
+      "Cheaper",
+      "Quicker to deploy VMs"
+    ],
+    "correct": "Automation",
+    "explanations": {
+      "Automation": "Correct. CLI and PowerShell enable scripts for repeatable tasks.",
+      "Cheaper": "Same pricing regardless of tool.",
+      "Quicker to deploy VMs": "May save time in batch tasks, but automation is the main value."
+    }
+  }
+]

@@ -1,0 +1,25 @@
+# ==============================================================================
+# KUBERNETES CONFIGMAP
+# ==============================================================================
+# This file stores non-sensitive configuration data
+# ==============================================================================
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: az900-portal-config
+  labels:
+    app: az900-portal
+data:
+  # Application configuration
+  app.name: "AZ-900 Practice Assessment Portal"
+  app.version: "1.0.0"
+  app.environment: "production"
+  
+  # Nginx configuration (optional - can override)
+  nginx.worker.processes: "auto"
+  nginx.worker.connections: "1024"
+  
+  # Feature flags
+  feature.analytics: "false"
+  feature.debug: "false"

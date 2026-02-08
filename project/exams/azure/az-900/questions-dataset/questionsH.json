@@ -1,0 +1,1364 @@
+[
+  {
+    "question": "An architect defines an Azure app’s VMs and networking in a JSON file for repeatable deployments, using __ as code to automate infrastructure setup.",
+    "options": ["platform", "infrastructure", "template", "resource"],
+    "correct": "infrastructure",
+    "explanations": {
+      "platform": "Platform as code is not a standard term for automating infrastructure.",
+      "infrastructure": "Infrastructure as Code (IaC) refers to managing infrastructure with code and configuration files.",
+      "template": "While templates are used, 'infrastructure' is the correct term to complete the phrase.",
+      "resource": "Resource as code is not the standard term for this concept."
+    }
+  },
+  {
+    "question": "_______________ copies your data synchronously across three Azure availability zones in the primary region. For applications requiring high availability.",
+    "options": [
+      "Locally redundant storage (LRS)",
+      "Zone Redundant Storage (ZRS)",
+      "Geo-zone-redundant storage (GZRS)",
+      "Planet-redundant storage (PRS)"
+    ],
+    "correct": "Zone Redundant Storage (ZRS)",
+    "explanations": {
+      "Locally redundant storage (LRS)": "LRS stores three copies in a single location, not across zones.",
+      "Zone Redundant Storage (ZRS)": "ZRS replicates data across availability zones in the same region.",
+      "Geo-zone-redundant storage (GZRS)": "GZRS includes both zone and geo redundancy, but ZRS is more specific here.",
+      "Planet-redundant storage (PRS)": "PRS is not a real Azure storage replication tier."
+    }
+  },
+  {
+    "question": "A company uses a ________ service type to rapidly build and deploy a web application without managing servers, and a ________ service type to access a fully managed email platform for employees.",
+    "options": [
+      "SaaS, PaaS",
+      "IaaS, PaaS",
+      "SaaS, IaaS",
+      "PaaS, SaaS"
+    ],
+    "correct": "PaaS, SaaS",
+    "explanations": {
+      "SaaS, PaaS": "Incorrect order. PaaS is used to build apps; SaaS is used for email.",
+      "IaaS, PaaS": "IaaS requires managing servers, not suitable for this context.",
+      "SaaS, IaaS": "Incorrect service types for the described purposes.",
+      "PaaS, SaaS": "Correct. PaaS is used for building apps; SaaS is used for fully managed software like email."
+    }
+  },
+  {
+    "question": "Which Azure feature ensures resilience within West Europe for a media firm hosting a streaming service across three isolated datacenters?",
+    "options": [
+      "Sovereign Regions",
+      "Management Groups",
+      "Availability Zones",
+      "Region Pairs"
+    ],
+    "correct": "Availability Zones",
+    "explanations": {
+      "Sovereign Regions": "These relate to data residency, not availability.",
+      "Management Groups": "These are used for governance, not physical resilience.",
+      "Availability Zones": "AZs isolate datacenters to ensure high availability within a region.",
+      "Region Pairs": "Used for disaster recovery across regions, not within one region."
+    }
+  },
+  {
+    "question": "Yes or No: Azure Service Health has the ability to configure cloud alerts to notify you about active and upcoming service issues.",
+    "options": ["Yes", "No"],
+    "correct": "Yes",
+    "explanations": {
+      "Yes": "Correct. Azure Service Health provides alerts for service incidents and maintenance.",
+      "No": "Incorrect. This is a feature Azure Service Health provides."
+    }
+  },
+  {
+    "question": "Which Azure service is best for a scalable virtual desktop infrastructure (VDI) with automatic load balancing?",
+    "options": [
+      "Azure Virtual Machine Scale Sets (VMSS) with Azure Load Balancer",
+      "Azure Virtual Desktop (AVD) with Azure Scale Sets",
+      "Azure Virtual Desktop (AVD) combined with Azure Availability Sets",
+      "Azure Virtual Machines (VMs) deployed with Availability Zones"
+    ],
+    "correct": "Azure Virtual Desktop (AVD) with Azure Scale Sets",
+    "explanations": {
+      "Azure Virtual Machine Scale Sets (VMSS) with Azure Load Balancer": "Doesn't cater specifically to VDI needs.",
+      "Azure Virtual Desktop (AVD) with Azure Scale Sets": "Correct. Offers VDI with autoscaling.",
+      "Azure Virtual Desktop (AVD) combined with Azure Availability Sets": "Lacks autoscaling for user demand.",
+      "Azure Virtual Machines (VMs) deployed with Availability Zones": "Provides HA but not autoscaling for VDI."
+    }
+  },
+  {
+    "question": "If your application experiences sudden high demand, what type of scaling involves adding more virtual machines or containers?",
+    "options": [
+      "Static scaling",
+      "Horizontal scaling",
+      "Vertical scaling",
+      "Downscaling"
+    ],
+    "correct": "Horizontal scaling",
+    "explanations": {
+      "Static scaling": "Static scaling doesn't change with demand.",
+      "Horizontal scaling": "Correct. Adds more instances to handle increased demand.",
+      "Vertical scaling": "Increases capacity of a single instance.",
+      "Downscaling": "Refers to reducing capacity, not increasing it."
+    }
+  },
+  {
+    "question": "Yes or No: Cloud services provide greater control over the physical security of your data compared to on-premises infrastructure.",
+    "options": ["Yes", "No"],
+    "correct": "No",
+    "explanations": {
+      "Yes": "Incorrect. Physical security is managed by the cloud provider.",
+      "No": "Correct. On-premises offers more direct control over physical access."
+    }
+  },
+  {
+    "question": "In Azure, when you set a budget, what happens when the budget alert level is reached?",
+    "options": [
+      "A budget alert is triggered",
+      "The budget is automatically increased by 10%",
+      "An invoice is sent to the account owner",
+      "The resource usage is suspended"
+    ],
+    "correct": "A budget alert is triggered",
+    "explanations": {
+      "A budget alert is triggered": "Correct. Budget alerts notify users when thresholds are met.",
+      "The budget is automatically increased by 10%": "Budgets do not adjust themselves.",
+      "An invoice is sent to the account owner": "Invoices follow billing cycles, not budget alerts.",
+      "The resource usage is suspended": "Usage is not suspended automatically."
+    }
+  },
+  {
+    "question": "Which authentication methods are being used when staff access apps using a single login, a text code for sensitive data, and a biometric app?",
+    "options": [
+      "Passwordless Authentication, Single Sign-On (SSO), and Encryption",
+      "Password-Based Authentication, Single Sign-On (SSO), and Conditional Access",
+      "Multi-Factor Authentication (MFA), Role-Based Access Control (RBAC), and Conditional Access",
+      "Single Sign-On (SSO), Multi-Factor Authentication (MFA), and Passwordless Authentication"
+    ],
+    "correct": "Single Sign-On (SSO), Multi-Factor Authentication (MFA), and Passwordless Authentication",
+    "explanations": {
+      "Passwordless Authentication, Single Sign-On (SSO), and Encryption": "Encryption is not directly described.",
+      "Password-Based Authentication, Single Sign-On (SSO), and Conditional Access": "Password-based auth not explicitly mentioned.",
+      "Multi-Factor Authentication (MFA), Role-Based Access Control (RBAC), and Conditional Access": "RBAC and Conditional Access aren't mentioned.",
+      "Single Sign-On (SSO), Multi-Factor Authentication (MFA), and Passwordless Authentication": "Correct. All three are described in the scenario."
+    }
+  },
+  {
+    "question": "Which of the following is a good usage of tags?",
+    "options": [
+      "Making business groups aware of cloud resource consumption requires IT to understand the resources and workloads each team is using",
+      "To help identify the assets required to support a single workload.",
+      "Using Tags to quickly locate resources associated with specific workloads, environments, ownership groups, or other important information.",
+      "Using tags for data classification"
+    ],
+    "correct": "All of these",
+    "explanations": {
+      "Making business groups aware of cloud resource consumption requires IT to understand the resources and workloads each team is using": "Tags help track usage by business group.",
+      "To help identify the assets required to support a single workload.": "Tags assist in grouping related assets.",
+      "Using Tags to quickly locate resources associated with specific workloads, environments, ownership groups, or other important information.": "Tags simplify resource discovery and management.",
+      "Using tags for data classification": "Tags support security classification and compliance."
+    }
+  },
+  {
+    "question": "Yes or No:\n_____________ notifies you about Azure service incidents and planned maintenance so you can take action to mitigate downtime.",
+    "options": [
+      "Azure Chaos Studio",
+      "Azure Percept",
+      "Azure Service Health",
+      "Azure Health Bot"
+    ],
+    "correct": "Azure Service Health",
+    "explanations": {
+      "Azure Chaos Studio": "Used for chaos testing, not incident notification.",
+      "Azure Percept": "AI edge platform, unrelated to service health alerts.",
+      "Azure Service Health": "Correct. Provides alerts about Azure service issues and maintenance.",
+      "Azure Health Bot": "Healthcare support tool, not service incident notifier."
+    }
+  },
+  {
+    "question": "A recent unapproved size change to one of the Virtual Machines (VMs) in your company has led to a huge unexpected bill. Which of the following services can help you identify the user who made this unapproved change?",
+    "options": [
+      "Azure Xamarin",
+      "Azure Information Protection (AIP)",
+      "Azure Activity Log",
+      "Azure Event Hubs",
+      "Azure Service Health"
+    ],
+    "correct": "Azure Activity Log",
+    "explanations": {
+      "Azure Xamarin": "Mobile app development platform, not related to tracking resource changes.",
+      "Azure Information Protection (AIP)": "Used for protecting documents, not tracking VM changes.",
+      "Azure Activity Log": "Correct. Logs user activity and changes to Azure resources.",
+      "Azure Event Hubs": "Used for event streaming, not user change auditing.",
+      "Azure Service Health": "Reports Azure service status, not user actions."
+    }
+  },
+  {
+    "question": "Your Azure account contains several policies and you wish to group/organize them. Which of the following can help you achieve this?",
+    "options": [
+      "Resource Groups",
+      "Initiatives",
+      "Azure Active Directory",
+      "Network Security Groups"
+    ],
+    "correct": "Initiatives",
+    "explanations": {
+      "Resource Groups": "Group resources, not policies.",
+      "Initiatives": "Correct. Groups multiple policy definitions into a single unit.",
+      "Azure Active Directory": "Handles identity, not policy grouping.",
+      "Network Security Groups": "Control traffic, not policy organization."
+    }
+  },
+  {
+    "question": "Suppose the lead architect in your company has asked your team to implement an IaaS based solution in Azure for a quick Proof-of-Concept (POC) to senior management. One of your colleagues creates an Azure Virtual Network and 3 Azure Virtual machines.\n\nWould you agree with this implementation?",
+    "options": ["Yes", "No"],
+    "correct": "Yes",
+    "explanations": {
+      "Yes": "Correct. Azure VMs and Virtual Network fall under IaaS.",
+      "No": "Incorrect. These are valid IaaS components."
+    }
+  },
+  {
+    "question": "How do resource locks affect Azure resources?",
+    "options": [
+      "Resource locks prevent modifications but allow read access.",
+      "Resource locks completely hide the resources from the Azure portal.",
+      "Resource locks enforce automatic scaling of resources.",
+      "Resource locks restrict any access to the resources."
+    ],
+    "correct": "Resource locks prevent modifications but allow read access.",
+    "explanations": {
+      "Resource locks prevent modifications but allow read access.": "Correct. Read access is allowed, but updates/deletions are blocked.",
+      "Resource locks completely hide the resources from the Azure portal.": "Incorrect. Locked resources remain visible.",
+      "Resource locks enforce automatic scaling of resources.": "Incorrect. Locks have no effect on scaling.",
+      "Resource locks restrict any access to the resources.": "Incorrect. They restrict changes, not access."
+    }
+  },
+  {
+    "question": "After taking a lot of courses and understanding cloud fundamentals, you've realized that migrating your business resources to Azure makes the most sense. Based on your understanding, which of the following would you need to create first?",
+    "options": [
+      "A resource lock",
+      "A subscription",
+      "A resource group",
+      "A virtual network"
+    ],
+    "correct": "A subscription",
+    "explanations": {
+      "A resource lock": "Used to protect resources, not to begin Azure usage.",
+      "A subscription": "Correct. It's the first step for billing and access to Azure.",
+      "A resource group": "Needs a subscription to be created first.",
+      "A virtual network": "Can only be created after a subscription exists."
+    }
+  },
+  {
+    "question": "You can link virtual networks together by using ________________.",
+    "options": [
+      "Virtual Network Proxy",
+      "Virtual Network Seeding",
+      "Virtual Network Hub",
+      "Virtual Network Peering"
+    ],
+    "correct": "Virtual Network Peering",
+    "explanations": {
+      "Virtual Network Proxy": "Not an Azure feature for connecting VNets.",
+      "Virtual Network Seeding": "Not a valid Azure term.",
+      "Virtual Network Hub": "Not used for peering VNets directly.",
+      "Virtual Network Peering": "Correct. Allows VNets to communicate across regions or within the same region."
+    }
+  },
+  {
+    "question": "You are an IT manager and want to ensure that you are notified when the Azure spending reaches a certain threshold. Which feature of Azure Cost Management should you use?",
+    "options": [
+      "Budgets",
+      "Cost analysis",
+      "Department spending quota alerts",
+      "Cost alerts"
+    ],
+    "correct": "Budgets",
+    "explanations": {
+      "Budgets": "Correct. Budgets allow setting thresholds and receiving alerts.",
+      "Cost analysis": "Used for reviewing usage and cost trends, not alerts.",
+      "Department spending quota alerts": "Applicable to Enterprise Agreements only.",
+      "Cost alerts": "Triggered by budgets; not the setting feature itself."
+    }
+  },
+  {
+    "question": "____________ is made up of one or more datacenters equipped with independent power, cooling, and networking. It is set up to be an isolation boundary. If one zone goes down, the other continues working.",
+    "options": [
+      "Database racks",
+      "Availability Zone",
+      "Region",
+      "Scale Set"
+    ],
+    "correct": "Availability Zone",
+    "explanations": {
+      "Database racks": "Not a logical or geographical isolation boundary.",
+      "Availability Zone": "Correct. It's designed to isolate failures.",
+      "Region": "A region is a group of datacenters, not isolated zones.",
+      "Scale Set": "Handles VM scaling, not physical isolation."
+    }
+  },
+  {
+    "question": "A _______________ can enable branch offices to share sensitive information between locations.",
+    "options": [
+      "DNS",
+      "Bastion",
+      "VPN",
+      "Bridge"
+    ],
+    "correct": "VPN",
+    "explanations": {
+      "DNS": "DNS resolves domain names to IP addresses but doesn't provide secure communication.",
+      "Bastion": "Bastion provides secure remote access, not inter-office data sharing.",
+      "VPN": "Correct. A VPN securely connects branch offices over the internet.",
+      "Bridge": "A bridge connects networks but lacks the security for sensitive data transfer."
+    }
+  },
+  {
+    "question": "For all cloud deployment types, you own your ___________ and _______________. You're also responsible for their security.",
+    "options": [
+      "devices, operating system",
+      "information, network controls",
+      "data, physical network",
+      "data, identities"
+    ],
+    "correct": "data, identities",
+    "explanations": {
+      "devices, operating system": "Cloud providers may manage OS, especially in PaaS/SaaS.",
+      "information, network controls": "Not always under your direct control in cloud deployments.",
+      "data, physical network": "You don’t manage the physical network in the cloud.",
+      "data, identities": "Correct. You are always responsible for your data and identity management."
+    }
+  },
+  {
+    "question": "Yes or No: Azure Advisor provides a cloud score to assess how well-architected your workloads are AND can also provide 'Step-by-Step' guidance and quick actions for fast remediation.",
+    "options": ["Yes", "No"],
+    "correct": "Yes",
+    "explanations": {
+      "Yes": "Correct. Azure Advisor gives recommendations, cloud score, and remediation steps.",
+      "No": "Incorrect. Azure Advisor does offer these features."
+    }
+  },
+  {
+    "question": "Which of the following can be included as artifacts in an Azure Blueprint? (Select all that apply)",
+    "options": [
+      "Resource groups",
+      "Role assignments",
+      "Policy assignments",
+      "Azure Resource Manager templates"
+    ],
+    "correct": "All of these",
+    "explanations": {
+      "Resource groups": "Correct. Blueprints can define and deploy resource groups.",
+      "Role assignments": "Correct. RBAC role assignments can be included in Blueprints.",
+      "Policy assignments": "Correct. Policies can be embedded as governance artifacts.",
+      "Azure Resource Manager templates": "Correct. ARM templates define resource deployments."
+    }
+  },
+  {
+    "question": "How can JSON strings be used to assign more than the maximum number of allowed tags to an Azure resource?",
+    "options": [
+      "By creating additional subscriptions",
+      "By including multiple values for a single tag name",
+      "By creating additional tag names",
+      "By creating additional resource groups"
+    ],
+    "correct": "By including multiple values for a single tag name",
+    "explanations": {
+      "By creating additional subscriptions": "Does not affect tag limits on individual resources.",
+      "By including multiple values for a single tag name": "Correct. A JSON-formatted string can hold multiple values.",
+      "By creating additional tag names": "Still subject to the tag count limit.",
+      "By creating additional resource groups": "Resource groups organize resources, but don't bypass tag limits."
+    }
+  },
+  {
+    "question": "What is the primary purpose of applying resource locks in Azure?",
+    "options": [
+      "To prevent accidental deletion or modification of critical resources.",
+      "To restrict access to Azure resources to a specific user.",
+      "To prevent any modifications to resources, including read access.",
+      "To ensure resources are automatically deleted after a specific time period."
+    ],
+    "correct": "To prevent accidental deletion or modification of critical resources.",
+    "explanations": {
+      "To prevent accidental deletion or modification of critical resources.": "Correct. Locks help protect resources.",
+      "To restrict access to Azure resources to a specific user.": "Access control is managed through RBAC, not locks.",
+      "To prevent any modifications to resources, including read access.": "Locks allow read access but block changes.",
+      "To ensure resources are automatically deleted after a specific time period.": "Locks don’t handle lifecycle automation."
+    }
+  },
+  {
+    "question": "An organization splits its Azure virtual network into two subnets—one for web servers, one for databases—and connects it to another VNet in a different region for data sharing. Which feature enables this cross-VNet connectivity?",
+    "options": [
+      "Azure Virtual Subnets",
+      "Azure DNS",
+      "Azure VPN Gateway",
+      "Virtual Network Peering"
+    ],
+    "correct": "Virtual Network Peering",
+    "explanations": {
+      "Azure Virtual Subnets": "Subnets segment a single VNet, not connect multiple VNets.",
+      "Azure DNS": "Used for name resolution, not connectivity.",
+      "Azure VPN Gateway": "Used for secure communication, but peering is more efficient for Azure VNets.",
+      "Virtual Network Peering": "Correct. Enables fast, secure VNet-to-VNet connectivity."
+    }
+  },
+  {
+    "question": "A developer deploys an Azure VM in Japan East, uses premium SSD storage, and forgets to deallocate it after testing, leading to a high bill. Which factor most directly impacts this cost overrun?",
+    "options": [
+      "Storage tier",
+      "Region selection",
+      "Resource usage",
+      "Data egress"
+    ],
+    "correct": "Resource usage",
+    "explanations": {
+      "Storage tier": "Affects cost, but not the main reason for the overrun.",
+      "Region selection": "Prices vary by region, but usage is the primary factor.",
+      "Resource usage": "Correct. VM running continuously leads to high charges.",
+      "Data egress": "Only applies when transferring data out of Azure."
+    }
+  },
+  {
+    "question": "A junior admin provisions oversized VMs, leaves unused disks, and neglects a security vulnerability. Which Azure Advisor recommendations are relevant?",
+    "options": [
+      "Performance",
+      "High Availability",
+      "Security",
+      "Cost Optimization"
+    ],
+    "correct": ["Security", "Cost Optimization"],
+    "explanations": {
+      "Performance": "Not directly related to the scenario’s cost or security issues.",
+      "High Availability": "Not related to cost or unused resources.",
+      "Security": "Correct. Addresses the unpatched vulnerability.",
+      "Cost Optimization": "Correct. Identifies unused and oversized resources."
+    }
+  },
+  {
+    "question": "A gaming company tracks its Azure app, querying VM logs for errors, setting CPU usage alerts, and diagnosing crashes. Which Azure Monitor components are in use?",
+    "options": [
+      "Azure Service Health",
+      "Application Insights",
+      "Log Analytics",
+      "Azure Monitor Alerts"
+    ],
+    "correct": ["Application Insights", "Log Analytics", "Azure Monitor Alerts"],
+    "explanations": {
+      "Azure Service Health": "Monitors Azure service issues, not app diagnostics.",
+      "Application Insights": "Correct. Monitors app health and crashes.",
+      "Log Analytics": "Correct. Used for querying logs like VM logs.",
+      "Azure Monitor Alerts": "Correct. Used for CPU alerting and thresholds."
+    }
+  },
+  {
+    "question": "Which of the following alert types are available in the Cost Management service? (Select all that apply)",
+    "options": [
+      "Budget alerts",
+      "Credit alerts",
+      "Department spending quota alerts",
+      "Resource usage alerts"
+    ],
+    "correct": ["Budget alerts", "Credit alerts", "Department spending quota alerts"],
+    "explanations": {
+      "Budget alerts": "Correct. Alerts you when spending reaches set thresholds.",
+      "Credit alerts": "Correct. Alerts for Azure credit consumption (mainly EA customers).",
+      "Department spending quota alerts": "Correct. Notifies when a department’s quota is reached.",
+      "Resource usage alerts": "Incorrect. These are not part of Cost Management alerts."
+    }
+  },
+  {
+    "question": "What is the key difference between vertical scaling and horizontal scaling?",
+    "options": [
+      "Vertical scaling only applies to virtual machines, while horizontal scaling applies to containers.",
+      "Vertical scaling adds more processing power, while horizontal scaling increases storage capacity.",
+      "Vertical scaling is automatic, while horizontal scaling requires manual intervention.",
+      "Horizontal scaling adjusts the number of resources, while vertical scaling adjusts capabilities."
+    ],
+    "correct": "Horizontal scaling adjusts the number of resources, while vertical scaling adjusts capabilities.",
+    "explanations": {
+      "Vertical scaling only applies to virtual machines, while horizontal scaling applies to containers.": "Incorrect. Both apply to various resource types.",
+      "Vertical scaling adds more processing power, while horizontal scaling increases storage capacity.": "Incorrect comparison.",
+      "Vertical scaling is automatic, while horizontal scaling requires manual intervention.": "Incorrect. Both can be manual or automatic.",
+      "Horizontal scaling adjusts the number of resources, while vertical scaling adjusts capabilities.": "Correct. Horizontal = more instances. Vertical = more power per instance."
+    }
+  },
+  {
+    "question": "What is the maximum allowed number of tags per Azure resource?",
+    "options": ["15", "30", "50", "10"],
+    "correct": "50",
+    "explanations": {
+      "15": "Incorrect. This was an older or hypothetical limit.",
+      "30": "Incorrect. Azure allows up to 50 tags per resource.",
+      "50": "Correct. You can apply up to 50 name-value pairs to a resource.",
+      "10": "Incorrect. This is far below the supported limit."
+    }
+  },
+  {
+    "question": "Microsoft Azure services operated by ____________ in China.",
+    "options": ["Morgan Stanley", "Xiaomi", "Alibaba", "21Vianet"],
+    "correct": "21Vianet",
+    "explanations": {
+      "Morgan Stanley": "Not related to Azure operations.",
+      "Xiaomi": "Consumer electronics company, not Azure operator.",
+      "Alibaba": "Cloud provider, but operates its own platform.",
+      "21Vianet": "Correct. Microsoft Azure in China is operated by 21Vianet."
+    }
+  },
+  {
+    "question": "How does Azure Blueprints help in monitoring deployments?",
+    "options": [
+      "By sending email notifications when a deployment reaches a certain milestone",
+      "By automatically suspending resources when they reach a certain cost threshold",
+      "By preserving the relationship between blueprint definition and blueprint assignment",
+      "By providing real-time monitoring of resource usage"
+    ],
+    "correct": "By preserving the relationship between blueprint definition and blueprint assignment",
+    "explanations": {
+      "By sending email notifications when a deployment reaches a certain milestone": "Incorrect. This is not a feature of Blueprints.",
+      "By automatically suspending resources when they reach a certain cost threshold": "Incorrect. This is handled by Cost Management.",
+      "By preserving the relationship between blueprint definition and blueprint assignment": "Correct. This allows for tracking and auditing.",
+      "By providing real-time monitoring of resource usage": "Incorrect. Use Azure Monitor for real-time tracking."
+    }
+  },
+  {
+    "question": "Yes or No: A Resource can only access other resources in the same resource group.",
+    "options": ["Yes", "No"],
+    "correct": "No",
+    "explanations": {
+      "Yes": "Incorrect. Resources in different groups can interact.",
+      "No": "Correct. Cross-group interaction is supported if configured."
+    }
+  },
+  {
+    "question": "The concept of sharing resources among multiple users or tenants, allowing for cost savings and increased efficiency, is known as _______.",
+    "options": [
+      "Autonomy",
+      "Monolithic architecture",
+      "Multi-Tenancy",
+      "Redundancy"
+    ],
+    "correct": "Multi-Tenancy",
+    "explanations": {
+      "Autonomy": "Means independence, not shared resource use.",
+      "Monolithic architecture": "Refers to tightly coupled applications, not multi-tenant environments.",
+      "Multi-Tenancy": "Correct. Enables shared use of resources by multiple tenants.",
+      "Redundancy": "Ensures availability, not sharing of resources."
+    }
+  },
+  {
+    "question": "Which of the following Azure resource types does NOT support tagging?",
+    "options": [
+      "Azure App Service",
+      "Azure Container Registry",
+      "Virtual Machines",
+      "Azure Cosmos DB"
+    ],
+    "correct": "Azure Container Registry",
+    "explanations": {
+      "Azure App Service": "Supports tagging.",
+      "Azure Container Registry": "Correct. Does not currently support tagging.",
+      "Virtual Machines": "Supports tagging.",
+      "Azure Cosmos DB": "Supports tagging."
+    }
+  },
+  {
+    "question": "Which of the following is a free tool to conveniently manage your Azure cloud storage resources from your desktop?",
+    "options": [
+      "Azure Migrate",
+      "Azure Storage Explorer",
+      "Azure AzCopy",
+      "Azure FileSync",
+      "Azure Data Box"
+    ],
+    "correct": "Azure Storage Explorer",
+    "explanations": {
+      "Azure Migrate": "Migration tool, not for storage management.",
+      "Azure Storage Explorer": "Correct. Free desktop tool for managing Azure Storage.",
+      "Azure AzCopy": "CLI tool for data transfer, not desktop GUI.",
+      "Azure FileSync": "Caches cloud files on-prem, not a storage management tool.",
+      "Azure Data Box": "Hardware device for bulk data transfer, not a desktop app."
+    }
+  },
+  {
+    "question": "_____________ copies your data synchronously three times within a single physical location in the primary region.",
+    "options": [
+      "Geo-zone-redundant storage (GZRS)",
+      "Worldwide Redundant Storage (WRS)",
+      "Zone-redundant storage (ZRS)",
+      "Locally redundant storage (LRS)"
+    ],
+    "correct": "Locally redundant storage (LRS)",
+    "explanations": {
+      "Geo-zone-redundant storage (GZRS)": "Replicates across zones and regions, not just locally.",
+      "Worldwide Redundant Storage (WRS)": "Not an actual Azure storage option.",
+      "Zone-redundant storage (ZRS)": "Replicates across zones, not a single location.",
+      "Locally redundant storage (LRS)": "Correct. Stores data 3x in one physical site."
+    }
+  },
+  {
+    "question": "Your streaming website experiences a burst of heavy traffic whenever you launch a new web-series, but relatively moderate traffic on other days. Which of the following would be a great benefit if you migrate your setup to Azure?",
+    "options": [
+      "Load Balancing",
+      "High Availability",
+      "Elasticity",
+      "Low Latency"
+    ],
+    "correct": "Elasticity",
+    "explanations": {
+      "Load Balancing": "Distributes traffic but doesn’t scale infrastructure based on demand.",
+      "High Availability": "Ensures uptime but doesn't handle traffic spikes by scaling.",
+      "Elasticity": "Correct. Automatically scales resources up or down based on load.",
+      "Low Latency": "Important for speed, but not related to resource scaling."
+    }
+  },
+  {
+    "question": "What is the primary objective of the 'Secure' aspect of Defender for Cloud?",
+    "options": [
+      "To ensure secure configurations of workloads and resources.",
+      "To focus on Azure Security Benchmark compliance.",
+      "To deploy Log Analytics agents on all virtual machines.",
+      "To provide protection against physical attacks on datacenters."
+    ],
+    "correct": "To ensure secure configurations of workloads and resources.",
+    "explanations": {
+      "To ensure secure configurations of workloads and resources.": "Correct. This is the main objective of the 'Secure' pillar.",
+      "To focus on Azure Security Benchmark compliance.": "Benchmarking is part of it, but not the main objective.",
+      "To deploy Log Analytics agents on all virtual machines.": "That’s a feature, not the core purpose.",
+      "To provide protection against physical attacks on datacenters.": "Microsoft handles physical security, not Defender for Cloud."
+    }
+  },
+  {
+    "question": "A university manages its Azure resources, grouping VMs and storage for a research project, billing them under a single entity, and applying compliance policies across multiple such entities campus-wide. Which components form this hierarchy? (Select all that apply)",
+    "options": [
+      "Management Groups",
+      "Subscriptions",
+      "Resource Groups",
+      "Public Endpoints"
+    ],
+    "correct": ["Management Groups", "Subscriptions", "Resource Groups"],
+    "explanations": {
+      "Management Groups": "Correct. Used to manage policies and compliance at scale.",
+      "Subscriptions": "Correct. Used for billing and access control boundaries.",
+      "Resource Groups": "Correct. Organize resources like VMs and storage.",
+      "Public Endpoints": "Incorrect. Not part of Azure's organizational hierarchy."
+    }
+  },
+  {
+    "question": "How does the syntax of commands differ between Azure PowerShell and the Azure CLI?",
+    "options": [
+      "There is no difference in command syntax between Azure PowerShell and the Azure CLI.",
+      "Azure PowerShell uses Python scripts, while the Azure CLI uses Ruby scripts.",
+      "Azure PowerShell uses Bash scripts, while the Azure CLI uses JSON configuration files.",
+      "Azure PowerShell uses PowerShell commands, while the Azure CLI uses Bash commands."
+    ],
+    "correct": "Azure PowerShell uses PowerShell commands, while the Azure CLI uses Bash commands.",
+    "explanations": {
+      "There is no difference in command syntax between Azure PowerShell and the Azure CLI.": "Incorrect. They use different command styles.",
+      "Azure PowerShell uses Python scripts, while the Azure CLI uses Ruby scripts.": "Incorrect. Neither uses Python or Ruby.",
+      "Azure PowerShell uses Bash scripts, while the Azure CLI uses JSON configuration files.": "Incorrect. CLI uses Bash-like commands.",
+      "Azure PowerShell uses PowerShell commands, while the Azure CLI uses Bash commands.": "Correct. CLI uses Bash syntax, PowerShell uses PowerShell syntax."
+    }
+  },
+  {
+    "question": "A firm manages on-premises servers and AWS Kubernetes clusters, applying Azure policies and monitoring them from a single portal. Which Azure feature enables this hybrid management?",
+    "options": [
+      "Azure Arc",
+      "Azure Cloud Shell",
+      "Azure Resource Manager",
+      "Azure Monitor"
+    ],
+    "correct": "Azure Arc",
+    "explanations": {
+      "Azure Arc": "Correct. Extends Azure management to non-Azure environments.",
+      "Azure Cloud Shell": "Provides command-line access but doesn’t manage hybrid resources.",
+      "Azure Resource Manager": "Used to deploy and manage Azure-native resources.",
+      "Azure Monitor": "Monitors Azure resources but doesn't provide hybrid management alone."
+    }
+  },
+  {
+    "question": "A company wants to deploy multiple resources in different subnets within the same Azure region, ensuring that some resources can communicate with each other, while others must remain isolated. The goal is to provide network segmentation without the use of a VPN or public IPs. Which Azure network configuration would best meet these requirements?",
+    "options": [
+      "Azure Virtual Network Peering between different subnets",
+      "Azure Virtual Network with Network Security Groups (NSGs) applied to individual subnets",
+      "Azure Virtual Network with VPN Gateway for inter-subnet communication",
+      "Azure Virtual Network with Network Security Groups (NSGs) applied to individual VMs"
+    ],
+    "correct": "Azure Virtual Network with Network Security Groups (NSGs) applied to individual subnets",
+    "explanations": {
+      "Azure Virtual Network Peering between different subnets": "Peering connects different VNets, not subnets in the same VNet.",
+      "Azure Virtual Network with Network Security Groups (NSGs) applied to individual subnets": "Correct. Allows segmentation and rule-based access control.",
+      "Azure Virtual Network with VPN Gateway for inter-subnet communication": "VPN is not required for communication within the same VNet.",
+      "Azure Virtual Network with Network Security Groups (NSGs) applied to individual VMs": "Possible, but not scalable or efficient for subnet-level control."
+    }
+  },
+  {
+    "question": "____________ is a bridge that extends the Azure platform to help you build applications and services with the flexibility to run across datacenters, at the edge, and in multicloud environments. It also simplifies governance and management by delivering a consistent multi-cloud and on-premises management platform.",
+    "options": [
+      "Azure Lighthouse",
+      "Azure Migrate",
+      "Azure Arc",
+      "Azure Stack"
+    ],
+    "correct": "Azure Arc",
+    "explanations": {
+      "Azure Lighthouse": "Used for multi-tenant management by service providers.",
+      "Azure Migrate": "Tool for migration assessment and planning.",
+      "Azure Arc": "Correct. Enables hybrid and multicloud resource management.",
+      "Azure Stack": "Brings Azure services to on-prem, but not focused on multicloud."
+    }
+  },
+  {
+    "question": "Which Azure service helps you discover, assess, right-size, and migrate on-premises servers, databases, and applications to Azure?",
+    "options": [
+      "Azure Advisor",
+      "Azure Migrate",
+      "Azure Site Recovery",
+      "Azure Monitor"
+    ],
+    "correct": "Azure Migrate",
+    "explanations": {
+      "Azure Advisor": "Provides optimization recommendations, not migration.",
+      "Azure Migrate": "Correct. Designed for assessment and migration.",
+      "Azure Site Recovery": "Used for disaster recovery, not migration.",
+      "Azure Monitor": "Used for telemetry and monitoring."
+    }
+  },
+  {
+    "question": "Which Azure service can help you orchestrate and automate the movement of data between different Azure services?",
+    "options": [
+      "Azure Logic Apps",
+      "Azure Functions",
+      "Azure Data Factory",
+      "Azure Synapse Analytics"
+    ],
+    "correct": "Azure Data Factory",
+    "explanations": {
+      "Azure Logic Apps": "Used for workflows and integration.",
+      "Azure Functions": "Used for serverless code execution.",
+      "Azure Data Factory": "Correct. It handles data movement and transformation.",
+      "Azure Synapse Analytics": "Used for big data analytics, not orchestration of data movement."
+    }
+  },
+  {
+    "question": "Which Azure feature helps ensure that your organization's Azure resources comply with your internal policies and standards?",
+    "options": [
+      "Azure Monitor",
+      "Azure Policy",
+      "Azure Arc",
+      "Azure Security Center"
+    ],
+    "correct": "Azure Policy",
+    "explanations": {
+      "Azure Monitor": "Monitors resources but doesn’t enforce compliance.",
+      "Azure Policy": "Correct. Enforces and evaluates resource compliance.",
+      "Azure Arc": "Extends Azure management to other environments.",
+      "Azure Security Center": "Helps with security posture, not policy enforcement."
+    }
+  },
+  {
+    "question": "Which of the following is the mission-critical cloud deployment available only to US Federal, State, Local and Tribal Governments and their partners?",
+    "options": [
+      "ISO",
+      "Azure Federal",
+      "Azure Government",
+      "Azure Nation"
+    ],
+    "correct": "Azure Government",
+    "explanations": {
+      "ISO": "A set of standards, not a cloud deployment.",
+      "Azure Federal": "Exists, but Azure Government is specifically for federal, state, local, and tribal government use.",
+      "Azure Government": "Correct. It is exclusive to government entities in the US.",
+      "Azure Nation": "Not a valid Azure service."
+    }
+  },
+  {
+    "question": "Which of the following best describes the Azure Cloud Shell capabilities demonstrated when a user stops a rogue VM via browser shell access during an outage?",
+    "options": [
+      "Allows use of browser-based tools to manage Azure resources without installing anything locally",
+      "Requires installation of Azure CLI on local machines",
+      "Provides only read access to Azure resources",
+      "Only available to users with admin roles"
+    ],
+    "correct": "Allows use of browser-based tools to manage Azure resources without installing anything locally",
+    "explanations": {
+      "Allows use of browser-based tools to manage Azure resources without installing anything locally": "Correct. Azure Cloud Shell enables command execution through a browser.",
+      "Requires installation of Azure CLI on local machines": "Incorrect. Cloud Shell does not require installations.",
+      "Provides only read access to Azure resources": "Incorrect. Users can execute commands like stopping VMs.",
+      "Only available to users with admin roles": "Incorrect. Access is role-based but not limited to admins."
+    }
+  },
+  {
+    "question": "What types of threats does Defender for Cloud help detect across Azure PaaS services?",
+    "options": [
+      "Denial of service (DoS) attacks against network resources",
+      "Threats targeting Azure services like Azure App Service, Azure SQL, and Azure Storage Account",
+      "Threats related to physical hardware vulnerabilities",
+      "Physical security breaches within datacenters"
+    ],
+    "correct": "Threats targeting Azure services like Azure App Service, Azure SQL, and Azure Storage Account",
+    "explanations": {
+      "Denial of service (DoS) attacks against network resources": "Defender for Cloud is more focused on PaaS-level threats.",
+      "Threats targeting Azure services like Azure App Service, Azure SQL, and Azure Storage Account": "Correct. These are the main targets of Defender for Cloud's protection.",
+      "Threats related to physical hardware vulnerabilities": "Incorrect. Hardware security is not covered by Defender for Cloud.",
+      "Physical security breaches within datacenters": "Incorrect. Defender for Cloud does not address physical security."
+    }
+  },
+  {
+    "question": "A startup builds an app with lightweight, dependency-bundled compute units for microservices and event-driven code snippets that execute without server management. Which Azure compute options are they using? (Select all that apply.)",
+    "options": [
+      "Azure Functions",
+      "Azure Virtual Desktop",
+      "Availability Sets",
+      "Azure Container Instances"
+    ],
+    "correct": ["Azure Functions", "Azure Container Instances"],
+    "explanations": {
+      "Azure Functions": "Correct. Ideal for serverless, event-driven code.",
+      "Azure Virtual Desktop": "Incorrect. Used for desktop virtualization.",
+      "Availability Sets": "Incorrect. Used for VM availability, not compute.",
+      "Azure Container Instances": "Correct. Ideal for running lightweight containers without managing infrastructure."
+    }
+  },
+  {
+    "question": "Yes or No: You can use Azure DNS to buy a domain name.",
+    "options": ["Yes", "No"],
+    "correct": "No",
+    "explanations": {
+      "Yes": "Incorrect. Azure DNS is only for DNS hosting.",
+      "No": "Correct. Domain names must be purchased via App Service Domains or third-party registrars."
+    }
+  },
+  {
+    "question": "The ability to provision and deprovision cloud resources quickly, with minimal management effort, is known as _______.",
+    "options": [
+      "Elasticity",
+      "Resiliency",
+      "Sustainability",
+      "Scalability"
+    ],
+    "correct": "Scalability",
+    "explanations": {
+      "Elasticity": "Elasticity refers to dynamic resizing based on demand.",
+      "Resiliency": "Refers to fault tolerance, not provisioning speed.",
+      "Sustainability": "Environmental impact focus, not resource management.",
+      "Scalability": "Correct. Involves efficient provisioning and deprovisioning."
+    }
+  },
+  {
+    "question": "An organization has multiple business units requiring separate Azure access and unified governance. Which Azure feature supports this best?",
+    "options": [
+      "Management Groups for centralized policy management, with Resource Groups grouped by geographic location",
+      "Resource Groups and Subscriptions for each business unit, with policies applied at the subscription level",
+      "Resource Groups within a single subscription, and policies applied to the resources directly",
+      "Azure Management Groups, with Resource Groups organized by business unit"
+    ],
+    "correct": "Azure Management Groups, with Resource Groups organized by business unit",
+    "explanations": {
+      "Management Groups for centralized policy management, with Resource Groups grouped by geographic location": "Geographic grouping may not align with business unit needs.",
+      "Resource Groups and Subscriptions for each business unit, with policies applied at the subscription level": "Somewhat helpful, but lacks unified governance across units.",
+      "Resource Groups within a single subscription, and policies applied to the resources directly": "Less scalable and manageable.",
+      "Azure Management Groups, with Resource Groups organized by business unit": "Correct. Supports governance across subscriptions with flexibility."
+    }
+  },
+  {
+    "question": "How does the 'compute' layer contribute to the defense-in-depth strategy?",
+    "options": [
+      "It secures access to physical data centers.",
+      "It prevents unauthorized physical access to hardware.",
+      "It ensures services are secure and free of vulnerabilities.",
+      "It automates data backup across all workloads."
+    ],
+    "correct": "It ensures services are secure and free of vulnerabilities.",
+    "explanations": {
+      "It secures access to physical data centers.": "This is part of the physical layer, not compute.",
+      "It prevents unauthorized physical access to hardware.": "Again, physical security, not compute-specific.",
+      "It ensures services are secure and free of vulnerabilities.": "Correct. This layer includes VM hardening, patching, and endpoint protection.",
+      "It automates data backup across all workloads.": "Data backup relates more to the data layer."
+    }
+  },
+  {
+    "question": "In an Azure virtual network, which of the following is used to filter network traffic between subnets?",
+    "options": [
+      "Azure Application Gateway",
+      "Network Security Group",
+      "Azure Firewall",
+      "Azure Load Balancer"
+    ],
+    "correct": "Network Security Group",
+    "explanations": {
+      "Azure Application Gateway": "Used for web traffic routing, not subnet filtering.",
+      "Network Security Group": "Correct. NSGs control inbound/outbound traffic rules between subnets.",
+      "Azure Firewall": "Used for broader network control, not typically for subnet-to-subnet filtering.",
+      "Azure Load Balancer": "Balances traffic, doesn’t filter it."
+    }
+  },
+  {
+    "question": "Yes or No: Azure Service Health allows you to define critical resources that should never be impacted by outages.",
+    "options": ["Yes", "No"],
+    "correct": "No",
+    "explanations": {
+      "Yes": "Incorrect. Service Health alerts you to issues but cannot prevent outages.",
+      "No": "Correct. It informs you of problems but doesn’t prevent impact."
+    }
+  },
+  {
+    "question": "A CFO, skeptical of cloud savings, tasks you with proving Azure’s value. You use one tool to dazzle her with a detailed breakdown of VM and storage costs for a new app, tweaking regions and tiers on the fly, while another reveals how much her dusty on-premises servers are bleeding cash over three years—without touching Azure specifics. Which tool wins her over with the long-term savings pitch?",
+    "options": [
+      "Pricing Calculator, because it forecasts multi-year ownership costs",
+      "TCO Calculator, because it adjusts Azure costs by region",
+      "Pricing Calculator, because it compares cloud vs. on-premises costs",
+      "TCO Calculator, because it estimates Azure service pricing"
+    ],
+    "correct": "TCO Calculator, because it estimates Azure service pricing",
+    "explanations": {
+      "Pricing Calculator, because it forecasts multi-year ownership costs": "The Pricing Calculator estimates Azure costs but does not compare them with on-premises.",
+      "TCO Calculator, because it adjusts Azure costs by region": "While partially true, the main value is in comparing Azure and on-prem costs.",
+      "Pricing Calculator, because it compares cloud vs. on-premises costs": "Incorrect. It doesn't provide direct cloud vs. on-prem comparisons.",
+      "TCO Calculator, because it estimates Azure service pricing": "Correct. TCO Calculator compares cloud and on-prem costs for long-term savings insight."
+    }
+  },
+  {
+    "question": "You are looking to link resources together in your on-premises environment and within your Azure subscription but don't want the connection to travel over the internet. Which of the following can you use?",
+    "options": [
+      "Azure Bastion",
+      "Azure Sentinel",
+      "Azure ExpressRoute",
+      "Azure Site-to-Site VPN",
+      "Azure Point-to-Site VPN"
+    ],
+    "correct": "Azure ExpressRoute",
+    "explanations": {
+      "Azure Bastion": "Used for secure VM access over public internet, not private hybrid connectivity.",
+      "Azure Sentinel": "Security analytics tool, not related to network connections.",
+      "Azure ExpressRoute": "Correct. Provides private, dedicated connectivity to Azure.",
+      "Azure Site-to-Site VPN": "Uses public internet, though encrypted.",
+      "Azure Point-to-Site VPN": "Also routes traffic over the public internet."
+    }
+  },
+  {
+    "question": "A consulting firm grants Azure portal access to clients using their own company logins, restricted to specific IPs, while internal staff face stricter sign-in rules. Which Azure feature enforces these location-based access policies?",
+    "options": [
+      "Azure Monitor",
+      "Microsoft Entra B2B",
+      "Microsoft Entra Conditional Access",
+      "Microsoft Entra B2C"
+    ],
+    "correct": "Microsoft Entra Conditional Access",
+    "explanations": {
+      "Azure Monitor": "Monitors performance and usage metrics, not access policies.",
+      "Microsoft Entra B2B": "Used for external user collaboration, not access policy enforcement.",
+      "Microsoft Entra Conditional Access": "Correct. Applies location-based and contextual access controls.",
+      "Microsoft Entra B2C": "Focused on customer identity management, not internal policy enforcement."
+    }
+  },
+  {
+    "question": "What types of threats does Defender for Cloud help detect across Azure PaaS services?",
+    "options": [
+      "Denial of service (DoS) attacks against network resources",
+      "Threats targeting Azure services like Azure App Service, Azure SQL, and Azure Storage Account",
+      "Threats related to physical hardware vulnerabilities",
+      "Physical security breaches within datacenters"
+    ],
+    "correct": "Threats targeting Azure services like Azure App Service, Azure SQL, and Azure Storage Account",
+    "explanations": {
+      "Denial of service (DoS) attacks against network resources": "DoS is handled by other networking security services.",
+      "Threats targeting Azure services like Azure App Service, Azure SQL, and Azure Storage Account": "Correct. Defender for Cloud focuses on PaaS-level threats.",
+      "Threats related to physical hardware vulnerabilities": "These are outside the scope of Defender for Cloud.",
+      "Physical security breaches within datacenters": "Handled by Microsoft’s physical security measures, not Defender for Cloud."
+    }
+  },
+  {
+    "question": "A startup builds an app with lightweight, dependency-bundled compute units for microservices and event-driven code snippets that execute without server management. Which Azure compute options are they using? (Select all that apply.)",
+    "options": [
+      "Azure Functions",
+      "Azure Virtual Desktop",
+      "Availability Sets",
+      "Azure Container Instances"
+    ],
+    "correct": ["Azure Functions", "Azure Container Instances"],
+    "explanations": {
+      "Azure Functions": "Correct. Ideal for event-driven serverless computing.",
+      "Azure Virtual Desktop": "Not relevant to microservices or serverless code.",
+      "Availability Sets": "Used for VM high availability, not lightweight compute.",
+      "Azure Container Instances": "Correct. Great for quickly running lightweight containerized applications."
+    }
+  },
+  {
+    "question": "Yes or No: You can use Azure DNS to buy a domain name.",
+    "options": ["Yes", "No"],
+    "correct": "No",
+    "explanations": {
+      "Yes": "Incorrect. Azure DNS does not support domain purchases.",
+      "No": "Correct. Domain names must be purchased via third-party registrars or App Service Domains."
+    }
+  },
+  {
+    "question": "The ability to provision and deprovision cloud resources quickly, with minimal management effort, is known as _______.",
+    "options": [
+      "Elasticity",
+      "Resiliency",
+      "Sustainability",
+      "Scalability"
+    ],
+    "correct": "Scalability",
+    "explanations": {
+      "Elasticity": "Elasticity refers to automatic resizing based on load, not necessarily provisioning speed.",
+      "Resiliency": "Focused on fault tolerance, not management speed.",
+      "Sustainability": "Relates to environmental and resource efficiency.",
+      "Scalability": "Correct. Involves rapid provisioning/deprovisioning of resources as needed."
+    }
+  },
+  {
+    "question": "How does the 'compute' layer contribute to the defense-in-depth strategy?",
+    "options": [
+      "It secures access to physical data centers.",
+      "It prevents unauthorized physical access to hardware.",
+      "It ensures services are secure and free of vulnerabilities.",
+      "It automates data backup across all workloads."
+    ],
+    "correct": "It ensures services are secure and free of vulnerabilities.",
+    "explanations": {
+      "It secures access to physical data centers.": "Handled at the physical layer, not compute.",
+      "It prevents unauthorized physical access to hardware.": "Also handled at the physical layer.",
+      "It ensures services are secure and free of vulnerabilities.": "Correct. The compute layer focuses on securing VMs and applications.",
+      "It automates data backup across all workloads.": "This is part of the data or operations layer."
+    }
+  },
+  {
+    "question": "In an Azure virtual network, which of the following is used to filter network traffic between subnets?",
+    "options": [
+      "Azure Application Gateway",
+      "Network Security Group",
+      "Azure Firewall",
+      "Azure Load Balancer"
+    ],
+    "correct": "Network Security Group",
+    "explanations": {
+      "Azure Application Gateway": "Used for application-level routing, not traffic filtering between subnets.",
+      "Network Security Group": "Correct. NSGs control inbound and outbound traffic rules at subnet or NIC level.",
+      "Azure Firewall": "Used for centralized traffic control, not subnet-level filtering.",
+      "Azure Load Balancer": "Balances traffic, doesn’t filter it."
+    }
+  },
+  {
+    "question": "Yes or No: Azure Service Health allows you to define critical resources that should never be impacted by outages.",
+    "options": ["Yes", "No"],
+    "correct": "No",
+    "explanations": {
+      "Yes": "Incorrect. Azure Service Health informs about issues, but doesn’t prevent them.",
+      "No": "Correct. It alerts on incidents but cannot guarantee impact-free service for specific resources."
+    }
+  },
+  {
+    "question": "A development team is tasked with deploying a microservices-based application where each service needs to be independently scalable, with minimal management overhead and the ability to run code in response to events. Which Azure services would be best suited for this architecture?",
+    "options": [
+      "Azure Kubernetes Service (AKS) for container orchestration, and Azure Functions for event-driven code execution",
+      "Azure App Service for deploying the microservices, and Azure Logic Apps for event-driven integration",
+      "Azure Service Fabric for container orchestration, and Azure Functions for event-driven code execution",
+      "Azure Virtual Machines for each microservice, and Azure Event Grid for event routing"
+    ],
+    "correct": "Azure Kubernetes Service (AKS) for container orchestration, and Azure Functions for event-driven code execution",
+    "explanations": {
+      "Azure Kubernetes Service (AKS) for container orchestration, and Azure Functions for event-driven code execution": "Correct. AKS provides orchestration for containers; Functions handle event-driven execution with minimal overhead.",
+      "Azure App Service for deploying the microservices, and Azure Logic Apps for event-driven integration": "Logic Apps is suitable for integration, not granular microservices execution.",
+      "Azure Service Fabric for container orchestration, and Azure Functions for event-driven code execution": "Valid alternative but AKS is the more standard managed solution.",
+      "Azure Virtual Machines for each microservice, and Azure Event Grid for event routing": "Too much overhead with managing individual VMs."
+    }
+  },
+  {
+    "question": "A company uses the ________ Calculator to estimate monthly Azure VM costs and the ________ Calculator to compare five-year savings against an on-premises datacenter.",
+    "options": [
+      "Total Cost of Ownership, Pricing",
+      "Estimation, Pricing",
+      "Pricing, Total Cost of Ownership",
+      "Estimation, Total Cost of Ownership"
+    ],
+    "correct": "Pricing, Total Cost of Ownership",
+    "explanations": {
+      "Total Cost of Ownership, Pricing": "Incorrect order of tools.",
+      "Estimation, Pricing": "Estimation Calculator is not a real Azure tool.",
+      "Pricing, Total Cost of Ownership": "Correct. Pricing Calculator estimates Azure monthly costs, TCO compares against on-prem.",
+      "Estimation, Total Cost of Ownership": "Estimation Calculator is not used in Azure."
+    }
+  },
+  {
+    "question": "Which Azure service allows for deploying and scaling virtualized desktops with autoscaling capabilities to meet user demand?",
+    "options": [
+      "Azure Virtual Machines (VMs) deployed with Availability Zones",
+      "Azure Virtual Desktop (AVD) combined with Azure Availability Sets",
+      "Azure Virtual Desktop (AVD) with Azure Scale Sets",
+      "Azure Virtual Machine Scale Sets (VMSS) with Azure Load Balancer"
+    ],
+    "correct": "Azure Virtual Desktop (AVD) with Azure Scale Sets",
+    "explanations": {
+      "Azure Virtual Machines (VMs) deployed with Availability Zones": "Provides HA but lacks autoscaling.",
+      "Azure Virtual Desktop (AVD) combined with Azure Availability Sets": "Availability Sets do not provide autoscaling.",
+      "Azure Virtual Desktop (AVD) with Azure Scale Sets": "Correct. AVD manages desktops, and Scale Sets provide autoscaling.",
+      "Azure Virtual Machine Scale Sets (VMSS) with Azure Load Balancer": "Not ideal for VDI; better suited for generic workloads."
+    }
+  },
+  {
+    "question": "If your application experiences sudden high demand, what type of scaling would involve adding more virtual machines or containers?",
+    "options": [
+      "Static scaling",
+      "Horizontal scaling",
+      "Vertical scaling",
+      "Downscaling"
+    ],
+    "correct": "Horizontal scaling",
+    "explanations": {
+      "Static scaling": "Static scaling keeps resources fixed.",
+      "Horizontal scaling": "Correct. This involves adding more instances.",
+      "Vertical scaling": "Involves upgrading a single instance.",
+      "Downscaling": "Refers to reducing the number of instances."
+    }
+  },
+  {
+    "question": "Which Azure service provides name resolution using Microsoft infrastructure but does not allow domain registration?",
+    "options": [
+      "Azure DNS",
+      "Azure ExpressRoute",
+      "Azure VPN Gateway",
+      "Azure Virtual Subnets"
+    ],
+    "correct": "Azure DNS",
+    "explanations": {
+      "Azure DNS": "Correct. It hosts DNS zones and records, but domain registration must be done separately.",
+      "Azure ExpressRoute": "Used for private connectivity to Azure.",
+      "Azure VPN Gateway": "Used for secure VPN connections.",
+      "Azure Virtual Subnets": "Used to segment networks, unrelated to DNS."
+    }
+  },
+  {
+    "question": "Which Azure feature enables users to centrally manage access to Azure resources through predefined roles?",
+    "options": [
+      "Resource Groups",
+      "Locks",
+      "Role Based Access Control (RBAC)",
+      "Policies"
+    ],
+    "correct": "Role Based Access Control (RBAC)",
+    "explanations": {
+      "Resource Groups": "Used to organize resources, not for access control.",
+      "Locks": "Prevent deletion/modification, not access management.",
+      "Role Based Access Control (RBAC)": "Correct. Provides fine-grained access control via roles.",
+      "Policies": "Used for compliance, not access management."
+    }
+  },
+  {
+    "question": "It's possible to deploy an Azure VM from a MacOS-based system using which of the following options? (Select all that apply)",
+    "options": [
+      "Azure Portal",
+      "Azure CLI",
+      "Azure Powershell",
+      "Azure Cloudshell"
+    ],
+    "correct": ["Azure Portal", "Azure CLI", "Azure Powershell", "Azure Cloudshell"],
+    "explanations": {
+      "Azure Portal": "Correct. Web-based interface available across OSes.",
+      "Azure CLI": "Correct. CLI is available for MacOS.",
+      "Azure Powershell": "Correct. PowerShell Core runs on MacOS.",
+      "Azure Cloudshell": "Correct. Web-based shell accessible via browser."
+    }
+  },
+  {
+    "question": "Which of the following is an example of a security layer in the defense-in-depth model?",
+    "options": [
+      "A single firewall at the network perimeter",
+      "The physical locks on server room doors",
+      "A dedicated intrusion detection system (IDS)",
+      "A strong password policy for user accounts"
+    ],
+    "correct": "A dedicated intrusion detection system (IDS)",
+    "explanations": {
+      "A single firewall at the network perimeter": "Not sufficient on its own.",
+      "The physical locks on server room doors": "Part of physical security, not a layered security control.",
+      "A dedicated intrusion detection system (IDS)": "Correct. Part of network security layer.",
+      "A strong password policy for user accounts": "Applies to identity layer, not security system layer."
+    }
+  },
+  {
+    "question": "Which Azure service can notify users about service incidents and planned maintenance?",
+    "options": [
+      "Azure Chaos Studio",
+      "Azure Percept",
+      "Azure Service Health",
+      "Azure Health Bot"
+    ],
+    "correct": "Azure Service Health",
+    "explanations": {
+      "Azure Chaos Studio": "Used for chaos testing, not service notifications.",
+      "Azure Percept": "Used for edge AI solutions.",
+      "Azure Service Health": "Correct. Provides alerts about incidents and maintenance.",
+      "Azure Health Bot": "Health support bot for medical scenarios, not Azure service status."
+    }
+  },
+  {
+    "question": "Which Azure service logs all resource-level changes, helping identify who made changes like resizing VMs?",
+    "options": [
+      "Azure Xamarin",
+      "Azure Information Protection (AIP)",
+      "Azure Activity Log",
+      "Azure Event Hubs"
+    ],
+    "correct": "Azure Activity Log",
+    "explanations": {
+      "Azure Xamarin": "Used for mobile development, not auditing changes.",
+      "Azure Information Protection (AIP)": "Protects data, not tracks changes.",
+      "Azure Activity Log": "Correct. Tracks who did what, when, and where in your Azure subscription.",
+      "Azure Event Hubs": "Captures and ingests event data, not focused on change tracking."
+    }
+  },
+  {
+    "question": "______________ is a command-line utility that you can use to copy blobs or files to or from a storage account.",
+    "options": [
+      "AzMigrate",
+      "AzReplicate",
+      "AzCopy"
+    ],
+    "correct": "AzCopy",
+    "explanations": {
+      "AzMigrate": "Incorrect. AzMigrate is not a valid Azure tool for copying files.",
+      "AzReplicate": "Incorrect. Not a recognized Azure command-line utility.",
+      "AzCopy": "Correct. AzCopy is the command-line tool designed for transferring data to/from Azure storage accounts."
+    }
+  },
+  {
+    "question": "A healthcare provider secures its Azure environment, classifying sensitive data across storage accounts, monitoring VM performance with alerts, and assessing cloud-wide security posture. Which tools support these tasks? (Select all that apply)",
+    "options": [
+      "Azure Monitor",
+      "Storage Tiers",
+      "Microsoft Defender for Cloud",
+      "Microsoft Purview"
+    ],
+    "correct": ["Azure Monitor", "Microsoft Defender for Cloud", "Microsoft Purview"],
+    "explanations": {
+      "Azure Monitor": "Correct. Used to monitor performance and set alerts on Azure resources like VMs.",
+      "Storage Tiers": "Incorrect. Related to storage cost and performance, not classification or monitoring.",
+      "Microsoft Defender for Cloud": "Correct. Assesses and protects cloud security posture.",
+      "Microsoft Purview": "Correct. Used to classify and govern sensitive data."
+    }
+  },
+  {
+    "question": "Yes or No: Upon applying a Tag to a Resource Group, all Resources inside it inherit that Tag.",
+    "options": ["Yes", "No"],
+    "correct": "No",
+    "explanations": {
+      "Yes": "Incorrect. Tags are not inherited by resources within a Resource Group.",
+      "No": "Correct. You must apply tags to each resource or use policies to enforce tagging."
+    }
+  },
+  {
+    "question": "Which of the following alert types are available in the Cost Management service? (Select all that apply)",
+    "options": [
+      "Budget alerts",
+      "Credit alerts",
+      "Department spending quota alerts",
+      "Resource usage alerts"
+    ],
+    "correct": ["Budget alerts", "Credit alerts", "Department spending quota alerts"],
+    "explanations": {
+      "Budget alerts": "Correct. Notify when spend exceeds a defined budget.",
+      "Credit alerts": "Correct. Notify when Azure credit balances are low.",
+      "Department spending quota alerts": "Correct. Alert departments when they near or exceed quota.",
+      "Resource usage alerts": "Incorrect. Not directly part of Cost Management alerts."
+    }
+  },
+  {
+    "question": "Yes or No: Azure Advisor provides a cloud score to assess how well-architected your workloads are AND can also provide 'Step-by-Step' guidance and quick actions for fast remediation.",
+    "options": ["Yes", "No"],
+    "correct": "Yes",
+    "explanations": {
+      "Yes": "Correct. Azure Advisor gives a cloud score and guidance for optimization.",
+      "No": "Incorrect. It does offer both cloud score and remediation recommendations."
+    }
+  },
+  {
+    "question": "Which of the following can be included as artifacts in an Azure Blueprint? (Select all that apply)",
+    "options": [
+      "Resource groups",
+      "Role assignments",
+      "Policy assignments",
+      "Azure Resource Manager templates"
+    ],
+    "correct": [
+      "Resource groups",
+      "Role assignments",
+      "Policy assignments",
+      "Azure Resource Manager templates"
+    ],
+    "explanations": {
+      "Resource groups": "Correct. Blueprints can define resource group structures.",
+      "Role assignments": "Correct. Used to assign access as part of deployment.",
+      "Policy assignments": "Correct. Help enforce compliance and configurations.",
+      "Azure Resource Manager templates": "Correct. Automate resource provisioning."
+    }
+  },
+  {
+    "question": "How can JSON strings be used to assign more than the maximum number of allowed tags to an Azure resource?",
+    "options": [
+      "By creating additional subscriptions",
+      "By including multiple values for a single tag name",
+      "By creating additional tag names",
+      "By creating additional resource groups"
+    ],
+    "correct": "By including multiple values for a single tag name",
+    "explanations": {
+      "By creating additional subscriptions": "Incorrect. Subscriptions do not increase tag limits.",
+      "By including multiple values for a single tag name": "Correct. JSON strings can be used to store multiple values under one tag.",
+      "By creating additional tag names": "Still constrained by the tag name limit.",
+      "By creating additional resource groups": "Unrelated to tagging limits."
+    }
+  },
+  {
+    "question": "Which of the following is a good usage of tags?",
+    "options": [
+      "Making business groups aware of cloud resource consumption",
+      "Identifying the assets required to support a single workload",
+      "Locating resources by workload or ownership",
+      "Data classification"
+    ],
+    "correct": "All of these",
+    "explanations": {
+      "Making business groups aware of cloud resource consumption": "Correct. Tags help track spending.",
+      "Identifying the assets required to support a single workload": "Correct. Tags help categorize workload-specific assets.",
+      "Locating resources by workload or ownership": "Correct. Tagging improves resource organization.",
+      "Data classification": "Correct. Tags can indicate sensitivity or regulatory classification."
+    }
+  },
+  {
+    "question": "A recent unapproved size change to one of the Virtual Machines (VMs) in your company has led to a huge unexpected bill. Which of the following services can help you identify the user who made this unapproved change?",
+    "options": [
+      "Azure Xamarin",
+      "Azure Information Protection (AIP)",
+      "Azure Activity Log",
+      "Azure Event Hubs",
+      "Azure Service Health"
+    ],
+    "correct": "Azure Activity Log",
+    "explanations": {
+      "Azure Xamarin": "Incorrect. Xamarin is for mobile app development.",
+      "Azure Information Protection (AIP)": "Incorrect. AIP is for data protection.",
+      "Azure Activity Log": "Correct. Tracks all operations on Azure resources, including who made changes.",
+      "Azure Event Hubs": "Incorrect. Used for event ingestion, not auditing.",
+      "Azure Service Health": "Incorrect. Reports Azure outages and issues, not user activity."
+    }
+  },
+  {
+    "question": "Which of the following NOTIFICATIONS are provided by Azure Service Health?",
+    "options": [
+      "Resource-level error alerts",
+      "Service incident updates",
+      "Planned maintenance notifications",
+      "Health advisories"
+    ],
+    "correct": "Resource-level error alerts",
+    "explanations": {
+      "Resource-level error alerts": "Incorrect. These are managed via Azure Monitor, not Service Health.",
+      "Service incident updates": "Correct. Service Health informs users of incidents affecting services.",
+      "Planned maintenance notifications": "Correct. Notifies users in advance of scheduled service events.",
+      "Health advisories": "Correct. Provides recommendations and warnings about potential issues."
+    }
+  }
+]
+
+
+

@@ -1,0 +1,69 @@
+# .dockerignore - Exclude files from Docker build context
+
+# Git
+.git
+.gitignore
+.gitattributes
+
+# GitHub
+.github
+
+# Documentation
+README.md
+COMMANDS.md
+*.md
+
+# Kubernetes manifests
+k8s/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+pglite-debug.log
+
+# Dependencies (if using npm/node)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build artifacts
+dist/
+build/
+*.tar.gz
+
+# Firebase
+.firebase/
+.firebaserc
+firebase.json
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Test files
+test/
+tests/
+*.test.js
+*.spec.js
+
+# CI/CD
+.github/workflows/
+
+# Misc
+*.bak
+*.tmp
+temp/
+tmp/

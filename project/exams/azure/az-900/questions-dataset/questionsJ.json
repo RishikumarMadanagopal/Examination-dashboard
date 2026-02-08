@@ -1,0 +1,987 @@
+[
+  {
+    "question": "A firm adopts a security model in Azure that trusts users and devices within the corporate network by default, only requiring verification for external access requests. Does this align with the Zero Trust concept?",
+    "options": [ "Yes", "No" ],
+    "correct": "No",
+    "explanations": {
+      "Yes": "Incorrect. Trusting internal network traffic by default contradicts Zero Trust principles.",
+      "No": "Correct. Zero Trust requires continuous verification of all access requests, regardless of network location."
+    }
+  },
+  {
+    "question": "In a Public Cloud model, you get dedicated hardware, storage, and network devices than the other organizations or cloud 'tenants'. Is this true?",
+    "options": [ "Yes", "No" ],
+    "correct": "No",
+    "explanations": {
+      "Yes": "Incorrect. Public cloud uses shared resources across multiple tenants.",
+      "No": "Correct. Public cloud models involve resource sharing among multiple organizations."
+    }
+  },
+  {
+    "question": "A developer needs an Azure storage account to store unstructured data with high-performance access, supporting blobs and file shares in a single region. Which storage account and redundancy option best fits?",
+    "options": [ "Block Blob with GRS", "File Storage with ZRS", "General-purpose v2 with LRS", "General-purpose v1 with RA-GRS" ],
+    "correct": "General-purpose v2 with LRS",
+    "explanations": {
+      "Block Blob with GRS": "GRS provides geo-redundancy, which isn't required for a single-region, high-performance scenario.",
+      "File Storage with ZRS": "Supports file shares only, not blobs. ZRS adds cross-zone redundancy not required here.",
+      "General-purpose v2 with LRS": "Correct. Supports both blobs and file shares with high performance in a single region.",
+      "General-purpose v1 with RA-GRS": "Outdated version with limited performance benefits and unnecessary geo-redundancy."
+    }
+  },
+  {
+    "question": "Your startup plans to migrate to Azure soon, but for all the resources, you would like control of the underlying Operating System and Middleware. Which of the following cloud models would make the most sense?",
+    "options": [ "Infrastructure as a Service (IaaS)", "Platform as a Service (PaaS)", "Anything as a Service (XaaS)", "Software as a Service (SaaS)" ],
+    "correct": "Infrastructure as a Service (IaaS)",
+    "explanations": {
+      "Infrastructure as a Service (IaaS)": "Correct. IaaS provides control over OS and middleware, which the startup needs.",
+      "Platform as a Service (PaaS)": "Incorrect. PaaS abstracts OS and middleware management.",
+      "Anything as a Service (XaaS)": "Too broad; doesn't directly address the control requirements.",
+      "Software as a Service (SaaS)": "Incorrect. SaaS offers pre-built apps without control over OS or middleware."
+    }
+  },
+  {
+    "question": "A government agency opts for a __ cloud to isolate sensitive data on its own infrastructure, while a media company uses a __ cloud for cost-effective streaming with global reach.",
+    "options": [ "private, public", "public, private", "hybrid, public", "public, hybrid" ],
+    "correct": "private, public",
+    "explanations": {
+      "private, public": "Correct. Private for isolated sensitive data, public for wide access and cost efficiency.",
+      "public, private": "Incorrect ordering for the given use cases.",
+      "hybrid, public": "Hybrid is not mentioned in the scenario context.",
+      "public, hybrid": "Incorrect ordering and use case mapping."
+    }
+  },
+  {
+    "question": "Which cloud pricing model is best suited for a company that has long-term, predictable needs and prefers the stability of fixed monthly payments while also ensuring that they are not overpaying for unused capacity during periods of low demand?",
+    "options": [ "Reserved pricing model", "Pay-as-you-go pricing", "Consumption-based model", "Spot pricing model" ],
+    "correct": "Reserved pricing model",
+    "explanations": {
+      "Reserved pricing model": "Correct. It offers cost savings and stability for long-term predictable workloads.",
+      "Pay-as-you-go pricing": "More suited to variable workloads, not predictable usage.",
+      "Consumption-based model": "Not ideal for fixed predictable workloads due to potential fluctuations.",
+      "Spot pricing model": "Not suitable for predictable workloads due to potential interruptions."
+    }
+  },
+  {
+    "question": "True or False: Each zone is made up of one or more datacentres equipped with common power, cooling, and networking.",
+    "options": [ "True", "False" ],
+    "correct": "False",
+    "explanations": {
+      "True": "Incorrect. Availability Zones have independent power, cooling, and networking to ensure fault isolation.",
+      "False": "Correct. Independence of infrastructure ensures high availability."
+    }
+  },
+  {
+    "question": "An Azure ________________ is a connection between two Azure Regions within the same geographic region for disaster recovery purposes.",
+    "options": [ "Region Pair", "Geography", "Availability Zone", "Region" ],
+    "correct": "Region Pair",
+    "explanations": {
+      "Region Pair": "Correct. Region pairs are linked for cross-region replication and disaster recovery.",
+      "Geography": "Refers to larger groupings of regions; not the specific link used for DR.",
+      "Availability Zone": "AZs are within regions, not between them.",
+      "Region": "Generic term, not specific to the disaster recovery connection."
+    }
+  },
+  {
+    "question": "A team uses Azure Cloud Shell to deploy VMs in West US and East US, noticing higher costs in one region. Does region selection affect Azure costs in this scenario?",
+    "options": [ "Yes", "No" ],
+    "correct": "Yes",
+    "explanations": {
+      "Yes": "Correct. Azure pricing varies by region based on infrastructure and demand.",
+      "No": "Incorrect. Different regions have different cost structures."
+    }
+  },
+  {
+    "question": "Azure provides native support for Infrastructure as Code (IaC) via the ________________ model.",
+    "options": [ "Azure Templates", "Azure Tags", "Azure Resource Manager", "Azure Portal" ],
+    "correct": "Azure Resource Manager",
+    "explanations": {
+      "Azure Templates": "Too broad and vague, refers to the tool but not the model itself.",
+      "Azure Tags": "Used for categorization, not infrastructure automation.",
+      "Azure Resource Manager": "Correct. ARM is the native IaC model in Azure.",
+      "Azure Portal": "GUI-based management, not related to IaC."
+    }
+  },
+  {
+    "question": "A firm adopts a security model in Azure that trusts users and devices within the corporate network by default, only requiring verification for external access requests. Does this align with the Zero Trust concept?",
+    "options": [ "Yes", "No" ],
+    "correct": "No",
+    "explanations": {
+      "Yes": "Incorrect. Trusting internal network traffic by default contradicts Zero Trust principles.",
+      "No": "Correct. Zero Trust requires continuous verification of all access requests, regardless of network location."
+    }
+  },
+  {
+    "question": "In a Public Cloud model, you get dedicated hardware, storage, and network devices than the other organizations or cloud 'tenants'. Is this true?",
+    "options": [ "Yes", "No" ],
+    "correct": "No",
+    "explanations": {
+      "Yes": "Incorrect. Public cloud uses shared resources across multiple tenants.",
+      "No": "Correct. Public cloud models involve resource sharing among multiple organizations."
+    }
+  },
+  {
+    "question": "A developer needs an Azure storage account to store unstructured data with high-performance access, supporting blobs and file shares in a single region. Which storage account and redundancy option best fits?",
+    "options": [ "Block Blob with GRS", "File Storage with ZRS", "General-purpose v2 with LRS", "General-purpose v1 with RA-GRS" ],
+    "correct": "General-purpose v2 with LRS",
+    "explanations": {
+      "Block Blob with GRS": "GRS provides geo-redundancy, which isn't required for a single-region, high-performance scenario.",
+      "File Storage with ZRS": "Supports file shares only, not blobs. ZRS adds cross-zone redundancy not required here.",
+      "General-purpose v2 with LRS": "Correct. Supports both blobs and file shares with high performance in a single region.",
+      "General-purpose v1 with RA-GRS": "Outdated version with limited performance benefits and unnecessary geo-redundancy."
+    }
+  },
+  {
+    "question": "Your startup plans to migrate to Azure soon, but for all the resources, you would like control of the underlying Operating System and Middleware. Which of the following cloud models would make the most sense?",
+    "options": [ "Infrastructure as a Service (IaaS)", "Platform as a Service (PaaS)", "Anything as a Service (XaaS)", "Software as a Service (SaaS)" ],
+    "correct": "Infrastructure as a Service (IaaS)",
+    "explanations": {
+      "Infrastructure as a Service (IaaS)": "Correct. IaaS provides control over OS and middleware, which the startup needs.",
+      "Platform as a Service (PaaS)": "Incorrect. PaaS abstracts OS and middleware management.",
+      "Anything as a Service (XaaS)": "Too broad; doesn't directly address the control requirements.",
+      "Software as a Service (SaaS)": "Incorrect. SaaS offers pre-built apps without control over OS or middleware."
+    }
+  },
+  {
+    "question": "A government agency opts for a __ cloud to isolate sensitive data on its own infrastructure, while a media company uses a __ cloud for cost-effective streaming with global reach.",
+    "options": [ "private, public", "public, private", "hybrid, public", "public, hybrid" ],
+    "correct": "private, public",
+    "explanations": {
+      "private, public": "Correct. Private for isolated sensitive data, public for wide access and cost efficiency.",
+      "public, private": "Incorrect ordering for the given use cases.",
+      "hybrid, public": "Hybrid is not mentioned in the scenario context.",
+      "public, hybrid": "Incorrect ordering and use case mapping."
+    }
+  },
+  {
+    "question": "Which cloud pricing model is best suited for a company that has long-term, predictable needs and prefers the stability of fixed monthly payments while also ensuring that they are not overpaying for unused capacity during periods of low demand?",
+    "options": [ "Reserved pricing model", "Pay-as-you-go pricing", "Consumption-based model", "Spot pricing model" ],
+    "correct": "Reserved pricing model",
+    "explanations": {
+      "Reserved pricing model": "Correct. It offers cost savings and stability for long-term predictable workloads.",
+      "Pay-as-you-go pricing": "More suited to variable workloads, not predictable usage.",
+      "Consumption-based model": "Not ideal for fixed predictable workloads due to potential fluctuations.",
+      "Spot pricing model": "Not suitable for predictable workloads due to potential interruptions."
+    }
+  },
+  {
+    "question": "True or False: Each zone is made up of one or more datacentres equipped with common power, cooling, and networking.",
+    "options": [ "True", "False" ],
+    "correct": "False",
+    "explanations": {
+      "True": "Incorrect. Availability Zones have independent power, cooling, and networking to ensure fault isolation.",
+      "False": "Correct. Independence of infrastructure ensures high availability."
+    }
+  },
+  {
+    "question": "An Azure ________________ is a connection between two Azure Regions within the same geographic region for disaster recovery purposes.",
+    "options": [ "Region Pair", "Geography", "Availability Zone", "Region" ],
+    "correct": "Region Pair",
+    "explanations": {
+      "Region Pair": "Correct. Region pairs are linked for cross-region replication and disaster recovery.",
+      "Geography": "Refers to larger groupings of regions; not the specific link used for DR.",
+      "Availability Zone": "AZs are within regions, not between them.",
+      "Region": "Generic term, not specific to the disaster recovery connection."
+    }
+  },
+  {
+    "question": "A team uses Azure Cloud Shell to deploy VMs in West US and East US, noticing higher costs in one region. Does region selection affect Azure costs in this scenario?",
+    "options": [ "Yes", "No" ],
+    "correct": "Yes",
+    "explanations": {
+      "Yes": "Correct. Azure pricing varies by region based on infrastructure and demand.",
+      "No": "Incorrect. Different regions have different cost structures."
+    }
+  },
+  {
+    "question": "Azure provides native support for Infrastructure as Code (IaC) via the ________________ model.",
+    "options": [ "Azure Templates", "Azure Tags", "Azure Resource Manager", "Azure Portal" ],
+    "correct": "Azure Resource Manager",
+    "explanations": {
+      "Azure Templates": "Too broad and vague, refers to the tool but not the model itself.",
+      "Azure Tags": "Used for categorization, not infrastructure automation.",
+      "Azure Resource Manager": "Correct. ARM is the native IaC model in Azure.",
+      "Azure Portal": "GUI-based management, not related to IaC."
+    }
+  },
+  {
+    "question": "Which of the following is a good usage of tags?",
+    "options": [
+      "Making business groups aware of cloud resource consumption requires IT to understand the resources and workloads each team is using",
+      "To help identify the assets required to support a single workload.",
+      "Using Tags to quickly locate resources associated with specific workloads, environments, ownership groups, or other important information.",
+      "Using tags for data classification"
+    ],
+    "correct": "All of these",
+    "explanations": {
+      "Making business groups aware of cloud resource consumption requires IT to understand the resources and workloads each team is using": "Correct. Tags support this kind of cost and usage accountability.",
+      "To help identify the assets required to support a single workload.": "Correct. Tags can identify and group related resources.",
+      "Using Tags to quickly locate resources associated with specific workloads, environments, ownership groups, or other important information.": "Correct. Tags support search and filtering.",
+      "Using tags for data classification": "Correct. Tags can classify data for organizational and governance needs."
+    }
+  },
+  {
+    "question": "Which of the following is used to enforce rules and effects over Azure resources?",
+    "options": [
+      "Azure Monitor",
+      "Azure Policy",
+      "Azure Blueprints",
+      "Azure Advisor"
+    ],
+    "correct": "Azure Policy",
+    "explanations": {
+      "Azure Monitor": "Incorrect. Used for telemetry, not enforcing rules.",
+      "Azure Policy": "Correct. Enforces compliance rules over Azure resources.",
+      "Azure Blueprints": "Incorrect. Used for deploying templates and policies, not standalone enforcement.",
+      "Azure Advisor": "Incorrect. Provides recommendations, not enforcement."
+    }
+  },
+  {
+    "question": "Your company wants to avoid accidental deletion of a storage account used for critical business data. Which Azure feature should you use?",
+    "options": [
+      "Azure RBAC",
+      "Azure Monitor Alerts",
+      "Resource Locks",
+      "Network Security Groups"
+    ],
+    "correct": "Resource Locks",
+    "explanations": {
+      "Azure RBAC": "Incorrect. Manages permissions but doesn't lock resources.",
+      "Azure Monitor Alerts": "Incorrect. Monitors metrics and activity but doesn't prevent deletions.",
+      "Resource Locks": "Correct. Prevents accidental deletion or changes to resources.",
+      "Network Security Groups": "Incorrect. Controls network traffic, not resource deletion."
+    }
+  },
+  {
+    "question": "Which of the following Azure governance tools can be used to organize multiple subscriptions in a hierarchy?",
+    "options": [
+      "Azure Management Groups",
+      "Azure Blueprints",
+      "Azure Policy",
+      "Azure Tags"
+    ],
+    "correct": "Azure Management Groups",
+    "explanations": {
+      "Azure Management Groups": "Correct. Organizes subscriptions for policy and access control.",
+      "Azure Blueprints": "Incorrect. Used for package deployments, not hierarchy management.",
+      "Azure Policy": "Incorrect. Enforces policies but doesn’t manage subscription structure.",
+      "Azure Tags": "Incorrect. Used for labeling, not hierarchical organization."
+    }
+  },
+  {
+    "question": "Which tool provides recommendations to help reduce costs and improve the performance, reliability, and security of your Azure resources?",
+    "options": [
+      "Azure Monitor",
+      "Azure Policy",
+      "Azure Advisor",
+      "Azure Blueprints"
+    ],
+    "correct": "Azure Advisor",
+    "explanations": {
+      "Azure Monitor": "Incorrect. Gathers metrics and diagnostics but doesn’t give proactive recommendations.",
+      "Azure Policy": "Incorrect. Used to enforce compliance.",
+      "Azure Advisor": "Correct. Recommends optimizations based on usage and performance.",
+      "Azure Blueprints": "Incorrect. Used for environment setup and compliance, not cost/performance advice."
+    }
+  },
+  {
+    "question": "Your team wants to analyze logs, set up performance alerts, and troubleshoot issues in your application. Which Azure service should you use?",
+    "options": [
+      "Azure Application Gateway",
+      "Azure Monitor",
+      "Azure Bastion",
+      "Azure Active Directory"
+    ],
+    "correct": "Azure Monitor",
+    "explanations": {
+      "Azure Application Gateway": "Incorrect. It’s a load balancer, not a monitoring tool.",
+      "Azure Monitor": "Correct. Collects logs, sets alerts, and helps troubleshoot Azure resources.",
+      "Azure Bastion": "Incorrect. Used for secure VM access, not monitoring.",
+      "Azure Active Directory": "Incorrect. Identity service, not a monitoring solution."
+    }
+  },
+  {
+    "question": "A company uses multiple Azure subscriptions for different departments. They want to apply a policy that limits VM deployment to specific regions. Which governance tool can help achieve this?",
+    "options": [
+      "Azure Tags",
+      "Azure Policy",
+      "Azure Monitor",
+      "Azure Cost Management"
+    ],
+    "correct": "Azure Policy",
+    "explanations": {
+      "Azure Tags": "Incorrect. Tags label resources but don’t enforce restrictions.",
+      "Azure Policy": "Correct. Enforces compliance rules such as allowed regions.",
+      "Azure Monitor": "Incorrect. Used for monitoring and diagnostics.",
+      "Azure Cost Management": "Incorrect. Tracks and manages spending, not governance."
+    }
+  },
+  {
+    "question": "Which Azure service helps you estimate and compare the cost of running workloads on-premises versus in Azure?",
+    "options": [
+      "Azure Pricing Calculator",
+      "Azure Advisor",
+      "Azure Cost Management",
+      "Azure TCO Calculator"
+    ],
+    "correct": "Azure TCO Calculator",
+    "explanations": {
+      "Azure Pricing Calculator": "Incorrect. Estimates Azure service cost but not on-prem comparisons.",
+      "Azure Advisor": "Incorrect. Gives usage and cost-saving tips, not TCO comparisons.",
+      "Azure Cost Management": "Incorrect. Tracks current spending, doesn’t compare on-premises costs.",
+      "Azure TCO Calculator": "Correct. Compares total cost of ownership between on-prem and Azure."
+    }
+  },
+  {
+    "question": "Which of the following describes an advantage of Azure Resource Manager (ARM) templates?",
+    "options": [
+      "They help monitor Azure services",
+      "They enforce security policies",
+      "They deploy infrastructure consistently",
+      "They store backup data securely"
+    ],
+    "correct": "They deploy infrastructure consistently",
+    "explanations": {
+      "They help monitor Azure services": "Incorrect. Monitoring is done by Azure Monitor.",
+      "They enforce security policies": "Incorrect. This is the role of Azure Policy.",
+      "They deploy infrastructure consistently": "Correct. ARM templates automate repeatable infrastructure deployments.",
+      "They store backup data securely": "Incorrect. This is the role of Azure Backup or Storage."
+    }
+  },
+  {
+    "question": "A company frequently experiences variable workloads with unpredictable demand spikes for its Azure-hosted application. It wants to optimize costs while ensuring that resources are available during peak usage periods without incurring charges during low-demand periods. Which combination of pricing models would be most suitable to achieve this?",
+    "options": [
+      "Consumption-based model with Spot Instances for cost reduction during low demand periods",
+      "Pay-as-you-go pricing for both unpredictable and predictable workloads",
+      "Consumption-based model for unpredictable demand and Reserved Instances for long-term predictable usage",
+      "Spot Instances for scalability and Reserved Instances for baseline capacity"
+    ],
+    "correct": "Consumption-based model for unpredictable demand and Reserved Instances for long-term predictable usage",
+    "explanations": {
+      "Consumption-based model with Spot Instances for cost reduction during low demand periods": "Incorrect. Spot instances are not guaranteed and may not suit peak needs.",
+      "Pay-as-you-go pricing for both unpredictable and predictable workloads": "Incorrect. Less cost-effective than reserved pricing for predictable usage.",
+      "Consumption-based model for unpredictable demand and Reserved Instances for long-term predictable usage": "Correct. Balances flexibility and cost savings.",
+      "Spot Instances for scalability and Reserved Instances for baseline capacity": "Incorrect. Spot instances are not reliable for scalability needs."
+    }
+  },
+  {
+    "question": "How can you apply a resource lock to an Azure resource?",
+    "options": [
+      "By creating a new resource group for the resource.",
+      "By configuring a network security group.",
+      "By assigning a custom role to the resource.",
+      "By using the Azure API for RBAC",
+      "By using the Azure portal or Azure PowerShell"
+    ],
+    "correct": "By using the Azure portal or Azure PowerShell",
+    "explanations": {
+      "By creating a new resource group for the resource.": "Incorrect. This doesn't apply a lock.",
+      "By configuring a network security group.": "Incorrect. NSGs are for network access, not resource protection.",
+      "By assigning a custom role to the resource.": "Incorrect. RBAC controls permissions but doesn't lock resources.",
+      "By using the Azure API for RBAC": "Incorrect. RBAC is about roles, not locks.",
+      "By using the Azure portal or Azure PowerShell": "Correct. These interfaces allow applying locks like CanNotDelete or ReadOnly."
+    }
+  },
+  {
+    "question": "Which of the following can help you manage multiple Azure Subscriptions?",
+    "options": [
+      "Resource Groups",
+      "Azure Blueprints",
+      "Management Groups",
+      "Azure Policy"
+    ],
+    "correct": "Management Groups",
+    "explanations": {
+      "Resource Groups": "Incorrect. Used to manage resources, not subscriptions.",
+      "Azure Blueprints": "Incorrect. Used for deploying environments, not organizing subscriptions.",
+      "Management Groups": "Correct. Used to manage access, policies, and compliance across multiple subscriptions.",
+      "Azure Policy": "Incorrect. Enforces rules, doesn’t manage subscriptions."
+    }
+  },
+  {
+    "question": "Azure Pay As You Go is an example of which cloud expenditure model?",
+    "options": [
+      "Capital (CapEx)",
+      "Operational (OpEx)"
+    ],
+    "correct": "Operational (OpEx)",
+    "explanations": {
+      "Capital (CapEx)": "Incorrect. CapEx involves upfront investment.",
+      "Operational (OpEx)": "Correct. OpEx allows paying for services as used."
+    }
+  },
+  {
+    "question": "What is the primary purpose of a public endpoint in Azure?",
+    "options": [
+      "To prevent communication between virtual networks.",
+      "To restrict incoming network traffic to specific IP ranges.",
+      "To provide a direct and secure connection to Azure services.",
+      "To enforce access control policies for resource groups."
+    ],
+    "correct": "To provide a direct and secure connection to Azure services.",
+    "explanations": {
+      "To prevent communication between virtual networks.": "Incorrect. That’s handled by NSGs or routing.",
+      "To restrict incoming network traffic to specific IP ranges.": "Incorrect. NSGs or firewalls do this.",
+      "To provide a direct and secure connection to Azure services.": "Correct. Public endpoints allow internet access to Azure services securely.",
+      "To enforce access control policies for resource groups.": "Incorrect. This is handled by RBAC or policies."
+    }
+  },
+  {
+    "question": "Which of the following services can host the following type of apps: Web apps, API apps, WebJobs, Mobile apps?",
+    "options": [
+      "Azure App Environment",
+      "Azure App Service",
+      "Azure Arc"
+    ],
+    "correct": "Azure App Service",
+    "explanations": {
+      "Azure App Environment": "Incorrect. Not a valid service.",
+      "Azure App Service": "Correct. Supports hosting of all listed app types.",
+      "Azure Arc": "Incorrect. Used for extending Azure management to other environments, not app hosting."
+    }
+  },
+  {
+    "question": "Which of the following can repeatedly deploy your infrastructure throughout the development lifecycle and have confidence your resources are deployed in a consistent manner?",
+    "options": [
+      "Azure Resource Manager templates",
+      "Azure Templates",
+      "The Azure API Management service",
+      "Management groups"
+    ],
+    "correct": "Azure Resource Manager templates",
+    "explanations": {
+      "Azure Resource Manager templates": "Correct. ARM templates allow consistent, repeatable infrastructure deployment.",
+      "Azure Templates": "Incorrect. Vague and not a specific service.",
+      "The Azure API Management service": "Incorrect. API-focused, not infrastructure.",
+      "Management groups": "Incorrect. Used for organizing subscriptions, not deployments."
+    }
+  },
+  {
+    "question": "A company is tracking performance and reliability of its Azure-hosted application by analyzing logs for errors, setting up notifications for high memory usage, and diagnosing web app performance issues. Which Azure Monitor components are being used? (Select all that apply.)",
+    "options": [
+      "Azure Service Health",
+      "Log Analytics",
+      "Application Insights",
+      "Azure Policy"
+    ],
+    "correct": ["Log Analytics", "Application Insights"],
+    "explanations": {
+      "Azure Service Health": "Incorrect. Reports Azure service status, not app-level metrics.",
+      "Log Analytics": "Correct. Collects and queries log data.",
+      "Application Insights": "Correct. Tracks app performance and errors.",
+      "Azure Policy": "Incorrect. Used for resource compliance, not monitoring."
+    }
+  },
+  {
+    "question": "A company uses Azure DevOps and wants to deploy their app code to Azure App Service automatically after each commit. Which service should they use?",
+    "options": [
+      "Azure Pipelines",
+      "Azure Functions",
+      "Azure Logic Apps",
+      "Azure Repos"
+    ],
+    "correct": "Azure Pipelines",
+    "explanations": {
+      "Azure Pipelines": "Correct. Automates CI/CD workflows.",
+      "Azure Functions": "Incorrect. Used for event-driven code.",
+      "Azure Logic Apps": "Incorrect. Used for workflow automation, not deployments.",
+      "Azure Repos": "Incorrect. Hosts source code but doesn’t deploy it."
+    }
+  },
+  {
+    "question": "Which service allows you to create custom dashboards to visualize Azure resource metrics and performance?",
+    "options": [
+      "Azure Blueprints",
+      "Azure Monitor",
+      "Azure Cost Management",
+      "Azure DevOps Boards"
+    ],
+    "correct": "Azure Monitor",
+    "explanations": {
+      "Azure Blueprints": "Incorrect. Used to deploy environments, not visualize metrics.",
+      "Azure Monitor": "Correct. Supports dashboards, metrics, alerts, and diagnostics.",
+      "Azure Cost Management": "Incorrect. Focuses on cost visualization, not performance.",
+      "Azure DevOps Boards": "Incorrect. Tracks project tasks, not metrics."
+    }
+  },
+  {
+    "question": "A company has a requirement to ensure web applications are protected from common exploits and vulnerabilities. Which service should they use?",
+    "options": [
+      "Azure Load Balancer",
+      "Azure Application Gateway with WAF",
+      "Azure Traffic Manager",
+      "Azure Front Door without WAF"
+    ],
+    "correct": "Azure Application Gateway with WAF",
+    "explanations": {
+      "Azure Load Balancer": "Incorrect. Distributes traffic but offers no Layer 7 protection.",
+      "Azure Application Gateway with WAF": "Correct. Protects web apps against OWASP top 10 vulnerabilities.",
+      "Azure Traffic Manager": "Incorrect. Routes traffic based on DNS, not app-layer security.",
+      "Azure Front Door without WAF": "Incorrect. Front Door offers WAF, but it's not used in this choice."
+    }
+  },
+  {
+    "question": "A company is tracking performance and reliability of its Azure-hosted application by analyzing logs for errors, setting up notifications for high memory usage, and diagnosing web app performance issues. Which Azure Monitor components are being used? (Select all that apply.)",
+    "options": ["Azure Service Health", "Log Analytics", "Application Insights", "Azure Policy"],
+    "correct": ["Log Analytics", "Application Insights"],
+    "explanations": {
+      "Azure Service Health": "Incorrect. It provides Azure-wide service health notifications, not app-level diagnostics.",
+      "Log Analytics": "Correct. Helps collect and analyze logs.",
+      "Application Insights": "Correct. Monitors app performance and usage.",
+      "Azure Policy": "Incorrect. It enforces resource compliance, not monitoring."
+    }
+  },
+  {
+    "question": "A company uses Azure DevOps and wants to deploy their app code to Azure App Service automatically after each commit. Which service should they use?",
+    "options": ["Azure Pipelines", "Azure Functions", "Azure Logic Apps", "Azure Repos"],
+    "correct": "Azure Pipelines",
+    "explanations": {
+      "Azure Pipelines": "Correct. Automates CI/CD for app deployments.",
+      "Azure Functions": "Incorrect. Used for event-driven code, not deployments.",
+      "Azure Logic Apps": "Incorrect. Automates workflows, not deployments.",
+      "Azure Repos": "Incorrect. Provides source control, not deployment automation."
+    }
+  },
+  {
+    "question": "Which service allows you to create custom dashboards to visualize Azure resource metrics and performance?",
+    "options": ["Azure Blueprints", "Azure Monitor", "Azure Cost Management", "Azure DevOps Boards"],
+    "correct": "Azure Monitor",
+    "explanations": {
+      "Azure Blueprints": "Incorrect. Used for environment setup, not metrics visualization.",
+      "Azure Monitor": "Correct. Offers customizable dashboards for performance and metrics.",
+      "Azure Cost Management": "Incorrect. Focuses on budget and cost control.",
+      "Azure DevOps Boards": "Incorrect. Used for tracking project tasks."
+    }
+  },
+  {
+    "question": "A company has a requirement to ensure web applications are protected from common exploits and vulnerabilities. Which service should they use?",
+    "options": ["Azure Load Balancer", "Azure Application Gateway with WAF", "Azure Traffic Manager", "Azure Front Door without WAF"],
+    "correct": "Azure Application Gateway with WAF",
+    "explanations": {
+      "Azure Load Balancer": "Incorrect. Operates at Layer 4, doesn’t protect against web exploits.",
+      "Azure Application Gateway with WAF": "Correct. Provides Layer 7 protection against OWASP top 10 threats.",
+      "Azure Traffic Manager": "Incorrect. DNS-based routing, no security enforcement.",
+      "Azure Front Door without WAF": "Incorrect. Missing the required web application firewall."
+    }
+  },
+  {
+    "question": "An organization enhances security in Azure by allowing users to sign in using a mobile authenticator app instead of passwords, leveraging Microsoft Entra ID’s __ authentication method.",
+    "options": ["passwordless", "multifactor", "token-based", "SSO"],
+    "correct": "passwordless",
+    "explanations": {
+      "passwordless": "Correct. Refers to authentication methods like mobile app login or biometrics without using passwords.",
+      "multifactor": "Incorrect. Requires password plus one more method.",
+      "token-based": "Incorrect. Not specific to mobile app login.",
+      "SSO": "Incorrect. Refers to single login access, not passwordless login specifically."
+    }
+  },
+  {
+    "question": "_________________ is a strategy that employs a series of mechanisms to slow the advance of an attack that's aimed at acquiring unauthorized access to information.",
+    "options": ["Defense in Depth", "Defense in Series", "Defense in Layers", "Defense in Steps"],
+    "correct": "Defense in Depth",
+    "explanations": {
+      "Defense in Depth": "Correct. Uses multiple layers of security to protect data.",
+      "Defense in Series": "Incorrect. Not a commonly used term.",
+      "Defense in Layers": "Too vague and nonstandard.",
+      "Defense in Steps": "Incorrect and not recognized in security frameworks."
+    }
+  },
+  {
+    "question": "A government agency requires Azure services in a dedicated region operated by screened personnel to meet strict compliance needs. Which type of Azure region supports this?",
+    "options": ["Region Pair", "Availability Zone", "Standard Region", "Sovereign Region"],
+    "correct": "Sovereign Region",
+    "explanations": {
+      "Region Pair": "Incorrect. Used for DR, not compliance.",
+      "Availability Zone": "Incorrect. Used for fault tolerance.",
+      "Standard Region": "Incorrect. Available to all, lacks special compliance controls.",
+      "Sovereign Region": "Correct. Meets strict data sovereignty and compliance needs."
+    }
+  },
+  {
+    "question": "______________ Infrastructure as Code involves writing scripts in languages like Bash or PowerShell. You explicitly state commands that are executed to produce a desired outcome.",
+    "options": ["Declarative", "Defined", "Imperative", "Ad-Hoc"],
+    "correct": "Imperative",
+    "explanations": {
+      "Declarative": "Incorrect. It describes the desired state, not how to achieve it.",
+      "Defined": "Not a recognized IaC method.",
+      "Imperative": "Correct. Specifies explicit commands for resource deployment.",
+      "Ad-Hoc": "Too vague and not a formal IaC term."
+    }
+  },
+  {
+    "question": "Is it possible for you to run BOTH Bash and PowerShell based scripts from the Azure Cloud Shell?",
+    "options": ["Yes", "No"],
+    "correct": "Yes",
+    "explanations": {
+      "Yes": "Correct. Azure Cloud Shell supports both Bash and PowerShell environments.",
+      "No": "Incorrect. Both environments are available and selectable in the shell."
+    }
+  },
+  {
+    "question": "You want to ensure that all virtual machines deployed in your Azure environment are configured with specific antivirus software. Which Azure service can you use to enforce this policy?",
+    "options": ["Azure Security Center", "Azure Monitor", "Azure Policy", "Azure Advisor"],
+    "correct": "Azure Policy",
+    "explanations": {
+      "Azure Security Center": "Incorrect. Provides recommendations, but doesn't enforce configurations.",
+      "Azure Monitor": "Incorrect. Used for performance monitoring.",
+      "Azure Policy": "Correct. Allows creation of policies that enforce required software configurations.",
+      "Azure Advisor": "Incorrect. Offers best-practice recommendations, not enforcement."
+    }
+  },
+  {
+    "question": "Which type of resource lock allows you to modify the resource, but not delete it?",
+    "options": ["CanNotModify lock", "Restrict lock", "CanNotDelete lock", "Read-only lock"],
+    "correct": "CanNotDelete lock",
+    "explanations": {
+      "CanNotModify lock": "Incorrect. Not a valid lock type.",
+      "Restrict lock": "Incorrect. Not a recognized Azure lock type.",
+      "CanNotDelete lock": "Correct. Allows modification but prevents deletion.",
+      "Read-only lock": "Incorrect. Prevents both deletion and modification."
+    }
+  },
+  {
+    "question": "A user needs to deploy code that responds to events without managing servers and only pays when the code runs. Which Azure service should they use?",
+    "options": ["Azure Logic Apps", "Azure App Service", "Azure Kubernetes Service", "Azure Functions"],
+    "correct": "Azure Functions",
+    "explanations": {
+      "Azure Logic Apps": "Incorrect. Used for workflow automation.",
+      "Azure App Service": "Incorrect. Requires some infrastructure management.",
+      "Azure Kubernetes Service": "Incorrect. Requires cluster and infrastructure management.",
+      "Azure Functions": "Correct. Serverless compute that charges only when code runs."
+    }
+  },
+  {
+    "question": "Which Azure service provides a centralized policy compliance dashboard?",
+    "options": ["Azure Advisor", "Azure Monitor", "Azure Policy", "Azure Sentinel"],
+    "correct": "Azure Policy",
+    "explanations": {
+      "Azure Advisor": "Incorrect. Gives recommendations, not policy enforcement.",
+      "Azure Monitor": "Incorrect. Focused on performance and logs.",
+      "Azure Policy": "Correct. Central tool for tracking policy compliance.",
+      "Azure Sentinel": "Incorrect. Security analytics, not compliance dashboard."
+    }
+  },
+  {
+    "question": "Which of the following storage tiers is best suited for archival storage that is rarely accessed and can tolerate high latency?",
+    "options": ["Hot Tier", "Cool Tier", "Premium Tier", "Archive Tier"],
+    "correct": "Archive Tier",
+    "explanations": {
+      "Hot Tier": "Incorrect. For frequently accessed data.",
+      "Cool Tier": "Incorrect. For infrequent access, but not archival.",
+      "Premium Tier": "Incorrect. High performance, not cost-effective for archival.",
+      "Archive Tier": "Correct. Optimized for rare access and high latency tolerance."
+    }
+  },
+  {
+    "question": "Which of the following best describes an Availability Zone?",
+    "options": [
+      "A logical grouping of Azure resources",
+      "A network security boundary",
+      "A physically separate datacenter within an Azure region",
+      "A set of Azure subscriptions"
+    ],
+    "correct": "A physically separate datacenter within an Azure region",
+    "explanations": {
+      "A logical grouping of Azure resources": "Incorrect. That describes resource groups.",
+      "A network security boundary": "Incorrect. Describes NSGs or VNets.",
+      "A physically separate datacenter within an Azure region": "Correct. Provides redundancy and high availability.",
+      "A set of Azure subscriptions": "Incorrect. Subscriptions are managed by management groups."
+    }
+  },
+  {
+    "question": "A company wants to ensure it complies with data residency and access rules for its national government. Which Azure offering is designed for this?",
+    "options": ["Azure Standard Region", "Azure Global", "Azure Government", "Azure Hybrid Cloud"],
+    "correct": "Azure Government",
+    "explanations": {
+      "Azure Standard Region": "Incorrect. Lacks the special compliance certifications.",
+      "Azure Global": "Incorrect. Generic term, not a specific offering.",
+      "Azure Government": "Correct. Designed for U.S. government data sovereignty and compliance.",
+      "Azure Hybrid Cloud": "Incorrect. Describes architecture, not a region offering."
+    }
+  },
+  {
+    "question": "Which cloud model gives the customer the most control over the infrastructure and is best suited when they want to install and manage their own OS and applications?",
+    "options": ["Software as a Service (SaaS)", "Platform as a Service (PaaS)", "Infrastructure as a Service (IaaS)", "Anything as a Service (XaaS)"],
+    "correct": "Infrastructure as a Service (IaaS)",
+    "explanations": {
+      "Software as a Service (SaaS)": "Incorrect. No infrastructure control.",
+      "Platform as a Service (PaaS)": "Incorrect. Limited control over OS and middleware.",
+      "Infrastructure as a Service (IaaS)": "Correct. Offers control over OS, apps, and middleware.",
+      "Anything as a Service (XaaS)": "Incorrect. Broad concept, not a specific model."
+    }
+  },
+  {
+    "question": "Which tool would you use to analyze performance metrics and logs across your Azure environment?",
+    "options": ["Azure Sentinel", "Azure Monitor", "Azure Cost Management", "Azure DevOps"],
+    "correct": "Azure Monitor",
+    "explanations": {
+      "Azure Sentinel": "Incorrect. Focuses on security data.",
+      "Azure Monitor": "Correct. Collects, analyzes, and visualizes performance metrics.",
+      "Azure Cost Management": "Incorrect. Deals with budgeting and usage, not performance.",
+      "Azure DevOps": "Incorrect. Used for development lifecycle, not monitoring."
+    }
+  },
+  {
+    "question": "Which Azure service allows you to isolate network traffic using private IPs to access Azure services securely?",
+    "options": ["Azure Front Door", "Private Endpoint", "Azure DNS", "Application Gateway"],
+    "correct": "Private Endpoint",
+    "explanations": {
+      "Azure Front Door": "Incorrect. Global routing and CDN service.",
+      "Private Endpoint": "Correct. Allows secure access via private IPs.",
+      "Azure DNS": "Incorrect. Handles domain name resolution.",
+      "Application Gateway": "Incorrect. Used for web traffic load balancing."
+    }
+  },
+  {
+    "question": "Which Azure tool can you use to compare the cost of on-premises infrastructure to Azure cloud services?",
+    "options": ["Azure Pricing Calculator", "Azure Cost Management", "Azure TCO Calculator", "Azure Advisor"],
+    "correct": "Azure TCO Calculator",
+    "explanations": {
+      "Azure Pricing Calculator": "Incorrect. Estimates costs of Azure resources.",
+      "Azure Cost Management": "Incorrect. Tracks Azure usage and spending.",
+      "Azure TCO Calculator": "Correct. Compares total cost of ownership for Azure vs. on-premises.",
+      "Azure Advisor": "Incorrect. Gives cost-saving recommendations, not TCO comparisons."
+    }
+  },
+  {
+    "question": "Which Azure component allows multiple users to manage resources in a subscription with role-specific permissions?",
+    "options": ["Azure Policy", "Azure Active Directory", "Azure Resource Manager", "Role-Based Access Control (RBAC)"],
+    "correct": "Role-Based Access Control (RBAC)",
+    "explanations": {
+      "Azure Policy": "Incorrect. Enforces resource compliance rules.",
+      "Azure Active Directory": "Incorrect. Identity provider, not access control mechanism.",
+      "Azure Resource Manager": "Incorrect. Manages resources, not roles.",
+      "Role-Based Access Control (RBAC)": "Correct. Assigns user permissions by role for secure access."
+    }
+  },  
+  {
+    "question": "Which of the following is the mission-critical cloud deployment available only to US Federal, State, Local and Tribal Governments and their partners?",
+    "options": ["ISO", "Azure Federal", "Azure Government", "Azure Nation"],
+    "correct": "Azure Government",
+    "explanations": {
+      "ISO": "Incorrect. ISO is a set of standards, not a cloud deployment.",
+      "Azure Federal": "Incorrect. Not a valid deployment name; Azure Government is the correct offering.",
+      "Azure Government": "Correct. Exclusive to US government entities and partners.",
+      "Azure Nation": "Incorrect. Not an Azure product or offering."
+    }
+  },
+  {
+    "question": "Which of the following best describes the Azure Cloud Shell capabilities demonstrated when a user runs az and PowerShell commands from a browser without installing tools?",
+    "options": ["Cross-platform script execution from CLI and GUI", "Running admin scripts with local agent", "Serverless function triggers", "Cloud-based shell access for both Bash and PowerShell"],
+    "correct": "Cloud-based shell access for both Bash and PowerShell",
+    "explanations": {
+      "Cross-platform script execution from CLI and GUI": "Incorrect. Cloud Shell supports CLI but not GUI script execution.",
+      "Running admin scripts with local agent": "Incorrect. Cloud Shell runs scripts in the browser without local tools.",
+      "Serverless function triggers": "Incorrect. Not related to Azure Cloud Shell.",
+      "Cloud-based shell access for both Bash and PowerShell": "Correct. Cloud Shell enables use of both shells from a browser."
+    }
+  },
+  {
+    "question": "A developer deploys event-driven code in Azure that runs without the need for server management and is billed solely based on execution time. Which Azure concept does this represent?",
+    "options": ["SaaS with per-user pricing", "IaaS with fixed pricing", "PaaS with subscription pricing", "Serverless with consumption pricing"],
+    "correct": "Serverless with consumption pricing",
+    "explanations": {
+      "SaaS with per-user pricing": "Incorrect. SaaS refers to fully managed applications.",
+      "IaaS with fixed pricing": "Incorrect. Involves managing VMs, not serverless code.",
+      "PaaS with subscription pricing": "Incorrect. Serverless is more dynamic and usage-based.",
+      "Serverless with consumption pricing": "Correct. Charges only for the time code runs, no server management."
+    }
+  },
+  {
+    "question": "In the _______ as a Service cloud service model, customers are responsible for managing applications, data, runtime, middleware, and operating systems, while the cloud provider manages the underlying infrastructure.",
+    "options": ["SaaS", "PaaS", "IaaS", "All of the above"],
+    "correct": "IaaS",
+    "explanations": {
+      "SaaS": "Incorrect. In SaaS, the provider manages everything.",
+      "PaaS": "Incorrect. The provider manages OS and runtime in PaaS.",
+      "IaaS": "Correct. Customers manage OS and above layers.",
+      "All of the above": "Incorrect. Only IaaS gives that level of control."
+    }
+  },
+  {
+    "question": "Which of the following is the best use case for Platform-as-a-Service (PaaS)?",
+    "options": [
+      "Deploying a pre-built CRM application to manage customer data",
+      "Hosting a virtual machine that runs a custom web application",
+      "Hosting a database where the admin manages the hardware and OS",
+      "Deploying a web app where the developer focuses only on coding and not on managing servers"
+    ],
+    "correct": "Deploying a web app where the developer focuses only on coding and not on managing servers",
+    "explanations": {
+      "Deploying a pre-built CRM application to manage customer data": "Incorrect. This is SaaS.",
+      "Hosting a virtual machine that runs a custom web application": "Incorrect. This is IaaS.",
+      "Hosting a database where the admin manages the hardware and OS": "Incorrect. This is also IaaS.",
+      "Deploying a web app where the developer focuses only on coding and not on managing servers": "Correct. This is a classic PaaS scenario."
+    }
+  },
+  {
+    "question": "True or False: Azure DNS can manage DNS records for your Azure services, but cannot provide DNS for your external resources.",
+    "options": ["True", "False"],
+    "correct": "False",
+    "explanations": {
+      "True": "Incorrect. Azure DNS can manage DNS for both Azure and external domains.",
+      "False": "Correct. Azure DNS supports external DNS record management as well."
+    }
+  },
+  {
+    "question": "Which of the following can you use to set spending thresholds?",
+    "options": [
+      "Azure Cost Management + Billing",
+      "Azure TCO Calculator",
+      "Azure Pricing Calculator",
+      "Azure Policy"
+    ],
+    "correct": "Azure Cost Management + Billing",
+    "explanations": {
+      "Azure Cost Management + Billing": "Correct. Lets you set budgets and alerts.",
+      "Azure TCO Calculator": "Incorrect. Estimates long-term ownership cost but not thresholds.",
+      "Azure Pricing Calculator": "Incorrect. Only estimates costs.",
+      "Azure Policy": "Incorrect. Used for compliance and governance, not budgets."
+    }
+  },
+  {
+    "question": "Which of the following protocols is used for federated authentication in Entra ID?",
+    "options": ["LDAP", "OpenID Connect", "OAuth 2.0", "SAML"],
+    "correct": "SAML",
+    "explanations": {
+      "LDAP": "Incorrect. LDAP is not a federation protocol.",
+      "OpenID Connect": "Incorrect. Often used in modern apps, but SAML is traditional for federated login.",
+      "OAuth 2.0": "Incorrect. OAuth is an authorization protocol, not authentication.",
+      "SAML": "Correct. SAML is commonly used for federated authentication."
+    }
+  },
+  {
+    "question": "A company pays only for Azure resources it uses, adjusting costs based on demand. Which concepts apply? (Select all that apply.)",
+    "options": [
+      "Pay-as-you-go pricing",
+      "Fixed pricing model",
+      "Consumption-based model",
+      "Capital expenditure model"
+    ],
+    "correct": ["Pay-as-you-go pricing", "Consumption-based model"],
+    "explanations": {
+      "Pay-as-you-go pricing": "Correct. Pay only for what you use.",
+      "Fixed pricing model": "Incorrect. Fixed pricing lacks flexibility.",
+      "Consumption-based model": "Correct. Charges based on actual usage.",
+      "Capital expenditure model": "Incorrect. CapEx requires upfront investment."
+    }
+  },
+  {
+    "question": "Which of the following is NOT a feature of Azure Service Health?",
+    "options": [
+      "Provides health alerts about the status of Azure resources",
+      "Informs about planned maintenance that may affect services",
+      "Tracks and resolves performance issues for applications",
+      "Provides real-time notifications of service outages in Azure"
+    ],
+    "correct": "Tracks and resolves performance issues for applications",
+    "explanations": {
+      "Provides health alerts about the status of Azure resources": "Incorrect. This is a core feature.",
+      "Informs about planned maintenance that may affect services": "Incorrect. This is supported.",
+      "Tracks and resolves performance issues for applications": "Correct. This is done by Application Insights, not Service Health.",
+      "Provides real-time notifications of service outages in Azure": "Incorrect. Azure Service Health does this."
+    }
+  },
+  {
+    "question": "A startup builds an app with lightweight, dependency-bundled compute units for microservices and event-driven code snippets that execute without server management. Which Azure compute options are they using? (Select all that apply.)",
+    "options": ["Azure Functions", "Azure Virtual Desktop", "Availability Sets", "Azure Container Instances"],
+    "correct": ["Azure Functions", "Azure Container Instances"],
+    "explanations": {
+      "Azure Functions": "Correct. Ideal for running event-driven code snippets without server management.",
+      "Azure Virtual Desktop": "Incorrect. Used for desktop virtualization, not microservices or serverless apps.",
+      "Availability Sets": "Incorrect. Used for ensuring VM availability, not for serverless workloads.",
+      "Azure Container Instances": "Correct. Allows containerized applications to run without managing infrastructure."
+    }
+  },
+  {
+    "question": "Yes or No: You can use Azure DNS to buy a domain name.",
+    "options": ["Yes", "No"],
+    "correct": "No",
+    "explanations": {
+      "Yes": "Incorrect. Azure DNS only hosts DNS zones; it doesn’t support domain purchases.",
+      "No": "Correct. You need a domain registrar to buy domain names; Azure DNS can host the domain’s DNS zone."
+    }
+  },
+  {
+    "question": "True or False: Each zone is made up of one or more datacentres equipped with common power, cooling, and networking.",
+    "options": ["True", "False"],
+    "correct": "False",
+    "explanations": {
+      "True": "Incorrect. Each Azure Availability Zone has its own independent power, cooling, and networking.",
+      "False": "Correct. Availability Zones are isolated to ensure high availability and fault tolerance."
+    }
+  },
+  {
+    "question": "Which cloud pricing model is best suited for a company that has long-term, predictable needs and prefers the stability of fixed monthly payments while also ensuring that they are not overpaying for unused capacity during periods of low demand?",
+    "options": ["Pay-as-you-go pricing", "Consumption-based model", "Spot pricing model", "Reserved pricing model"],
+    "correct": "Reserved pricing model",
+    "explanations": {
+      "Pay-as-you-go pricing": "Incorrect. More flexible but lacks cost predictability.",
+      "Consumption-based model": "Incorrect. Pricing fluctuates with usage.",
+      "Spot pricing model": "Incorrect. Resources can be interrupted and are not suited for stable long-term workloads.",
+      "Reserved pricing model": "Correct. Best for predictable workloads with fixed monthly costs."
+    }
+  },
+  {
+    "question": "A government agency opts for a __ cloud to isolate sensitive data on its own infrastructure, while a media company uses a __ cloud for cost-effective streaming with global reach.",
+    "options": ["private, public", "hybrid, public", "public, hybrid", "private, hybrid"],
+    "correct": "private, public",
+    "explanations": {
+      "private, public": "Correct. Government uses private for sensitive data; media company benefits from public cloud scalability.",
+      "hybrid, public": "Incorrect. Hybrid combines private and public, but doesn’t isolate sensitive data alone.",
+      "public, hybrid": "Incorrect. Public cloud isn’t ideal for sensitive government data.",
+      "private, hybrid": "Incorrect. Media companies often require global scalability provided by public clouds."
+    }
+  },
+  {
+    "question": "What is the default action for a Network Security Group (NSG) rule if no other action is specified?",
+    "options": ["Allow", "Deny", "Log", "Audit"],
+    "correct": "Deny",
+    "explanations": {
+      "Allow": "Incorrect. NSGs require explicit allow rules.",
+      "Deny": "Correct. The default action is to deny traffic unless explicitly allowed.",
+      "Log": "Incorrect. Logging is a separate feature and not a rule action.",
+      "Audit": "Incorrect. Not a valid action in NSG rules."
+    }
+  },
+  {
+    "question": "True or False: Each Azure Subscription can trust multiple Active Directories.",
+    "options": ["True", "False"],
+    "correct": "False",
+    "explanations": {
+      "True": "Incorrect. Each Azure subscription can only be associated with one Azure Active Directory.",
+      "False": "Correct. Multiple subscriptions can share a single directory, but one subscription can’t trust multiple directories."
+    }
+  },
+  {
+    "question": "An organization is planning to migrate large amounts of data from their On-Prem storage to Azure. However, they are worried of incurring huge costs for this transfer and have halted their plans for now. Is this assumption valid?",
+    "options": ["Yes", "No"],
+    "correct": "No",
+    "explanations": {
+      "Yes": "Incorrect. Inbound data (ingress) to Azure is free.",
+      "No": "Correct. Azure does not charge for data transferred into the cloud."
+    }
+  },
+  {
+    "question": "You are designing a solution to improve the resiliency of your application in Azure. Which of the following would you choose to ensure your application remains available during planned maintenance events?",
+    "options": ["Azure Container Registry", "Scale Sets", "Availability Sets", "Application Insights"],
+    "correct": "Availability Sets",
+    "explanations": {
+      "Azure Container Registry": "Incorrect. Used to store container images.",
+      "Scale Sets": "Incorrect. Used for auto-scaling VMs, but doesn’t ensure resiliency during maintenance.",
+      "Availability Sets": "Correct. Ensures VMs are distributed across fault and update domains.",
+      "Application Insights": "Incorrect. Used for monitoring, not high availability."
+    }
+  },
+  {
+    "question": "Which of the following provides support for key migration workloads like Windows, SQL and Linux Server, databases, data, web apps, and virtual desktops?",
+    "options": ["Azure Advisor", "Azure Migrate", "Azure Recommendations", "Azure Suggestions"],
+    "correct": "Azure Migrate",
+    "explanations": {
+      "Azure Advisor": "Incorrect. Provides best-practice recommendations.",
+      "Azure Migrate": "Correct. Designed for assessing and migrating a wide range of workloads to Azure.",
+      "Azure Recommendations": "Incorrect. Not a valid Azure service.",
+      "Azure Suggestions": "Incorrect. Not an official Azure tool."
+    }
+  }
+]
+    

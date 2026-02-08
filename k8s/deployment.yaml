@@ -1,0 +1,104 @@
+# ==============================================================================
+# KUBERNETES DEPLOYMENT MANIFEST
+# ==============================================================================
+# This file defines the Deployment for the AZ-900 Practice Portal
+# ==============================================================================
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: az900-portal
+  labels:
+    app: az900-portal
+    version: v1
+    environment: production
+spec:
+  # Number of pod replicas
+  replicas: 2
+  
+  # Deployment strategy
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  
+  # Selector to match pods
+  selector:
+    matchLabels:
+      app: az900-portal
+  
+  # Pod template
+  template:
+    metadata:
+      labels:
+        app: az900-portal
+        version: v1
+    spec:
+      # Image pull secret for GHCR
+      imagePullSecrets:
+        - name: ghcr-secret
+      
+      # Container specification
+      containers:
+      - name: az900-portal
+        image: IMAGE_PLACEHOLDER  # Will be replaced by CI/CD pipeline
+        imagePullPolicy: Always
+        
+        # Container port
+        ports:
+        - containerPort: 8080
+          name: http
+          protocol: TCP
+        
+        # Resource limits and requests (IMPORTANT for cost optimization)
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "100m"
+          limits:
+            memory: "128Mi"
+            cpu: "200m"
+        
+        # Liveness probe (checks if container is alive)
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8080
+          initialDelaySeconds: 10
+          periodSeconds: 10
+          timeoutSeconds: 3
+          failureThreshold: 3
+        
+        # Readiness probe (checks if container is ready to serve traffic)
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 5
+          timeoutSeconds: 3
+          failureThreshold: 3
+        
+        # Environment variables (if needed)
+        env:
+        - name: NODE_ENV
+          value: "production"
+        - name: PORT
+          value: "8080"
+        
+        # Security context
+        securityContext:
+          runAsNonRoot: true
+          runAsUser: 1001
+          allowPrivilegeEscalation: false
+          readOnlyRootFilesystem: false
+          capabilities:
+            drop:
+              - ALL
+      
+      # Restart policy
+      restartPolicy: Always
+      
+      # DNS policy
+      dnsPolicy: ClusterFirst

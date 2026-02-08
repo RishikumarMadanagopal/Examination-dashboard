@@ -1,0 +1,793 @@
+[
+  {
+    "question": "What type of scaling typically involves adding more resources to a pool of existing resources?",
+    "options": [
+      "Vertical scaling",
+      "Horizontal scaling",
+      "Scaling up"
+    ],
+    "correct": "Horizontal scaling",
+    "explanations": {
+      "Vertical scaling": "Incorrect. Vertical scaling increases the capacity of a single resource, not the number of resources.",
+      "Horizontal scaling": "Correct. This involves adding more instances to a pool of resources.",
+      "Scaling up": "Incorrect. Scaling up refers to vertical scaling, not adding more resources."
+    }
+  },
+  {
+    "question": "How does high availability help businesses avoid financial losses?",
+    "options": [
+      "By preventing data loss",
+      "By ensuring uninterrupted revenue generation",
+      "By increasing downtime",
+      "By reducing operational costs"
+    ],
+    "correct": "By ensuring uninterrupted revenue generation",
+    "explanations": {
+      "By preventing data loss": "Incorrect. While important, the focus is on keeping services running.",
+      "By ensuring uninterrupted revenue generation": "Correct. Uptime ensures ongoing business operations.",
+      "By increasing downtime": "Incorrect. High availability reduces downtime.",
+      "By reducing operational costs": "Incorrect. Cost savings may be secondary, not the primary benefit."
+    }
+  },
+  {
+    "question": "Can subscriptions be nested?",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "correct": "No",
+    "explanations": {
+      "Yes": "Incorrect. Subscriptions are independent entities and cannot be hierarchically organized.",
+      "No": "Correct. Subscriptions cannot be nested; each stands alone for billing and access."
+    }
+  },
+  {
+    "question": "Which of the following is an example of a PaaS offering from Azure?",
+    "options": [
+      "Microsoft Entra ID (formerly Azure Active Directory)",
+      "Azure App Service",
+      "Azure Storage (General Purpose V2)"
+    ],
+    "correct": "Azure App Service",
+    "explanations": {
+      "Microsoft Entra ID (formerly Azure Active Directory)": "Incorrect. It's an identity management service, not PaaS.",
+      "Azure App Service": "Correct. It's a PaaS solution for building and hosting applications.",
+      "Azure Storage (General Purpose V2)": "Incorrect. It's a storage service, not for application deployment."
+    }
+  },
+  {
+    "question": "What is an example of manageability in the cloud?",
+    "options": [
+      "You use a command-line script to create or destroy virtual machines in a programmatic way.",
+      "You can select the location of your virtual machine.",
+      "You use autoscaling to manage traffic spikes."
+    ],
+    "correct": "You use a command-line script to create or destroy virtual machines in a programmatic way.",
+    "explanations": {
+      "You use a command-line script to create or destroy virtual machines in a programmatic way.": "Correct. Manageability includes automating tasks with scripts.",
+      "You can select the location of your virtual machine.": "Incorrect. That relates to geographic availability, not manageability.",
+      "You use autoscaling to manage traffic spikes.": "Incorrect. That refers to scalability, not manageability."
+    }
+  },
+  {
+    "question": "Which Azure pricing model offers discounted prices in exchange for a commitment to use Azure services for a period of 1 or 3 years?",
+    "options": [
+      "Spot Pricing",
+      "Reserved Instances",
+      "Pay-As-You-Go",
+      "Consumption Pricing"
+    ],
+    "correct": "Reserved Instances",
+    "explanations": {
+      "Spot Pricing": "Incorrect. Spot pricing is variable and doesn't guarantee resources.",
+      "Reserved Instances": "Correct. This pricing model offers discounts for long-term commitment.",
+      "Pay-As-You-Go": "Incorrect. No commitment or discount involved.",
+      "Consumption Pricing": "Incorrect. Generic term, not the specific model with discounts."
+    }
+  },
+  {
+    "question": "What cloud feature did your application demonstrate when it automatically added resources during a traffic spike?",
+    "options": [
+      "Manageability",
+      "High availability",
+      "Scalability",
+      "Predictability"
+    ],
+    "correct": "Scalability",
+    "explanations": {
+      "Manageability": "Incorrect. This refers to ease of administration.",
+      "High availability": "Incorrect. Refers to system uptime.",
+      "Scalability": "Correct. Automatically adding resources is a key feature of scalability.",
+      "Predictability": "Incorrect. Not the best fit in this context."
+    }
+  },
+  {
+    "question": "What is the primary benefit of using containers for deploying applications to Azure?",
+    "options": [
+      "Increased storage capacity",
+      "Improved portability and consistency",
+      "Improved network performance",
+      "Enhanced security"
+    ],
+    "correct": "Improved portability and consistency",
+    "explanations": {
+      "Increased storage capacity": "Incorrect. Not a key advantage of containers.",
+      "Improved portability and consistency": "Correct. Containers allow reliable deployments across environments.",
+      "Improved network performance": "Incorrect. Not a defining benefit of containers.",
+      "Enhanced security": "Incorrect. While beneficial, not the primary reason for using containers."
+    }
+  },
+  {
+    "question": "Which cloud computing model would you use to run legacy software that needs access to the Windows Registry?",
+    "options": [
+      "PaaS",
+      "SaaS",
+      "FaaS",
+      "IaaS"
+    ],
+    "correct": "IaaS",
+    "explanations": {
+      "PaaS": "Incorrect. Limited control over the underlying OS.",
+      "SaaS": "Incorrect. Offers only application access, not OS-level control.",
+      "FaaS": "Incorrect. Function-as-a-Service doesn't allow low-level access.",
+      "IaaS": "Correct. You get full control over the OS, including the Registry."
+    }
+  },
+  {
+    "question": "What cloud model is best for ensuring sensitive data stays on a private network while taking advantage of the public cloud for other workloads?",
+    "options": [
+      "Public Cloud",
+      "Private Cloud",
+      "Hybrid Cloud",
+      "Community Cloud"
+    ],
+    "correct": "Hybrid Cloud",
+    "explanations": {
+      "Public Cloud": "Incorrect. All resources are in the provider's environment.",
+      "Private Cloud": "Incorrect. Fully internal, lacks public cloud benefits.",
+      "Hybrid Cloud": "Correct. Combines both public and private cloud environments.",
+      "Community Cloud": "Incorrect. Shared among similar organizations, not necessarily private + public."
+    }
+  },
+  {
+    "question": "What is the maximum amount of data that can be stored in a single Azure Storage account?",
+    "options": [
+      "5 Gigabytes",
+      "5 Terabytes",
+      "There is no limit",
+      "5 Petabytes"
+    ],
+    "correct": "5 Petabytes",
+    "explanations": {
+      "5 Gigabytes": "Incorrect. Far too small for Azure's capacity.",
+      "5 Terabytes": "Incorrect. The correct limit is much higher.",
+      "There is no limit": "Incorrect. Azure Storage accounts do have a defined limit.",
+      "5 Petabytes": "Correct. This is the current maximum storage limit per account."
+    }
+  },
+  {
+    "question": "Which of the following are required in order to create an Azure Virtual Machine?",
+    "options": [
+      "A resource group",
+      "A subscription to Azure",
+      "A virtual network",
+      "A name for the VM"
+    ],
+    "correct": [
+      "A resource group",
+      "A subscription to Azure",
+      "A virtual network",
+      "A name for the VM"
+    ],
+    "explanations": {
+      "A resource group": "Correct. Used to organize resources logically.",
+      "A subscription to Azure": "Correct. Essential to use and bill for Azure services.",
+      "A virtual network": "Correct. Required for network connectivity.",
+      "A name for the VM": "Correct. VMs must have unique identifiers."
+    }
+  },
+  {
+    "question": "In which storage redundancy option does Azure keep six copies of your files across two regions?",
+    "options": [
+      "LRS",
+      "ZRS",
+      "GRS"
+    ],
+    "correct": "GRS",
+    "explanations": {
+      "LRS": "Incorrect. LRS only replicates data within a single region.",
+      "ZRS": "Incorrect. ZRS spreads data across zones in one region, not multiple regions.",
+      "GRS": "Correct. GRS keeps six copies across a primary and secondary region."
+    }
+  },
+  {
+    "question": "What is the primary purpose of Microsoft Entra Conditional Access?",
+    "options": [
+      "To implement granular access controls based on specific conditions.",
+      "To protect against phishing attacks.",
+      "To enforce strong password policies.",
+      "To provide multi-factor authentication for all users."
+    ],
+    "correct": "To implement granular access controls based on specific conditions.",
+    "explanations": {
+      "To implement granular access controls based on specific conditions.": "Correct. It allows contextual access policies.",
+      "To protect against phishing attacks.": "Incorrect. Not the main objective.",
+      "To enforce strong password policies.": "Incorrect. Handled by other Azure AD features.",
+      "To provide multi-factor authentication for all users.": "Incorrect. MFA is a component but not the sole purpose."
+    }
+  },
+  {
+    "question": "Which of the following is an example of a serverless computing service?",
+    "options": [
+      "Virtual Machines",
+      "Azure Functions",
+      "App Services"
+    ],
+    "correct": "Azure Functions",
+    "explanations": {
+      "Virtual Machines": "Incorrect. VMs require infrastructure management.",
+      "Azure Functions": "Correct. Serverless code execution platform.",
+      "App Services": "Incorrect. PaaS but not serverless."
+    }
+  },
+  {
+    "question": "What is the primary purpose of Azure ExpressRoute?",
+    "options": [
+      "To encrypt communications between Azure and the public Internet",
+      "To provide a secure connection over VPN",
+      "To provide a dedicated private connection between on-premises and Azure",
+      "To speed up web traffic from a browser to Azure apps"
+    ],
+    "correct": "To provide a dedicated private connection between on-premises and Azure",
+    "explanations": {
+      "To encrypt communications between Azure and the public Internet": "Incorrect. VPN handles encryption.",
+      "To provide a secure connection over VPN": "Incorrect. VPN and ExpressRoute are different solutions.",
+      "To provide a dedicated private connection between on-premises and Azure": "Correct. ExpressRoute bypasses the public Internet entirely.",
+      "To speed up web traffic from a browser to Azure apps": "Incorrect. That's more relevant to CDNs."
+    }
+  },
+  {
+    "question": "What is Microsoft Defender for Cloud used for?",
+    "options": [
+      "To host virtual machines securely",
+      "To manage DevOps pipelines",
+      "To provide security recommendations and monitor compliance",
+      "To create resource groups and subscriptions"
+    ],
+    "correct": "To provide security recommendations and monitor compliance",
+    "explanations": {
+      "To host virtual machines securely": "Incorrect. Hosting VMs is an IaaS capability, not Defender's role.",
+      "To manage DevOps pipelines": "Incorrect. Azure DevOps is used for that.",
+      "To provide security recommendations and monitor compliance": "Correct. Defender for Cloud continuously assesses security posture.",
+      "To create resource groups and subscriptions": "Incorrect. That’s done through the Azure portal."
+    }
+  },
+  {
+    "question": "Which Microsoft tool provides a centralized location for compliance documentation and certifications?",
+    "options": [
+      "Microsoft Trust Center",
+      "Microsoft Purview",
+      "Azure Monitor",
+      "Microsoft Defender for Endpoint"
+    ],
+    "correct": "Microsoft Trust Center",
+    "explanations": {
+      "Microsoft Trust Center": "Correct. This portal hosts all compliance and regulatory certifications.",
+      "Microsoft Purview": "Incorrect. It’s for data governance, not compliance documentation.",
+      "Azure Monitor": "Incorrect. Focuses on telemetry and metrics.",
+      "Microsoft Defender for Endpoint": "Incorrect. Endpoint protection tool, not a documentation hub."
+    }
+  },
+  {
+    "question": "What Azure product helps you optimize your cloud resources for cost, security, and performance?",
+    "options": [
+      "Azure Monitor",
+      "Azure Advisor",
+      "Azure Service Health",
+      "Azure Sentinel"
+    ],
+    "correct": "Azure Advisor",
+    "explanations": {
+      "Azure Monitor": "Incorrect. Focuses on logging and metrics.",
+      "Azure Advisor": "Correct. Recommends improvements in cost, performance, security, and availability.",
+      "Azure Service Health": "Incorrect. Not used for optimization.",
+      "Azure Sentinel": "Incorrect. Focused on SIEM and security analysis."
+    }
+  },
+  {
+    "question": "What is Azure’s service level agreement (SLA) for two or more VMs deployed across Availability Zones?",
+    "options": [
+      "99.9%",
+      "99.95%",
+      "99.99%",
+      "100%"
+    ],
+    "correct": "99.99%",
+    "explanations": {
+      "99.9%": "Too low for AZ redundancy.",
+      "99.95%": "Applies to availability sets, not zones.",
+      "99.99%": "Correct. VMs across AZs receive a 99.99% SLA.",
+      "100%": "No cloud provider guarantees 100% uptime."
+    }
+  },
+  {
+    "question": "What Azure product allows you to autoscale virtual machines from 1 to 1000 instances, and also provides load balancing services built in?",
+    "options": [
+      "Azure App Services",
+      "Azure Virtual Machines",
+      "Application Gateway",
+      "Virtual Machine Scale Sets"
+    ],
+    "correct": "Virtual Machine Scale Sets",
+    "explanations": {
+      "Azure App Services": "Incorrect. App Services are for hosting web apps, not managing VM scaling.",
+      "Azure Virtual Machines": "Incorrect. Standard VMs don't scale automatically to 1000 instances.",
+      "Application Gateway": "Incorrect. It provides load balancing but not autoscaling VMs.",
+      "Virtual Machine Scale Sets": "Correct. This service provides autoscaling and load balancing for large sets of VMs."
+    }
+  },
+  {
+    "question": "Which Azure pricing model allows you to pay for compute resources by the second, with no long-term commitment?",
+    "options": [
+      "Spot Pricing",
+      "Pay-As-You-Go",
+      "Enterprise Agreement",
+      "Reserved Instances"
+    ],
+    "correct": "Pay-As-You-Go",
+    "explanations": {
+      "Spot Pricing": "Incorrect. Spot is for discounted, interruptible workloads.",
+      "Pay-As-You-Go": "Correct. Offers second-based billing without upfront commitment.",
+      "Enterprise Agreement": "Incorrect. Meant for large-scale enterprise purchases with contracts.",
+      "Reserved Instances": "Incorrect. Requires a 1- or 3-year commitment for lower pricing."
+    }
+  },
+  {
+    "question": "Which Azure Storage service is best suited for storing unstructured data such as text or binary data?",
+    "options": [
+      "Azure Queue Storage",
+      "Azure Table Storage",
+      "Azure File Storage",
+      "Azure Blob Storage"
+    ],
+    "correct": "Azure Blob Storage",
+    "explanations": {
+      "Azure Queue Storage": "Incorrect. Designed for message queuing.",
+      "Azure Table Storage": "Incorrect. Best for structured NoSQL data.",
+      "Azure File Storage": "Incorrect. Suitable for file shares.",
+      "Azure Blob Storage": "Correct. Designed for storing massive amounts of unstructured data."
+    }
+  },
+  {
+    "question": "Which Azure feature allows you to group related resources together for easier management and billing?",
+    "options": [
+      "Azure Resource Manager",
+      "Azure Subscription",
+      "Resource Group",
+      "Azure Tenant"
+    ],
+    "correct": "Resource Group",
+    "explanations": {
+      "Azure Resource Manager": "Incorrect. It's the deployment and management service, not a grouping container.",
+      "Azure Subscription": "Incorrect. Organizes resources for billing but not fine-grained grouping.",
+      "Resource Group": "Correct. Used to group related resources logically.",
+      "Azure Tenant": "Incorrect. Refers to the entire directory, not resource management."
+    }
+  },
+  {
+    "question": "Which Azure Storage option is the lowest-cost NoSQL storage option for structured, non-relational data?",
+    "options": [
+      "Queue Storage",
+      "Table Storage",
+      "Cosmos DB",
+      "Blob Storage"
+    ],
+    "correct": "Table Storage",
+    "explanations": {
+      "Queue Storage": "Incorrect. For message queuing, not structured NoSQL.",
+      "Table Storage": "Correct. Lowest-cost option for structured non-relational data.",
+      "Cosmos DB": "Incorrect. Powerful but more expensive.",
+      "Blob Storage": "Incorrect. For unstructured data like files and images."
+    }
+  },
+  {
+    "question": "Which feature of Azure Virtual Machines allows you to choose which data center to physically deploy a VM to?",
+    "options": [
+      "Region",
+      "Availability sets",
+      "Spot instances",
+      "Availability zones"
+    ],
+    "correct": "Availability zones",
+    "explanations": {
+      "Region": "Incorrect. Refers to broader geographic location, not specific datacenters.",
+      "Availability sets": "Incorrect. For fault and update domain isolation within a datacenter.",
+      "Spot instances": "Incorrect. Relates to pricing model, not placement.",
+      "Availability zones": "Correct. Enables placement across physically separate datacenters within a region."
+    }
+  },
+  {
+    "question": "What is the core problem you need to solve for a high-availability application?",
+    "options": [
+      "Ensure server has a lot of RAM and CPUs",
+      "Avoid single points of failure",
+      "Ensure the server's capacity exceeds user load",
+      "Have a backup server ready"
+    ],
+    "correct": "Avoid single points of failure",
+    "explanations": {
+      "Ensure server has a lot of RAM and CPUs": "Incorrect. Doesn’t address fault tolerance.",
+      "Avoid single points of failure": "Correct. Core principle of high availability.",
+      "Ensure the server's capacity exceeds user load": "Incorrect. That's related to scalability.",
+      "Have a backup server ready": "Helpful, but not as complete a solution as avoiding single points of failure."
+    }
+  },
+  {
+    "question": "What name does Microsoft give to the set of APIs that provide ML/AI capabilities like image recognition and natural language processing?",
+    "options": [
+      "Azure Machine Learning Studio",
+      "Azure AI Language services",
+      "Azure AI services",
+      "Azure Batch"
+    ],
+    "correct": "Azure AI services",
+    "explanations": {
+      "Azure Machine Learning Studio": "Incorrect. Used for building/training ML models.",
+      "Azure AI Language services": "Incorrect. A subset of Azure AI, not the entire suite.",
+      "Azure AI services": "Correct. Full set of Cognitive and AI APIs.",
+      "Azure Batch": "Incorrect. For large-scale parallel jobs, not AI."
+    }
+  },
+  {
+    "question": "What does it mean that security is a 'shared model' in Azure?",
+    "options": [
+      "You must keep your security keys private.",
+      "Azure handles all security responsibilities.",
+      "Azure takes no responsibility for security.",
+      "Both users and Azure have responsibilities for security."
+    ],
+    "correct": "Both users and Azure have responsibilities for security.",
+    "explanations": {
+      "You must keep your security keys private.": "Important, but doesn’t define the shared model.",
+      "Azure handles all security responsibilities.": "Incorrect. Customers are responsible for some layers.",
+      "Azure takes no responsibility for security.": "Incorrect. Azure handles infrastructure security.",
+      "Both users and Azure have responsibilities for security.": "Correct. It's a shared responsibility model."
+    }
+  },
+  {
+    "question": "What Azure resource allows central collection of logs and metrics from across multiple services?",
+    "options": [
+      "Azure Monitor",
+      "Log Analytics Workspace",
+      "Azure Storage",
+      "Azure Activity Log"
+    ],
+    "correct": "Log Analytics Workspace",
+    "explanations": {
+      "Azure Monitor": "Incorrect. It's a broader monitoring framework.",
+      "Log Analytics Workspace": "Correct. Central container for queryable logs.",
+      "Azure Storage": "Incorrect. General data storage, not log analysis.",
+      "Azure Activity Log": "Incorrect. Records Azure resource changes but isn't a workspace."
+    }
+  },
+  {
+    "question": "What is the primary purpose of Azure B2B collaboration?",
+    "options": [
+      "To enable internal user account creation",
+      "To allow external users to create Azure subscriptions",
+      "To allow guest users from external organizations to access your organization's resources",
+      "To provide billing options for multiple businesses"
+    ],
+    "correct": "To allow guest users from external organizations to access your organization's resources",
+    "explanations": {
+      "To enable internal user account creation": "Incorrect. This pertains to internal directory services.",
+      "To allow external users to create Azure subscriptions": "Incorrect. Azure subscriptions are unrelated to B2B collaboration.",
+      "To allow guest users from external organizations to access your organization's resources": "Correct. Azure B2B collaboration lets you securely share resources with external users.",
+      "To provide billing options for multiple businesses": "Incorrect. Billing is handled through Azure subscriptions and cost management."
+    }
+  },
+  {
+    "question": "Which Azure service helps you manage and analyze logs collected from your resources?",
+    "options": [
+      "Azure Advisor",
+      "Azure Monitor",
+      "Log Analytics",
+      "Azure Security Center"
+    ],
+    "correct": "Log Analytics",
+    "explanations": {
+      "Azure Advisor": "Incorrect. It provides optimization recommendations.",
+      "Azure Monitor": "Incorrect. It is a broader framework that uses Log Analytics for querying.",
+      "Log Analytics": "Correct. It enables querying and analysis of logs collected across Azure.",
+      "Azure Security Center": "Incorrect. Focused on threat detection and compliance."
+    }
+  },
+  {
+    "question": "What Azure service provides a central location for creating and managing policies across multiple Azure resources?",
+    "options": [
+      "Azure Resource Manager",
+      "Azure Policy",
+      "Azure Monitor",
+      "Azure Blueprint"
+    ],
+    "correct": "Azure Policy",
+    "explanations": {
+      "Azure Resource Manager": "Incorrect. ARM is the deployment engine, not policy enforcement.",
+      "Azure Policy": "Correct. It lets you define and enforce governance policies.",
+      "Azure Monitor": "Incorrect. Used for telemetry and alerts, not governance.",
+      "Azure Blueprint": "Incorrect. It combines policy, RBAC, and templates but isn't the central policy engine."
+    }
+  },
+  {
+    "question": "What is Azure's default approach to allowing customers to manage resource costs?",
+    "options": [
+      "Through Azure Advisor only",
+      "By creating multiple tenants",
+      "Using Azure Cost Management + Billing",
+      "By assigning budgets in the Microsoft 365 portal"
+    ],
+    "correct": "Using Azure Cost Management + Billing",
+    "explanations": {
+      "Through Azure Advisor only": "Incorrect. Advisor suggests optimizations but isn't the primary billing tool.",
+      "By creating multiple tenants": "Incorrect. Tenants are directory containers and don’t manage costs.",
+      "Using Azure Cost Management + Billing": "Correct. This service tracks usage and cost, and allows budget setup.",
+      "By assigning budgets in the Microsoft 365 portal": "Incorrect. Azure cost management is separate from M365."
+    }
+  },
+  {
+    "question": "Which feature allows you to assign multiple policies as a single group?",
+    "options": [
+      "Role Definition",
+      "Blueprint",
+      "Policy Assignment",
+      "Initiative"
+    ],
+    "correct": "Initiative",
+    "explanations": {
+      "Role Definition": "Incorrect. Defines access permissions, not policies.",
+      "Blueprint": "Incorrect. Blueprint includes policies but is broader and not the direct grouping mechanism.",
+      "Policy Assignment": "Incorrect. Applies individual or grouped policies but doesn’t group them.",
+      "Initiative": "Correct. This groups several policies into a reusable set."
+    }
+  },
+  {
+    "question": "How does Azure help ensure regulatory compliance with industry standards?",
+    "options": [
+      "By enforcing password policies across all VMs",
+      "By offering specialized compliance tools like Microsoft Purview and Compliance Manager",
+      "By encrypting all user data by default",
+      "By maintaining an isolated network per subscription"
+    ],
+    "correct": "By offering specialized compliance tools like Microsoft Purview and Compliance Manager",
+    "explanations": {
+      "By enforcing password policies across all VMs": "Incorrect. Password policy enforcement is basic security, not comprehensive compliance.",
+      "By offering specialized compliance tools like Microsoft Purview and Compliance Manager": "Correct. These tools help manage and document compliance.",
+      "By encrypting all user data by default": "Incorrect. While encryption helps, compliance is broader.",
+      "By maintaining an isolated network per subscription": "Incorrect. Network isolation doesn’t address compliance requirements."
+    }
+  },
+  {
+    "question": "What is the benefit of using Azure Availability Zones?",
+    "options": [
+      "Lower cost for virtual machines",
+      "Ensures data encryption",
+      "Provides redundancy by hosting resources across multiple data centers in a region",
+      "Improves compute speed through higher VM sizes"
+    ],
+    "correct": "Provides redundancy by hosting resources across multiple data centers in a region",
+    "explanations": {
+      "Lower cost for virtual machines": "Incorrect. Pricing isn’t necessarily lower.",
+      "Ensures data encryption": "Incorrect. Availability Zones focus on uptime and redundancy.",
+      "Provides redundancy by hosting resources across multiple data centers in a region": "Correct. AZs protect against datacenter-level failures.",
+      "Improves compute speed through higher VM sizes": "Incorrect. VM size affects performance, not redundancy."
+    }
+  },
+  {
+    "question": "What tool in Azure allows you to forecast costs and simulate different configurations?",
+    "options": [
+      "Azure Monitor",
+      "Azure Calculator",
+      "Azure Advisor",
+      "Cost Management"
+    ],
+    "correct": "Azure Calculator",
+    "explanations": {
+      "Azure Monitor": "Incorrect. Used for telemetry, not pricing simulation.",
+      "Azure Calculator": "Correct. Used for pricing estimation based on configuration.",
+      "Azure Advisor": "Incorrect. Offers recommendations, not forecasting.",
+      "Cost Management": "Incorrect. Tracks actual usage, not hypothetical scenarios."
+    }
+  },
+  {
+    "question": "Which of the following statements best describes a resource group?",
+    "options": [
+      "It defines who can access a resource.",
+      "It is a container that holds related Azure resources.",
+      "It is a region-specific policy object.",
+      "It is used to bill virtual machines."
+    ],
+    "correct": "It is a container that holds related Azure resources.",
+    "explanations": {
+      "It defines who can access a resource.": "Incorrect. That’s managed with RBAC.",
+      "It is a container that holds related Azure resources.": "Correct. Resource groups organize resources for management and billing.",
+      "It is a region-specific policy object.": "Incorrect. Policies are defined separately and applied to scopes.",
+      "It is used to bill virtual machines.": "Incorrect. Subscriptions are used for billing."
+    }
+  },
+  {
+    "question": "What is the key advantage of geo-redundant storage (GRS)?",
+    "options": [
+      "Provides instant file-level backup",
+      "Replicates data to a secondary region for disaster recovery",
+      "Encrypts data using advanced key management",
+      "Lowers the cost of cold storage"
+    ],
+    "correct": "Replicates data to a secondary region for disaster recovery",
+    "explanations": {
+      "Provides instant file-level backup": "Incorrect. GRS isn't a backup solution.",
+      "Replicates data to a secondary region for disaster recovery": "Correct. GRS enhances durability with cross-region replication.",
+      "Encrypts data using advanced key management": "Incorrect. Encryption is separate from redundancy type.",
+      "Lowers the cost of cold storage": "Incorrect. GRS can be more expensive due to redundancy."
+    }
+  },
+  {
+    "question": "What is the purpose of Azure Private Link?",
+    "options": [
+      "To monitor private IP traffic in Azure",
+      "To allow private access to Azure services from your virtual network",
+      "To allow external access to your virtual machines",
+      "To create a VPN tunnel between on-premises and Azure"
+    ],
+    "correct": "To allow private access to Azure services from your virtual network",
+    "explanations": {
+      "To monitor private IP traffic in Azure": "Incorrect. This is more related to NSG flow logs or Network Watcher.",
+      "To allow private access to Azure services from your virtual network": "Correct. Azure Private Link enables private endpoints for services.",
+      "To allow external access to your virtual machines": "Incorrect. NSGs or Public IPs provide that functionality.",
+      "To create a VPN tunnel between on-premises and Azure": "Incorrect. That's the role of VPN Gateway, not Private Link."
+    }
+  },
+  {
+    "question": "Which Azure service offers a security layer for web applications to protect against threats like SQL injection and cross-site scripting?",
+    "options": [
+      "Azure Firewall",
+      "Application Gateway with WAF",
+      "Azure Bastion",
+      "Azure Monitor"
+    ],
+    "correct": "Application Gateway with WAF",
+    "explanations": {
+      "Azure Firewall": "Incorrect. Provides network-level protection, not web-specific filtering.",
+      "Application Gateway with WAF": "Correct. The WAF (Web Application Firewall) filters and protects web app traffic.",
+      "Azure Bastion": "Incorrect. Bastion provides secure RDP/SSH access to VMs.",
+      "Azure Monitor": "Incorrect. Used for collecting and analyzing metrics and logs, not filtering web traffic."
+    }
+  },
+  {
+    "question": "Which of the following is the best example of the defense-in-depth principle?",
+    "options": [
+      "Encrypting data at rest only",
+      "Using a firewall only",
+      "Implementing multiple layers of security such as firewalls, identity management, and encryption",
+      "Isolating a network from the internet"
+    ],
+    "correct": "Implementing multiple layers of security such as firewalls, identity management, and encryption",
+    "explanations": {
+      "Encrypting data at rest only": "Incorrect. One layer only, not defense-in-depth.",
+      "Using a firewall only": "Incorrect. Too narrow to be considered layered defense.",
+      "Implementing multiple layers of security such as firewalls, identity management, and encryption": "Correct. Defense-in-depth means applying layered protection.",
+      "Isolating a network from the internet": "Incorrect. This is part of a strategy but not the whole approach."
+    }
+  },
+  {
+    "question": "What does the Azure SLA for a single virtual machine in an availability zone guarantee?",
+    "options": [
+      "100% availability",
+      "99.9% availability",
+      "99.95% availability",
+      "99.99% availability"
+    ],
+    "correct": "99.99% availability",
+    "explanations": {
+      "100% availability": "Incorrect. No SLA guarantees 100% uptime.",
+      "99.9% availability": "Too low for this configuration.",
+      "99.95% availability": "Applies to availability sets, not AZs.",
+      "99.99% availability": "Correct. SLA for VMs spread across Availability Zones."
+    }
+  },
+  {
+    "question": "What is Azure DevTest Labs used for?",
+    "options": [
+      "Creating CI/CD pipelines",
+      "Building AI models",
+      "Quickly creating environments for testing and development",
+      "Backing up and restoring virtual machines"
+    ],
+    "correct": "Quickly creating environments for testing and development",
+    "explanations": {
+      "Creating CI/CD pipelines": "Incorrect. Azure DevOps handles that.",
+      "Building AI models": "Incorrect. Use Azure Machine Learning for that.",
+      "Quickly creating environments for testing and development": "Correct. DevTest Labs automates test/dev environments.",
+      "Backing up and restoring virtual machines": "Incorrect. That’s handled by Azure Backup."
+    }
+  },
+  {
+    "question": "What is the role of Azure Policy?",
+    "options": [
+      "To monitor application performance",
+      "To assign permissions to users and groups",
+      "To define and enforce resource compliance rules",
+      "To encrypt data in transit"
+    ],
+    "correct": "To define and enforce resource compliance rules",
+    "explanations": {
+      "To monitor application performance": "Incorrect. That’s Azure Monitor’s role.",
+      "To assign permissions to users and groups": "Incorrect. That’s managed with RBAC.",
+      "To define and enforce resource compliance rules": "Correct. Azure Policy is used to enforce rules across resources.",
+      "To encrypt data in transit": "Incorrect. This is achieved with TLS, not policy."
+    }
+  },
+  {
+    "question": "What Azure feature lets you organize and manage access to multiple subscriptions effectively?",
+    "options": [
+      "Resource Groups",
+      "Role-Based Access Control",
+      "Azure Management Groups",
+      "Azure Monitor"
+    ],
+    "correct": "Azure Management Groups",
+    "explanations": {
+      "Resource Groups": "Incorrect. They group resources, not subscriptions.",
+      "Role-Based Access Control": "Incorrect. RBAC manages permissions, not organizational structure.",
+      "Azure Management Groups": "Correct. They allow managing access, policy, and compliance across subscriptions.",
+      "Azure Monitor": "Incorrect. Used for monitoring resources."
+    }
+  },
+  {
+    "question": "Which Azure feature enables resource provisioning and management through declarative templates?",
+    "options": [
+      "Azure DevTest Labs",
+      "Azure Resource Manager (ARM) templates",
+      "Azure Monitor",
+      "Azure Logic Apps"
+    ],
+    "correct": "Azure Resource Manager (ARM) templates",
+    "explanations": {
+      "Azure DevTest Labs": "Incorrect. It helps manage dev/test environments.",
+      "Azure Resource Manager (ARM) templates": "Correct. They allow provisioning infrastructure as code.",
+      "Azure Monitor": "Incorrect. Focuses on telemetry.",
+      "Azure Logic Apps": "Incorrect. Used for building workflows."
+    }
+  },
+  {
+    "question": "How does Azure help customers meet regulatory compliance requirements?",
+    "options": [
+      "By guaranteeing 100% uptime",
+      "By providing built-in compliance tools and reports",
+      "By encrypting all data automatically",
+      "By assigning legal counsel to all enterprise accounts"
+    ],
+    "correct": "By providing built-in compliance tools and reports",
+    "explanations": {
+      "By guaranteeing 100% uptime": "Incorrect. No cloud provider can offer this.",
+      "By providing built-in compliance tools and reports": "Correct. Azure includes tools like Compliance Manager and Purview.",
+      "By encrypting all data automatically": "Incorrect. Some encryption must be enabled/configured by users.",
+      "By assigning legal counsel to all enterprise accounts": "Incorrect. Legal compliance is self-managed with support from Azure documentation and tools."
+    }
+  },
+  {
+    "question": "Which Azure service provides distributed denial-of-service protection?",
+    "options": [
+      "Azure Firewall",
+      "Azure Front Door",
+      "Azure DDoS Protection",
+      "Application Gateway"
+    ],
+    "correct": "Azure DDoS Protection",
+    "explanations": {
+      "Azure Firewall": "Incorrect. Focuses on network-level access control.",
+      "Azure Front Door": "Incorrect. Used for global routing and load balancing.",
+      "Azure DDoS Protection": "Correct. Specifically designed to mitigate DDoS attacks.",
+      "Application Gateway": "Incorrect. Offers WAF for apps, not DDoS protection."
+    }
+  }
+]
